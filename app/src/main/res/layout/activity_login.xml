@@ -65,11 +65,29 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="66dp"
         android:layout_marginBottom="226dp"
-        android:text="Button"
         android:hint="Sign in"
+        android:text="Sign in"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="99dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginRight="178dp"
+        android:layout_marginBottom="102dp"
+        android:text="Sign In"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

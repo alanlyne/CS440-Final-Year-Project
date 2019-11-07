@@ -30,37 +30,44 @@ public class MainActivity extends AppCompatActivity {
 
         mFirebaseAuth = FirebaseAuth.getInstance();
         emailId = findViewById(R.id.editText);
-        password = findViewById(R.id. editText2);
+        password = findViewById(R.id.editText2);
         btnSignUp = findViewById(R.id.button2);
-        btnSignUp.setOnClickListener(new View.OnClickListener(){
+        tvSignIn = findViewById(R.id.textView);
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String email = emailId.getText().toString();
                 String pwd = password.getText().toString();
-                if(email.isEmpty()){
+                if (email.isEmpty()) {
                     emailId.setError("Please enter email");
                     emailId.requestFocus();
-                }else if(pwd.isEmpty()){
+                } else if (pwd.isEmpty()) {
                     password.setError("Please enter password");
                     password.requestFocus();
-                }
-                else if(email.isEmpty() && pwd.isEmpty()){
-                    Toast.makeText(MainActivity.this, "Fields are empty!",Toast.LENGTH_SHORT).show();
-                }else if(!(email.isEmpty() && pwd.isEmpty())){
+                } else if (email.isEmpty() && pwd.isEmpty()) {
+                    Toast.makeText(MainActivity.this, "Fields are empty!", Toast.LENGTH_SHORT).show();
+                } else if (!(email.isEmpty() && pwd.isEmpty())) {
                     mFirebaseAuth.createUserWithEmailAndPassword(email, pwd).addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
-                            if(!task.isSuccessful()){
-                                Toast.makeText(MainActivity.this, "Sign Up Unsuccessful, Please Try Again",Toast.LENGTH_SHORT).show();
-                            }else{
+                            if (!task.isSuccessful()) {
+                                Toast.makeText(MainActivity.this, "Sign Up Unsuccessful, Please Try Again", Toast.LENGTH_SHORT).show();
+                            } else {
                                 startActivity(new Intent(MainActivity.this, HomeActivity.class));
                             }
                         }
                     });
+                } else {
+                    Toast.makeText(MainActivity.this, "Error Occurred!", Toast.LENGTH_SHORT).show();
                 }
-                else{
-                    Toast.makeText(MainActivity.this, "Error Occurred!",Toast.LENGTH_SHORT).show();
-                }
+            }
+        });
+
+        tvSignIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, loginActivity.class);
+                startActivity(i);
             }
         });
     }
