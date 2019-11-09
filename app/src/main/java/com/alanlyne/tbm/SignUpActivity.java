@@ -33,7 +33,8 @@ public class SignUpActivity extends AppCompatActivity {
         password = findViewById(R.id.editText2);
         btnSignUp= findViewById(R.id.signUp);
         tvSignIn = findViewById(R.id.textView);
-        System.out.println(btnSignUp);
+
+        //Sign Up Action
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,6 +65,7 @@ public class SignUpActivity extends AppCompatActivity {
             }
         });
 
+        //Move to Sign In
         tvSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

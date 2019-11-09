@@ -35,6 +35,7 @@ public class loginActivity extends AppCompatActivity {
         btnSignIn = findViewById(R.id.button2);
         tvSignUp = findViewById(R.id.textView);
 
+        //Check if user is already logged in
         mAuthStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -49,6 +50,8 @@ public class loginActivity extends AppCompatActivity {
                 }
             }
         };
+
+        //Login action
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,6 +85,8 @@ public class loginActivity extends AppCompatActivity {
 
             }
         });
+
+        //Move to Sign Up
         tvSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -23,14 +23,7 @@ public class MainActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.logout);
         tvSignIn = findViewById(R.id.login);
 
-       /* btnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FirebaseAuth.getInstance().signOut();
-                Intent intToMain = new Intent(MainActivity.this, loginActivity.class);
-                startActivity(intToMain);
-            }
-        });*/
+        // Move to Login
         tvSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
