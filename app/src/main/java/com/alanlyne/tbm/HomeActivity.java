@@ -53,10 +53,23 @@ public class HomeActivity extends AppCompatActivity {
         //Change image on button press
         Button button = findViewById(R.id.imageButton1);
         button.setOnClickListener(new View.OnClickListener() {
+            public int counter;
+
+            @Override
             public void onClick(View v) {
-                TestImage.setImageResource(R.drawable.image);
+                counter +=1;
+                if(counter == 1){
+                    TestImage.setImageResource(R.drawable.image);
+                }else if(counter == 2){
+                    TestImage.setImageResource(R.drawable.sunset);
+                }else{
+                    TestImage.setImageResource(R.drawable.download);
+                }
+
+                //TestImage.setImageResource(R.drawable.image);
             }
         });
+
 
         //Move to Sign out
         btnLogout = findViewById(R.id.logout);
