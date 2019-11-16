@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "881797015740-0j0e8p3od8ad93ps4ig3em6ia56btkcm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alanlyne.tbm",
+            "certificate_hash": "6acca4ce7e7a126f4e72c35a1835291fc3ad4c70"
+          }
+        },
+        {
           "client_id": "881797015740-o1al7c6gtg216h88fol10nl1vavdt7g3.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

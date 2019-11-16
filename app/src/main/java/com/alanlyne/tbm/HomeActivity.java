@@ -95,7 +95,7 @@ public class HomeActivity extends AppCompatActivity {
 
             name userName = new name(id, name, phone);
 
-            databaseName.child(id).setValue(userName);
+            databaseName.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(userName);
 
             Toast.makeText(this, "Name added", Toast.LENGTH_LONG).show();
 
