@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.alanlyne.tbm.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -17,7 +18,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class Menu extends AppCompatActivity {
-    private static final String TAG = "Menu";
     Button btn;
     public ImageView image;
     public static int counter;
@@ -27,6 +27,7 @@ public class Menu extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
 
         //Add an image
         image = findViewById(R.id.imageView2);
@@ -40,6 +41,8 @@ public class Menu extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 menuCounter uCount = dataSnapshot.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).getValue(menuCounter.class);
                 counter = uCount.counter;
+
+                System.out.println("Counter value is " + counter);
 
                 if (counter == 1) {image.setImageResource(R.drawable.g2);}
 
