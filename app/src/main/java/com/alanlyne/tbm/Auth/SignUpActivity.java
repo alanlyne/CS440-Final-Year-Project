@@ -1,4 +1,4 @@
-package com.alanlyne.tbm;
+package com.alanlyne.tbm.Auth;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,11 +11,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.alanlyne.tbm.Menu.Menu;
+import com.alanlyne.tbm.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseAuthException;
 
 public class SignUpActivity extends AppCompatActivity {
     public EditText emailId, password;

@@ -13,11 +13,12 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.alanlyne.tbm.Auth.loginActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class HomeActivity extends AppCompatActivity {
+public class temp extends AppCompatActivity {
     Button buttonAdd;
     EditText editTextName;
     EditText editPhone;
@@ -53,23 +54,10 @@ public class HomeActivity extends AppCompatActivity {
         //Change image on button press
         Button button = findViewById(R.id.imageButton1);
         button.setOnClickListener(new View.OnClickListener() {
-            public int counter;
-
-            @Override
             public void onClick(View v) {
-                counter +=1;
-                if(counter == 1){
-                    TestImage.setImageResource(R.drawable.image);
-                }else if(counter == 2){
-                    TestImage.setImageResource(R.drawable.sunset);
-                }else{
-                    TestImage.setImageResource(R.drawable.download);
-                }
-
-                //TestImage.setImageResource(R.drawable.image);
+                TestImage.setImageResource(R.drawable.image);
             }
         });
-
 
         //Move to Sign out
         btnLogout = findViewById(R.id.logout);
@@ -77,7 +65,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
-                Intent intToMain = new Intent(HomeActivity.this, loginActivity.class);
+                Intent intToMain = new Intent(temp.this, loginActivity.class);
                 startActivity(intToMain);
             }
         });
@@ -91,14 +79,7 @@ public class HomeActivity extends AppCompatActivity {
         String phone = editPhone.getText().toString().trim();
 
         if(!TextUtils.isEmpty(name)){
-            String id = databaseName.push().getKey();
-
-            name userName = new name(id, name, phone);
-
-            databaseName.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(userName);
-
-            Toast.makeText(this, "Name added", Toast.LENGTH_LONG).show();
-
+            databaseName.push().getKey();
         }else{
             Toast.makeText(this, "Enter name", Toast.LENGTH_LONG).show();
         }

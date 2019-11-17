@@ -1,8 +1,8 @@
-package com.alanlyne.tbm;
+package com.alanlyne.tbm.Menu;
 
 public class menuCounter {
 
-    int counter;
+    public int counter;
 
     public menuCounter(){
 
