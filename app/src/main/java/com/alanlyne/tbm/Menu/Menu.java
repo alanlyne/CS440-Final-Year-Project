@@ -9,7 +9,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.alanlyne.tbm.Auth.loginActivity;
 import com.alanlyne.tbm.R;
+import com.alanlyne.tbm.temp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -39,7 +41,7 @@ public class Menu extends AppCompatActivity {
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                menuCounter uCount = dataSnapshot.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).getValue(menuCounter.class);
+                menuCounter uCount = dataSnapshot.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).getValue(com.alanlyne.tbm.Menu.menuCounter.class);
                 counter = uCount.counter;
 
                 System.out.println("Counter value is " + counter);
@@ -59,6 +61,18 @@ public class Menu extends AppCompatActivity {
             public void onClick(View v) {
                 Intent WIP = new Intent(Menu.this, com.alanlyne.tbm.WIP.WIP.class);
                 startActivity(WIP);
+            }
+        });
+
+
+        //Move to Sign out
+        btn = findViewById(R.id.btnSignOut);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                Intent intToMain = new Intent(Menu.this, com.alanlyne.tbm.Auth.loginActivity.class);
+                startActivity(intToMain);
             }
         });
     }
