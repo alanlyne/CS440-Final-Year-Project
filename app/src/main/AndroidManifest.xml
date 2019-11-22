@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WIP.WIP"></activity>
+        <activity android:name=".WIP.wipQuiz.ResultActivity"></activity>
+        <activity android:name=".WIP.wipQuiz.wipQuiz" />
+        <activity android:name=".WIP.WIP" />
         <activity android:name=".Menu.Menu" />
         <activity android:name=".Auth.SignUpActivity" />
         <activity android:name=".Auth.loginActivity" />

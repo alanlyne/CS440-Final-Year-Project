@@ -15,7 +15,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class WIP extends AppCompatActivity {
-    Button btn;
+    Button btn, quiz;
 
     DatabaseReference databaseName;
 
@@ -26,14 +26,24 @@ public class WIP extends AppCompatActivity {
 
         databaseName = FirebaseDatabase.getInstance().getReference("counter");
 
+        quiz = findViewById(R.id.wipQuiz);
+
+        quiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent quiz= new Intent(WIP.this,com.alanlyne.tbm.WIP.wipQuiz.wipQuiz.class);
+                startActivity(quiz);
+            }
+        });
+
         btn = findViewById(R.id.button1);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Menu.counter = 1;
-                Intent act2= new Intent(WIP.this,Menu.class);
-                startActivity(act2);
+                Intent menu = new Intent(WIP.this,Menu.class);
+                startActivity(menu);
 
                 addCounter();
             }
