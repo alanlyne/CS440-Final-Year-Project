@@ -41,7 +41,7 @@ public class WIP extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Menu.counter = 1;
+                //Menu.counter = 1;
                 Intent menu = new Intent(WIP.this,Menu.class);
                 startActivity(menu);
 
@@ -51,7 +51,7 @@ public class WIP extends AppCompatActivity {
     }
 
     private void addCounter(){
-        Menu.counter = 1;
+        Menu.counter = 0;
         menuCounter counter = new menuCounter(Menu.counter);
         databaseName.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(counter);
         }

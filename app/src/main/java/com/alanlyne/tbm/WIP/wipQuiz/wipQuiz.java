@@ -23,7 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 public class wipQuiz extends AppCompatActivity {
 
     Button b1, b2, b3, b4;
-    TextView t1_question, timerTxt;
+    TextView t1_question;
     int total = 0;
     int correct = 0;
     int wrong = 0;
@@ -42,10 +42,10 @@ public class wipQuiz extends AppCompatActivity {
         b4 = findViewById(R.id.button4);
 
         t1_question = findViewById(R.id.questionText);
-        timerTxt = findViewById(R.id.timerTxt);
+        //timerTxt = findViewById(R.id.timerTxt);
 
         updateQuestion();
-        reverseTimer(60,timerTxt);
+        //reverseTimer(60,timerTxt);
     }
 
     private void updateQuestion() {
@@ -256,22 +256,22 @@ public class wipQuiz extends AppCompatActivity {
         }
     }
 
-    public void reverseTimer(int seconds, final TextView tv){
-        new CountDownTimer(seconds * 1000 + 1000, 1000){
-            public void onTick(long millisUntilFinished){
-                int seconds = (int) (millisUntilFinished / 1000);
-                int minutes = seconds / 60;
-                seconds = seconds % 60;
-                tv.setText(String.format("%02d", minutes) + ":" + String.format("%02d", seconds));
-            }
-            public void onFinish(){
-                tv.setText("Completed");
-                Intent myIntent = new Intent(wipQuiz.this, ResultActivity.class);
-                myIntent.putExtra("total", String.valueOf(total));
-                myIntent.putExtra("correct", String.valueOf(correct));
-                myIntent.putExtra("wrong", String.valueOf(wrong));
-                startActivity(myIntent);
-            }
-        }.start();
-    }
+//    public void reverseTimer(int seconds, final TextView tv){
+//        new CountDownTimer(seconds * 1000 + 1000, 1000){
+//            public void onTick(long millisUntilFinished){
+//                int seconds = (int) (millisUntilFinished / 1000);
+//                int minutes = seconds / 60;
+//                seconds = seconds % 60;
+//                tv.setText(String.format("%02d", minutes) + ":" + String.format("%02d", seconds));
+//            }
+//            public void onFinish(){
+//                tv.setText("Completed");
+//                Intent myIntent = new Intent(wipQuiz.this, ResultActivity.class);
+//                myIntent.putExtra("total", String.valueOf(total));
+//                myIntent.putExtra("correct", String.valueOf(correct));
+//                myIntent.putExtra("wrong", String.valueOf(wrong));
+//                startActivity(myIntent);
+//            }
+//        }.start();
+//    }
 }
