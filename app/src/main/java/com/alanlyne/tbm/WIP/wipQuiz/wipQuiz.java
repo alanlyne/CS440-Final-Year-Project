@@ -102,7 +102,7 @@ public class wipQuiz extends AppCompatActivity {
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        correct++;
+                                        //correct++;
                                         b1.setBackgroundColor(Color.parseColor("#03A9F4"));
                                         b2.setBackgroundColor(Color.parseColor("#03A9F4"));
                                         b3.setBackgroundColor(Color.parseColor("#03A9F4"));
@@ -146,7 +146,7 @@ public class wipQuiz extends AppCompatActivity {
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        correct++;
+                                        //correct++;
                                         b1.setBackgroundColor(Color.parseColor("#03A9F4"));
                                         b2.setBackgroundColor(Color.parseColor("#03A9F4"));
                                         b3.setBackgroundColor(Color.parseColor("#03A9F4"));
@@ -190,7 +190,7 @@ public class wipQuiz extends AppCompatActivity {
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        correct++;
+                                        //correct++;
                                         b1.setBackgroundColor(Color.parseColor("#03A9F4"));
                                         b2.setBackgroundColor(Color.parseColor("#03A9F4"));
                                         b3.setBackgroundColor(Color.parseColor("#03A9F4"));
@@ -234,7 +234,7 @@ public class wipQuiz extends AppCompatActivity {
                                 handler.postDelayed(new Runnable() {
                                     @Override
                                     public void run() {
-                                        correct++;
+                                        //correct++;
                                         b1.setBackgroundColor(Color.parseColor("#03A9F4"));
                                         b2.setBackgroundColor(Color.parseColor("#03A9F4"));
                                         b3.setBackgroundColor(Color.parseColor("#03A9F4"));
