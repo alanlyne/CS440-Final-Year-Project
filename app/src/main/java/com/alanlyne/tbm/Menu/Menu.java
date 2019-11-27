@@ -7,11 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-import com.alanlyne.tbm.Auth.loginActivity;
 import com.alanlyne.tbm.R;
-import com.alanlyne.tbm.temp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -46,7 +43,7 @@ public class Menu extends AppCompatActivity {
 
                 System.out.println("Counter value is " + counter);
 
-                if (counter == 1) {image.setImageResource(R.drawable.g2);}
+                if (counter == 10) {image.setImageResource(R.drawable.g2);}
 
             }
             @Override
@@ -55,7 +52,7 @@ public class Menu extends AppCompatActivity {
             }
         });
 
-        btn = findViewById(R.id.button1);
+        btn = findViewById(R.id.reset);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
