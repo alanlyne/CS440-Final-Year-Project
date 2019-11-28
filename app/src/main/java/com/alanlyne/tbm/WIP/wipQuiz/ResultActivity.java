@@ -42,8 +42,9 @@ public class ResultActivity extends AppCompatActivity {
 
         setValues();
 
-
-        addCounter();
+        if(Menu.counter < 10) {
+            addCounter();
+        }
 
         backToMenu.setOnClickListener(new View.OnClickListener() {
             @Override

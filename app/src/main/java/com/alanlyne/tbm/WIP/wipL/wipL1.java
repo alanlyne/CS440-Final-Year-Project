@@ -31,18 +31,15 @@ public class wipL1 extends AppCompatActivity {
 
         btn = findViewById(R.id.finishL1);
 
-        if(Menu.counter < 0) {
-            btn.setEnabled(false);
-        }
-
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Menu.counter = 1;
                 Intent menu = new Intent(wipL1.this,WIP.class);
                 startActivity(menu);
-
-                addCounter();
+                if(Menu.counter == 0) {
+                    addCounter();
+                }
             }
         });
     }
