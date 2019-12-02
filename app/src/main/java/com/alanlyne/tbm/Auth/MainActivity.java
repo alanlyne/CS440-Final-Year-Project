@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnLogin = findViewById(R.id.logout);
+        //btnLogin = findViewById(R.id.logout);
         tvSignIn = findViewById(R.id.login);
 
         // Move to Login
