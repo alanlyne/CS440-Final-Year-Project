@@ -58,7 +58,7 @@ public class wipQuiz extends AppCompatActivity {
             startActivity(myIntent);
 
         } else {
-            reference = FirebaseDatabase.getInstance().getReference().child("Questions").child(String.valueOf(computerCount));
+            reference = FirebaseDatabase.getInstance().getReference().child("wipQuestions").child(String.valueOf(computerCount));
             total++;
             reference.addValueEventListener(new ValueEventListener() {
                 @Override

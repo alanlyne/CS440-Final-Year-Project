@@ -15,7 +15,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WIP.wipL.wipL4"></activity>
+        <activity android:name=".Variables.varQuiz.ResultActivity"></activity>
+        <activity android:name=".Variables.varQuiz.varQuiz" />
+        <activity android:name=".Variables.varL.varL4" />
+        <activity android:name=".Variables.varL.varL3" />
+        <activity android:name=".Variables.varL.varL2" />
+        <activity android:name=".Variables.varL.varL1" />
+        <activity android:name=".Variables.Var" />
+        <activity android:name=".WIP.wipL.wipL4" />
         <activity android:name=".WIP.wipL.wipL3" />
         <activity android:name=".WIP.wipL.wipL2" />
         <activity android:name=".WIP.wipL.wipL1" />

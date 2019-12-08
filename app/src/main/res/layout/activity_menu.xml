@@ -29,27 +29,27 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button17" />
+            app:layout_constraintTop_toBottomOf="@+id/a6" />
 
         <Button
-            android:id="@+id/button16"
+            android:id="@+id/a5"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginTop="44dp"
-            android:text="Variables"
-            app:layout_constraintEnd_toStartOf="@+id/button17"
+            android:text="Iteration"
+            app:layout_constraintEnd_toStartOf="@+id/a6"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button12" />
+            app:layout_constraintTop_toBottomOf="@+id/a3" />
 
         <Button
-            android:id="@+id/button17"
+            android:id="@+id/a6"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginTop="44dp"
-            android:text="Variables"
+            android:text="Strings"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button16"
-            app:layout_constraintTop_toBottomOf="@+id/button14" />
+            app:layout_constraintStart_toEndOf="@+id/a5"
+            app:layout_constraintTop_toBottomOf="@+id/a4" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -63,45 +63,45 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <Button
-            android:id="@+id/reset"
+            android:id="@+id/wip"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginTop="49dp"
             android:text="What is programming?"
 
-            app:layout_constraintBottom_toTopOf="@+id/button12"
-            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintBottom_toTopOf="@+id/a3"
+            app:layout_constraintEnd_toStartOf="@+id/a2"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/a2"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginTop="49dp"
             android:text="Variables"
-            app:layout_constraintBottom_toTopOf="@+id/button14"
+            app:layout_constraintBottom_toTopOf="@+id/a4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/reset"
+            app:layout_constraintStart_toEndOf="@+id/wip"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/a3"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginStart="37dp"
             android:layout_marginLeft="37dp"
             android:layout_marginTop="44dp"
             android:text="Operators"
-            app:layout_constraintBottom_toTopOf="@+id/button16"
-            app:layout_constraintEnd_toStartOf="@+id/button14"
+            app:layout_constraintBottom_toTopOf="@+id/a5"
+            app:layout_constraintEnd_toStartOf="@+id/a4"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/reset" />
+            app:layout_constraintTop_toBottomOf="@+id/wip" />
 
         <Button
-            android:id="@+id/button14"
+            android:id="@+id/a4"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginStart="37dp"
@@ -109,12 +109,12 @@
             android:layout_marginTop="44dp"
             android:layout_marginEnd="37dp"
             android:layout_marginRight="37dp"
-            android:text="Variables"
-            app:layout_constraintBottom_toTopOf="@+id/button17"
+            android:text="Selection Statements"
+            app:layout_constraintBottom_toTopOf="@+id/a6"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/button12"
-            app:layout_constraintTop_toBottomOf="@+id/button2" />
+            app:layout_constraintStart_toEndOf="@+id/a3"
+            app:layout_constraintTop_toBottomOf="@+id/a2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
