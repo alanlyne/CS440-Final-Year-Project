@@ -32,7 +32,7 @@ public class Menu extends AppCompatActivity {
 
         //Add an image
         image = findViewById(R.id.imageView2);
-        image.setImageResource(R.drawable.g1);
+        image.setImageResource(R.drawable.c0);
 
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference ref = database.getReference("counter");
@@ -46,7 +46,7 @@ public class Menu extends AppCompatActivity {
                 System.out.println("Counter value is " + counter);
 
                 if (counter >= 10 && counter < 20) {
-                    image.setImageResource(R.drawable.g2);
+                    image.setImageResource(R.drawable.c1);
                 }
 
 
