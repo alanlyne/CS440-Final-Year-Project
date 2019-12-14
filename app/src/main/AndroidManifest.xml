@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Variables.varQuiz.ResultActivity"></activity>
+        <activity android:name=".Auth.video"></activity>
+        <activity android:name=".Variables.varQuiz.ResultActivity" />
         <activity android:name=".Variables.varQuiz.varQuiz" />
         <activity android:name=".Variables.varL.varL4" />
         <activity android:name=".Variables.varL.varL3" />
