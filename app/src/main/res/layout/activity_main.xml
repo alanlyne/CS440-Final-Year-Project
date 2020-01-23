@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Auth.MainActivity"
-    android:background="@drawable/gradient2"
+    android:background="@drawable/bg1"
     >
 
     <TextView
@@ -18,7 +18,8 @@
         android:layout_marginEnd="179dp"
         android:layout_marginRight="179dp"
         android:layout_marginBottom="383dp"
-        android:text="Test"
+        android:text="Welcome to The Bare Minimum"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +35,7 @@
         android:layout_marginEnd="163dp"
         android:layout_marginRight="163dp"
         android:layout_marginBottom="299dp"
-        android:text="Login"
+        android:text="Continue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
