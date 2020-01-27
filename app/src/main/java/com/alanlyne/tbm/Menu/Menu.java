@@ -46,6 +46,7 @@ public class Menu extends AppCompatActivity {
                 System.out.println("Counter value is " + counter);
 
                 if (counter >= 10 && counter < 20) {
+
                     image.setImageResource(R.drawable.c1);
                 }
 

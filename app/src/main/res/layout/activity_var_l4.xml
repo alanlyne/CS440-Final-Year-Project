@@ -5,7 +5,7 @@
     android:id="@+id/ScrollView01"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/gradient2"
+    android:background="@drawable/bg1"
     android:fillViewport="true">
 
 
@@ -15,6 +15,7 @@
         android:layout_height="wrap_content">
 
         <Button
+            android:background="@drawable/edit_round"
             android:id="@+id/finishL1"
             android:layout_width="88dp"
             android:layout_height="wrap_content"
@@ -46,6 +47,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
+            android:background="@drawable/edit_round"
             android:id="@+id/c1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
