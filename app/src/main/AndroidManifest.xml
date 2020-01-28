@@ -17,7 +17,7 @@
         android:roundIcon="@drawable/logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Auth.welcome"></activity>
+        <activity android:name=".Auth.welcome"/>
         <activity
             android:name=".Auth.video"
             android:screenOrientation="landscape" />

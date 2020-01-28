@@ -1,22 +1,16 @@
 package com.alanlyne.tbm.Auth;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
-
 import com.alanlyne.tbm.Menu.Menu;
-import com.alanlyne.tbm.Menu.menuCounter;
 import com.alanlyne.tbm.R;
-import com.alanlyne.tbm.Variables.Var;
-import com.alanlyne.tbm.Variables.varL.varL1;
-import com.google.firebase.auth.FirebaseAuth;
 
 public class welcome extends AppCompatActivity {
-    TextView t1;
+    TextView t1,t0;
     int counter = 0;
 
     @Override
@@ -24,24 +18,27 @@ public class welcome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
         t1 = findViewById(R.id.t1);
+        t0 = findViewById(R.id.t0);
 
+        setContentView(R.layout.activity_welcome);
 
+        View view = findViewById(R.id.ScrollView01);
+        view.setOnTouchListener(new View.OnTouchListener() {
 
-
-        c1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                counter = 1;
+            public boolean onTouch(View view,MotionEvent event) {
+                counter++;
                 System.out.println(counter);
-
-                if(counter == 1){
+                if (counter > 0) {
                     TextView tv = findViewById(R.id.t1);
                     tv.setVisibility(View.VISIBLE);
                 }
+                if (counter > 1) {
+                    Intent Menu = new Intent(welcome.this, Menu.class);
+                    startActivity(Menu);
+                }
+                return true;
             }
         });
-    }
-    private void addCounter(){
-        counter++;
     }
 }

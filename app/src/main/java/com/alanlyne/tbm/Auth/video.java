@@ -36,7 +36,7 @@ public class video extends AppCompatActivity {
         videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener(){
             @Override
             public void onCompletion(MediaPlayer mp) {
-                Intent menu = new Intent(video.this, Menu.class);
+                Intent menu = new Intent(video.this, welcome.class);
                 startActivity(menu);
             }
         });
