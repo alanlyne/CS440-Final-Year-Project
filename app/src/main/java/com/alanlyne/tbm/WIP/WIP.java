@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.alanlyne.tbm.Menu.Menu;
 import com.alanlyne.tbm.Menu.menuCounter;
@@ -20,7 +21,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class WIP extends AppCompatActivity {
-    Button reset, quiz, l1, l2, l3, l4;
+    Button reset, quiz, l1, l2, l3;
+    TextView x;
 
     DatabaseReference databaseName;
 
@@ -28,6 +30,15 @@ public class WIP extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wip);
+
+        x = findViewById(R.id.x);
+        x.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent x = new Intent(WIP.this, Menu.class);
+                startActivity(x);
+            }
+        });
 
         databaseName = FirebaseDatabase.getInstance().getReference("counter");
 
@@ -60,19 +71,8 @@ public class WIP extends AppCompatActivity {
             }
         });
 
-        l4 = findViewById(R.id.l4);
-        if(Menu.counter < 3) { l4.setEnabled(false); }
-        l4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent l4 = new Intent(WIP.this, wipL4.class);
-                startActivity(l4);
-            }
-        });
-
-
         quiz = findViewById(R.id.wipQuiz);
-        if(Menu.counter < 4) { quiz.setEnabled(false); }
+        if(Menu.counter < 3) { quiz.setEnabled(false); }
         quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -92,12 +92,12 @@ public class WIP extends AppCompatActivity {
                 Intent menu = new Intent(WIP.this,Menu.class);
                 startActivity(menu);
 
-                addCounter();
+                resetCounter();
             }
         });
     }
 
-    private void addCounter(){
+    private void resetCounter(){
         Menu.counter = 0;
         menuCounter counter = new menuCounter(Menu.counter);
         databaseName.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(counter);

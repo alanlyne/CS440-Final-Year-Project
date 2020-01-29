@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg1"
+    android:background="@drawable/bgcolour"
     tools:context=".Auth.SignUpActivity">
 
     <EditText
@@ -66,10 +66,10 @@
         android:layout_marginEnd="177dp"
         android:layout_marginRight="177dp"
         android:layout_marginBottom="97dp"
-        android:background="@drawable/edit_round"
-        android:padding="5dp"
+        android:background="@drawable/b_round"
+        android:padding="10dp"
         android:text="Already have an account? Sign in here"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         android:textColorHighlight="@android:color/black"
         android:textColorHint="@android:color/black"
         android:textColorLink="@android:color/black"
@@ -80,35 +80,29 @@
 
     <Button
         android:id="@+id/signUp"
-        android:background="@drawable/edit_round"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="66dp"
         android:layout_marginBottom="226dp"
+        android:background="@drawable/b_round"
         android:text="Sign Up"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginLeft="176dp"
-        android:layout_marginTop="99dp"
-        android:layout_marginEnd="178dp"
-        android:layout_marginRight="178dp"
-        android:layout_marginBottom="102dp"
-        android:background="@drawable/title_round"
-        android:padding="10dp"
-        android:text="Sign Up"
-        android:textColor="@android:color/white"
-        android:textColorHint="@android:color/white"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="128dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="77dp"
         app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

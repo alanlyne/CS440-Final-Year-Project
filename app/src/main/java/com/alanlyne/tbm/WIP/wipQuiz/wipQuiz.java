@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.alanlyne.tbm.R;
+import com.alanlyne.tbm.WIP.WIP;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -22,7 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 public class wipQuiz extends AppCompatActivity {
 
     Button b1, b2, b3, b4;
-    TextView t1_question;
+    TextView t1_question, x;
     int total = 0;
     int correct = 0;
     int wrong = 0;
@@ -39,6 +40,15 @@ public class wipQuiz extends AppCompatActivity {
         b2 = findViewById(R.id.button2);
         b3 = findViewById(R.id.button3);
         b4 = findViewById(R.id.button4);
+
+        x = findViewById(R.id.x);
+        x.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent x = new Intent(wipQuiz.this, WIP.class);
+                startActivity(x);
+            }
+        });
 
         t1_question = findViewById(R.id.questionText);
         //timerTxt = findViewById(R.id.timerTxt);
@@ -80,7 +90,7 @@ public class wipQuiz extends AppCompatActivity {
                                     @Override
                                     public void run() {
                                         correct++;
-                                        b1.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                        b1.setBackgroundResource(R.drawable.b_round);
                                         updateQuestion();
                                     }
                                 }, 1500);
@@ -102,10 +112,10 @@ public class wipQuiz extends AppCompatActivity {
                                     @Override
                                     public void run() {
                                         //correct++;
-                                        b1.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b2.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b3.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b4.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                        b1.setBackgroundResource(R.drawable.b_round);
+                                        b2.setBackgroundResource(R.drawable.b_round);
+                                        b3.setBackgroundResource(R.drawable.b_round);
+                                        b4.setBackgroundResource(R.drawable.b_round);
                                         updateQuestion();
                                     }
                                 }, 1500);
@@ -124,7 +134,7 @@ public class wipQuiz extends AppCompatActivity {
                                     @Override
                                     public void run() {
                                         correct++;
-                                        b2.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                        b2.setBackgroundResource(R.drawable.b_round);
                                         updateQuestion();
                                     }
                                 }, 1500);
@@ -146,10 +156,10 @@ public class wipQuiz extends AppCompatActivity {
                                     @Override
                                     public void run() {
                                         //correct++;
-                                        b1.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b2.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b3.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b4.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                        b1.setBackgroundResource(R.drawable.b_round);
+                                        b2.setBackgroundResource(R.drawable.b_round);
+                                        b3.setBackgroundResource(R.drawable.b_round);
+                                        b4.setBackgroundResource(R.drawable.b_round);
                                         updateQuestion();
                                     }
                                 }, 1500);
@@ -168,7 +178,7 @@ public class wipQuiz extends AppCompatActivity {
                                     @Override
                                     public void run() {
                                         correct++;
-                                        b3.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                        b3.setBackgroundResource(R.drawable.b_round);
                                         updateQuestion();
                                     }
                                 }, 1500);
@@ -190,10 +200,10 @@ public class wipQuiz extends AppCompatActivity {
                                     @Override
                                     public void run() {
                                         //correct++;
-                                        b1.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b2.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b3.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b4.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                        b1.setBackgroundResource(R.drawable.b_round);
+                                        b2.setBackgroundResource(R.drawable.b_round);
+                                        b3.setBackgroundResource(R.drawable.b_round);
+                                        b4.setBackgroundResource(R.drawable.b_round);
                                         updateQuestion();
                                     }
                                 }, 1500);
@@ -212,7 +222,7 @@ public class wipQuiz extends AppCompatActivity {
                                     @Override
                                     public void run() {
                                         correct++;
-                                        b4.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                        b4.setBackgroundResource(R.drawable.b_round);
                                         updateQuestion();
                                     }
                                 }, 1500);
@@ -234,10 +244,10 @@ public class wipQuiz extends AppCompatActivity {
                                     @Override
                                     public void run() {
                                         //correct++;
-                                        b1.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b2.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b3.setBackgroundColor(Color.parseColor("#03A9F4"));
-                                        b4.setBackgroundColor(Color.parseColor("#03A9F4"));
+                                        b1.setBackgroundResource(R.drawable.b_round);
+                                        b2.setBackgroundResource(R.drawable.b_round);
+                                        b3.setBackgroundResource(R.drawable.b_round);
+                                        b4.setBackgroundResource(R.drawable.b_round);
                                         updateQuestion();
                                     }
                                 }, 1500);

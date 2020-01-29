@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg1"
+    android:background="@drawable/bgcolour"
     tools:context=".Auth.loginActivity">
 
     <EditText
@@ -63,19 +63,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="177dp"
-        android:layout_marginLeft="177dp"
         android:layout_marginTop="340dp"
         android:layout_marginEnd="177dp"
-        android:layout_marginRight="177dp"
         android:layout_marginBottom="97dp"
-        android:background="@drawable/edit_round"
-        android:padding="5dp"
+        android:background="@drawable/b_round"
+        android:padding="10dp"
         android:text="Not registered? Sign up here"
-        android:textColor="@android:color/black"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintVertical_bias="0.513" />
 
     <Button
         android:id="@+id/button2"
@@ -83,9 +82,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="66dp"
         android:layout_marginBottom="226dp"
+        android:background="@drawable/b_round"
         android:hint="Sign in"
         android:text="Sign in"
-        android:background="@drawable/edit_round"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -93,23 +93,17 @@
         app:layout_constraintTop_toBottomOf="@+id/editText2"
         app:layout_constraintVertical_bias="0.384" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginLeft="176dp"
-        android:layout_marginTop="99dp"
-        android:layout_marginEnd="178dp"
-        android:layout_marginRight="178dp"
-        android:layout_marginBottom="102dp"
-        android:background="@drawable/title_round"
-        android:padding="10dp"
-        android:text="Sign In"
-        android:textColor="@android:color/white"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="145dp"
+        android:layout_height="109dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="37dp"
         app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

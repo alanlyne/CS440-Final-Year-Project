@@ -4,9 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.SystemClock;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.alanlyne.tbm.Menu.Menu;
@@ -19,59 +22,80 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class wipL1 extends AppCompatActivity{
 
-    Button btn, c1;
-    TextView t1;
+    TextView t0, t1, t2, x;
+    Button b1;
     int counter = 0;
     DatabaseReference databaseName;
+    private long mLastClickTime = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wip_l1);
-
         databaseName = FirebaseDatabase.getInstance().getReference("counter");
 
-
-
-        btn = findViewById(R.id.finishL1);
-        c1 = findViewById(R.id.c1);
+        t0 = findViewById(R.id.t0);
         t1 = findViewById(R.id.t1);
+        t2 = findViewById(R.id.t2);
+        b1 = findViewById(R.id.b1);
+        setContentView(R.layout.activity_wip_l1);
 
-
-
-
-        c1.setOnClickListener(new View.OnClickListener() {
+        x = findViewById(R.id.x);
+        x.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                counter = 1;
-                System.out.println(counter);
-
-                if(counter == 1){
-                    TextView tv = findViewById(R.id.t1);
-                    tv.setVisibility(View.VISIBLE);
-                }
+                Intent x = new Intent(wipL1.this, WIP.class);
+                startActivity(x);
             }
         });
 
+        View view = findViewById(R.id.ScrollView01);
+        view.setOnTouchListener(new View.OnTouchListener() {
 
-
-        btn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                //Menu.counter = 1;
-                Intent menu = new Intent(wipL1.this,WIP.class);
-                startActivity(menu);
-                if(Menu.counter == 0) {
-                    addCounter();
+            public boolean onTouch(View view,MotionEvent event) {
+
+                if (SystemClock.elapsedRealtime() - mLastClickTime < 500) {
+                    System.out.println("Fun");
                 }
+                else{
+                mLastClickTime = SystemClock.elapsedRealtime();
+
+                counter++;
+
+                System.out.println(counter);
+                if (counter > 0) {
+                    TextView tv = findViewById(R.id.t1);
+                    tv.setVisibility(View.VISIBLE);
+                    ImageView i1 = findViewById(R.id.i1);
+                    i1.setVisibility(View.VISIBLE);
+                }
+                if (counter > 2) {
+                    TextView tv = findViewById(R.id.t2);
+                    tv.setVisibility(View.VISIBLE);
+                }
+                if (counter > 4) {
+                    Button b1 = findViewById(R.id.b1);
+                    b1.setVisibility(View.VISIBLE);
+                    b1.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent Menu = new Intent(wipL1.this, WIP.class);
+                            startActivity(Menu);
+                            addCounter();
+                        }
+                    });
+                }}
+                return true;
             }
         });
     }
-
     private void addCounter(){
-        Menu.counter = 1;
-        menuCounter counter = new menuCounter(Menu.counter);
-        databaseName.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(counter);
+        if(Menu.counter == 0) {
+            Menu.counter = 1;
+            menuCounter counter = new menuCounter(Menu.counter);
+            databaseName.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(counter);
+        }
     }
 }
 

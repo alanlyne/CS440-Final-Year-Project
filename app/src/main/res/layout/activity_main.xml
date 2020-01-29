@@ -5,11 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Auth.MainActivity"
-    android:background="@drawable/bg1"
+    android:background="@drawable/bgcolour"
     >
 
     <TextView
         android:id="@+id/textView2"
+        android:textColor="@android:color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="173dp"
@@ -18,10 +19,9 @@
         android:layout_marginEnd="179dp"
         android:layout_marginRight="179dp"
         android:layout_marginBottom="383dp"
-        android:background="@drawable/edit_round"
+        android:background="@drawable/head_round"
         android:padding="10dp"
         android:text="Welcome to The Bare Minimum"
-        android:textColor="@android:color/black"
         android:textColorHint="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,6 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:background="@drawable/b_round"
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,10 +39,8 @@
         android:layout_marginEnd="163dp"
         android:layout_marginRight="163dp"
         android:layout_marginBottom="299dp"
-        android:background="@drawable/edit_round"
         android:text="Continue"
-        android:textColor="@android:color/black"
-        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

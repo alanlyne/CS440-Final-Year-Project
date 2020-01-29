@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/gradient2"
+    android:background="@drawable/bgcolour"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -13,6 +13,8 @@
 
     <TextView
         android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+        android:background="@drawable/head_round"
         android:layout_height="wrap_content"
         android:text="Results"
         android:textAlignment="center"
@@ -31,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginTop="45dp"
-        android:background="#c6c6c6" />
+        android:background="@drawable/b_round" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,34 +44,35 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Total Questions           :"
-            android:textColor="#d4ce2e"
+            android:textColor="@android:color/white"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/attempted"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#FFD4CE2E"
+            android:textColor="@android:color/white"
             android:textSize="24sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
         android:layout_marginTop="20dp">
 
         <TextView
             android:layout_width="wrap_content"
+            android:textColor="@android:color/white"
             android:layout_height="wrap_content"
             android:text="Correct                          :"
-            android:textColor="#51b364"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/correct"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#51b364"
+            android:textColor="@android:color/white"
             android:textSize="24sp" />
     </LinearLayout>
 
@@ -82,14 +85,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Incorrect                       :"
-            android:textColor="#e9403d"
+            android:textColor="@android:color/white"
             android:textSize="24sp" />
 
         <TextView
             android:id="@+id/incorrect"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#e9403d"
+            android:textColor="@android:color/white"
             android:textSize="24sp" />
     </LinearLayout>
 
@@ -98,10 +101,12 @@
         android:layout_height="2dp"
         android:id = "@+id/tv"
         android:layout_marginTop="25dp"
-        android:background="#bebebe" />
+        android:background="@drawable/b_round" />
 
     <Button
         android:id="@+id/backToMenu"
+        android:background="@drawable/b_round"
+        android:textColor="@android:color/white"
         android:layout_width="127dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
