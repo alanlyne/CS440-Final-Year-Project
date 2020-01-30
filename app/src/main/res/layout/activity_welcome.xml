@@ -5,7 +5,7 @@
     android:id="@+id/ScrollView01"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/bg1"
+    android:background="@drawable/bgcolour"
     android:fillViewport="true"
     >
 

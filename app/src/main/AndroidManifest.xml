@@ -17,7 +17,10 @@
         android:roundIcon="@drawable/logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Auth.welcome"/>
+        <activity android:name=".Variables.varQuiz.revActivity"></activity>
+        <activity android:name=".WIP.wipQuiz.ResultActivity" />
+        <activity android:name=".Variables.varQuiz.varRevision" />
+        <activity android:name=".Auth.welcome" />
         <activity
             android:name=".Auth.video"
             android:screenOrientation="landscape" />
@@ -32,7 +35,6 @@
         <activity android:name=".WIP.wipL.wipL3" />
         <activity android:name=".WIP.wipL.wipL2" />
         <activity android:name=".WIP.wipL.wipL1" />
-        <activity android:name=".WIP.wipQuiz.ResultActivity" />
         <activity android:name=".WIP.wipQuiz.wipQuiz" />
         <activity android:name=".WIP.WIP" />
         <activity android:name=".Menu.Menu" />

@@ -1,66 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ScrollView01"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/bg1"
-    android:fillViewport="true">
-
+    android:background="@drawable/bgcolour"
+    tools:context=".Variables.varL.varL4">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraint_layout1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:background="@drawable/edit_round"
-            android:id="@+id/finishL1"
-            android:layout_width="88dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="161dp"
-            android:layout_marginLeft="161dp"
-            android:layout_marginEnd="161dp"
-            android:layout_marginRight="161dp"
-            android:text="Finish"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/c1" />
+        android:layout_height="fill_parent"
+        android:id="@+id/View01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/t1"
-            android:layout_width="wrap_content"
+            android:id="@+id/t0"
+            android:layout_width="350sp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="83dp"
-            android:layout_marginBottom="256dp"
-            android:text="This is how you Java"
-            android:textColor="#F7F3F3"
-            android:textColorHighlight="#FF000000"
-            android:visibility="invisible"
-            app:layout_constraintBottom_toTopOf="@+id/c1"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Okay, lets see what you know\nPlease try the following problems on your own.\nIf you can, you have reached an acceptable level of knowledge in variables and can move onto the quiz."
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/t1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:background="@drawable/edit_round"
-            android:id="@+id/c1"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="350sp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="200dp"
-            android:layout_marginLeft="200dp"
-            android:layout_marginEnd="200dp"
-            android:layout_marginRight="200dp"
-            android:text="Continue"
-            app:layout_constraintBottom_toTopOf="@+id/finishL1"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Q1 - Write a Java program which:\nDeclares 8 variables, one of each of the types previously mentioned."
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/t2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t0" />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Q2 - Using the above program, re-assign all of the variables to new values without having to redeclare them."
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/t3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/t1" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Q3 - Using the two above programs, print out each of the variables on seperate lines and state what they are\ne.g. &quot;This is a double: 10.5&quot;"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/b1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t2" />
+
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/b_round"
+            android:text="Continue"
+            android:textColor="@android:color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t3" />
+
+        <TextView
+            android:id="@+id/x"
+            android:layout_width="15dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:text="x"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/t0"
+            app:layout_constraintEnd_toEndOf="@+id/t0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
+

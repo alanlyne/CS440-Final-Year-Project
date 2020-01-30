@@ -20,7 +20,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class varQuiz extends AppCompatActivity {
+public class varRevision extends AppCompatActivity {
     Button b1, b2, b3, b4;
     TextView t1_question, x;
     int total = 0;
@@ -44,7 +44,7 @@ public class varQuiz extends AppCompatActivity {
         x.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent x = new Intent(varQuiz.this, Var.class);
+                Intent x = new Intent(varRevision.this, Var.class);
                 startActivity(x);
             }
         });
@@ -60,19 +60,19 @@ public class varQuiz extends AppCompatActivity {
         computerCount++;
         if (computerCount > 2) {
             Toast.makeText(getApplicationContext(), "Game Over", Toast.LENGTH_SHORT).show();
-            Intent myIntent = new Intent(varQuiz.this, ResultActivity.class);
+            Intent myIntent = new Intent(varRevision.this, revActivity.class);
             myIntent.putExtra("total", String.valueOf(total));
             myIntent.putExtra("correct", String.valueOf(correct));
             myIntent.putExtra("incorrect", String.valueOf(wrong));
             startActivity(myIntent);
 
         } else {
-            reference = FirebaseDatabase.getInstance().getReference().child("varQuestions").child(String.valueOf(computerCount));
+            reference = FirebaseDatabase.getInstance().getReference().child("varRev").child(String.valueOf(computerCount));
             total++;
             reference.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    final varQuestions questions = dataSnapshot.getValue(varQuestions.class);
+                    final varRev questions = dataSnapshot.getValue(varRev.class);
                     t1_question.setText(questions.getQuestion());
                     b1.setText(questions.getOption1());
                     b2.setText(questions.getOption2());

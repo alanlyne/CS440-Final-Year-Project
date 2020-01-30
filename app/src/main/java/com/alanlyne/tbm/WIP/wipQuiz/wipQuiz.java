@@ -35,7 +35,7 @@ public class wipQuiz extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wip_quiz);
+        setContentView(R.layout.activity_quiz);
         b1 = findViewById(R.id.reset);
         b2 = findViewById(R.id.button2);
         b3 = findViewById(R.id.button3);

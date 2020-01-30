@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="50dp"
         android:background="@drawable/head_round"
         android:fontFamily="@font/open_sans"
@@ -18,25 +19,41 @@
         android:text="Variables"
         android:textColor="@android:color/white"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/revision"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="35dp" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/revision"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/b_round"
+        android:text="Revision"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/l1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
         android:id="@+id/l1"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginStart="80dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="80dp"
         android:background="@drawable/b_round"
         android:text="What is a variable?"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/l2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/revision" />
 
     <Button
         android:id="@+id/l2"
@@ -57,14 +74,13 @@
         android:id="@+id/l3"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginStart="80dp"
         android:layout_marginTop="25dp"
-        android:layout_marginEnd="80dp"
         android:background="@drawable/b_round"
         android:text="Using Variables"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/l4"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/l2" />
 
@@ -76,39 +92,26 @@
         android:background="@drawable/b_round"
         android:text="Challenges"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/Quiz"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/l3" />
-
-    <Button
-        android:id="@+id/Quiz"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="150dp"
-        android:background="@drawable/b_round"
-        android:text="Revise"
-        android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/quiz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/l4" />
+        app:layout_constraintTop_toBottomOf="@+id/l3" />
 
     <Button
         android:id="@+id/quiz"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/b_round"
-        android:text="Revise"
+        android:text="Quiz"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/l1"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="90dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l4" />
 
     <TextView
         android:id="@+id/x"
