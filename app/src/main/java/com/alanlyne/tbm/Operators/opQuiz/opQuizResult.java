@@ -1,4 +1,4 @@
-package com.alanlyne.tbm.Variables.varQuiz;
+package com.alanlyne.tbm.Operators.opQuiz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,15 +10,15 @@ import android.widget.TextView;
 
 import com.alanlyne.tbm.Menu.Menu;
 import com.alanlyne.tbm.Menu.menuCounter;
+import com.alanlyne.tbm.Operators.op;
 import com.alanlyne.tbm.R;
-import com.alanlyne.tbm.WIP.WIP;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import static com.alanlyne.tbm.Menu.Menu.counter;
 
-public class ResultActivity extends AppCompatActivity {
+public class opQuizResult extends AppCompatActivity {
     TextView t1_total,t2_correct,t3_wrong;
     String total,correct,incorrect;
     Button backToMenu;
@@ -42,14 +42,16 @@ public class ResultActivity extends AppCompatActivity {
 
         setValues();
 
-        if(Menu.counter < 20) {
+//        if(Menu.counter == 28) {
+            System.out.println("FUCKKKKKKKKKKKKKKKKKKKKK");
             addCounter();
-        }
+        //}
 
         backToMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent menu = new Intent(ResultActivity.this,Menu.class);
+
+                Intent menu = new Intent(opQuizResult.this, op.class);
                 startActivity(menu);
 
             }
@@ -65,9 +67,9 @@ public class ResultActivity extends AppCompatActivity {
 
     private void addCounter() {
 
+        System.out.println("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
         if (correct.compareTo(total) == 0) {
-
-            counter = 20;
+            counter = 30;
             menuCounter counter = new menuCounter(Menu.counter);
             databaseName.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(counter);
         }

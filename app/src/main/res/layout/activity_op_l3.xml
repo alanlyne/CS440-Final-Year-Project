@@ -7,13 +7,14 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/bgcolour"
-    tools:context=".Variables.varL.varL4">
+    tools:context=".Variables.varL.varL2">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/View01"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
@@ -24,8 +25,9 @@
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Okay, lets see what you know\nPlease try the following problems on your own.\nIf you can, you have reached an acceptable level of knowledge in variables and can move onto the quiz."
+            android:text="Modulus calculates the remainder on a division calculation"
             android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
             android:textSize="15sp"
             android:visibility="visible"
             app:layout_constraintBottom_toTopOf="@+id/t1"
@@ -42,8 +44,9 @@
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Q1 - Write a Java program which:\nDeclares 8 variables, one of each of the types previously mentioned."
+            android:text="Example\n10/8 equals 2, with a &quot;modulus&quot; of 2"
             android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
             android:textSize="15sp"
             android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/t2"
@@ -60,8 +63,9 @@
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Q2 - Using the above program, re-assign all of the variables to new values without having to redeclare them."
+            android:text="In Java, we can write the above as follows\nint remainder = 10 % 8;\nThis stores the value of 2 in &quot;remainder&quot;"
             android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
             android:textSize="15sp"
             android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/t3"
@@ -78,17 +82,16 @@
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Q3 - Using the two above programs, print out each of the variables on seperate lines and state what they are\ne.g. &quot;This is a double: 10.5&quot;"
+            android:text="Modulus can be used in many ways, including to check if a number is divisible by another\nWe will find out how to do this in more detail later.\nif a % b is zero, then a is divisible by b."
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
             android:textSize="15sp"
             android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/b1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintHorizontal_bias="0.508"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/t2" />
-
 
         <Button
             android:id="@+id/b1"
@@ -97,7 +100,7 @@
             android:layout_marginStart="150dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="150dp"
-            android:layout_marginBottom="200dp"
+            android:layout_marginBottom="250dp"
             android:background="@drawable/b_round"
             android:text="Continue"
             android:textColor="@android:color/white"

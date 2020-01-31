@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.alanlyne.tbm.Operators.op;
 import com.alanlyne.tbm.R;
 import com.alanlyne.tbm.Variables.Var;
 import com.alanlyne.tbm.WIP.WIP;
@@ -19,7 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 public class Menu extends AppCompatActivity {
-    Button wip, var, a3, a4, a5, a6, signOut;
+    Button wip, var, op, a4, a5, a6, signOut;
     public ImageView image;
     public static int counter;
 
@@ -72,14 +73,14 @@ public class Menu extends AppCompatActivity {
                     }
                 });
 
-                a3 = findViewById(R.id.a3);
+                op = findViewById(R.id.a3);
                 if (counter < 20) {
-                    a3.setEnabled(false);
+                    op.setEnabled(false);
                 }
-                a3.setOnClickListener(new View.OnClickListener() {
+                op.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent Var = new Intent(Menu.this, Var.class);
+                        Intent Var = new Intent(Menu.this, op.class);
                         startActivity(Var);
                     }
                 });

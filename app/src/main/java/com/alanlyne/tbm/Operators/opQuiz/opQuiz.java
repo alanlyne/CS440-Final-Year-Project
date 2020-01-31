@@ -1,4 +1,4 @@
-package com.alanlyne.tbm.Variables.varQuiz;
+package com.alanlyne.tbm.Operators.opQuiz;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,15 +12,15 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.alanlyne.tbm.Operators.op;
 import com.alanlyne.tbm.R;
-import com.alanlyne.tbm.Variables.Var;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class varQuiz extends AppCompatActivity {
+public class opQuiz extends AppCompatActivity {
     Button b1, b2, b3, b4;
     TextView t1_question, x;
     int total = 0;
@@ -44,7 +44,7 @@ public class varQuiz extends AppCompatActivity {
         x.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent x = new Intent(varQuiz.this, Var.class);
+                Intent x = new Intent(opQuiz.this, op.class);
                 startActivity(x);
             }
         });
@@ -58,21 +58,21 @@ public class varQuiz extends AppCompatActivity {
 
     private void updateQuestion() {
         computerCount++;
-        if (computerCount > 3) {
+        if (computerCount > 2) {
             Toast.makeText(getApplicationContext(), "Game Over", Toast.LENGTH_SHORT).show();
-            Intent myIntent = new Intent(varQuiz.this, ResultActivity.class);
+            Intent myIntent = new Intent(opQuiz.this, opQuizResult.class);
             myIntent.putExtra("total", String.valueOf(total));
             myIntent.putExtra("correct", String.valueOf(correct));
             myIntent.putExtra("incorrect", String.valueOf(wrong));
             startActivity(myIntent);
 
         } else {
-            reference = FirebaseDatabase.getInstance().getReference().child("varQuestions").child(String.valueOf(computerCount));
+            reference = FirebaseDatabase.getInstance().getReference().child("opRev").child(String.valueOf(computerCount));
             total++;
             reference.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    final varQuestions questions = dataSnapshot.getValue(varQuestions.class);
+                    final opRevQ questions = dataSnapshot.getValue(opRevQ.class);
                     t1_question.setText(questions.getQuestion());
                     b1.setText(questions.getOption1());
                     b2.setText(questions.getOption2());

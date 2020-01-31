@@ -40,7 +40,7 @@
       "counter" : 3
     },
     "TiKOf4lmHOc5XvEmT2GKN4zbSKl2" : {
-      "counter" : 10
+      "counter" : 15
     },
     "U2Z0rdpDjwP6JzZgatxkCvQZV5H3" : {
       "counter" : 0
@@ -76,21 +76,43 @@
       "counter" : 0
     }
   },
-  "varQuestions" : [ null, {
+  "wipQuestions" : [ null, {
     "answer" : "Alan",
     "option1" : "Sean",
     "option2" : "Alan",
     "option3" : "Kevin",
     "option4" : "Raymond",
-    "question" : "What is your name?"
+    "question" : "What is my name?"
   }, {
     "answer" : "Kildare",
     "option1" : "Dublin",
     "option2" : "Cork",
     "option3" : "Wexford",
     "option4" : "Kildare",
-    "question" : "Where are you?"
+    "question" : "Where am I?"
   } ],
+  "varQuestions" : [ null, {
+    "answer" : "0",
+    "option1" : "0",
+    "option2" : "1",
+    "option3" : "-1",
+    "option4" : "Null",
+    "question" : "The default value of a static integer variable in Java is"
+  }, {
+    "answer" : "String",
+    "option1" : "char",
+    "option2" : "int",
+    "option3" : "String",
+    "option4" : "boolean",
+    "question" : "Which of these is NOT a primitive type"
+  }, {
+    "answer" : "I am 20years old",
+    "option1" : "I am 99 years old",
+    "option2" : "I am 20years old",
+    "option3" : "Error",
+    "option4" : "I am 20 years old",
+    "question" : "What is the output of the following code?\nint a = 20, b = 99;\nSystem.out.println(\"I am \" + a + \"years old\")"
+  }  ],
   "varRev" : [ null, {
     "answer" : "Alan",
     "option1" : "Sean",
@@ -106,19 +128,19 @@
     "option4" : "Kildare",
     "question" : "Where are the?"
   } ],
-  "wipQuestions" : [ null, {
-    "answer" : "Alan",
-    "option1" : "Sean",
-    "option2" : "Alan",
-    "option3" : "Kevin",
-    "option4" : "Raymond",
-    "question" : "What is my name?"
+  "opRev" : [ null, {
+    "answer" : "op",
+    "option1" : "sam",
+    "option2" : "op",
+    "option3" : "jam",
+    "option4" : "can",
+    "question" : "Some op questions"
   }, {
-    "answer" : "Kildare",
-    "option1" : "Dublin",
-    "option2" : "Cork",
-    "option3" : "Wexford",
-    "option4" : "Kildare",
-    "question" : "Where am I?"
+    "answer" : "white",
+    "option1" : "blue",
+    "option2" : "green",
+    "option3" : "white",
+    "option4" : "black",
+    "question" : "Rice colour"
   } ]
 }
