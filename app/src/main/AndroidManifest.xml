@@ -17,7 +17,10 @@
         android:roundIcon="@drawable/logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Operators.opQuiz.opQuizResult"></activity>
+        <activity android:name=".SelectionStatements.ssQuiz.ssQuiz"></activity>
+        <activity android:name=".Iteration.Iteration" />
+        <activity android:name=".SelectionStatements.SS" />
+        <activity android:name=".Operators.opQuiz.opQuizResult" />
         <activity android:name=".Operators.opQuiz.opQuiz" />
         <activity android:name=".Operators.opL.opL7" />
         <activity android:name=".Operators.opL.opL6" />
