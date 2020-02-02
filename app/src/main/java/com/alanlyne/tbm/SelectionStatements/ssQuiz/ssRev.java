@@ -13,9 +13,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.alanlyne.tbm.Operators.op;
-import com.alanlyne.tbm.Operators.opQuiz.opQuiz;
-import com.alanlyne.tbm.Operators.opQuiz.opQuizResult;
-import com.alanlyne.tbm.Operators.opQuiz.opRevQ;
 import com.alanlyne.tbm.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -23,7 +20,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class ssQuiz extends AppCompatActivity {
+public class ssRev extends AppCompatActivity {
 
     Button b1, b2, b3, b4;
     TextView t1_question, x;
@@ -48,7 +45,7 @@ public class ssQuiz extends AppCompatActivity {
         x.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent x = new Intent(ssQuiz.this, op.class);
+                Intent x = new Intent(ssRev.this, op.class);
                 startActivity(x);
             }
         });
@@ -64,7 +61,7 @@ public class ssQuiz extends AppCompatActivity {
         computerCount++;
         if (computerCount > 2) {
             Toast.makeText(getApplicationContext(), "Game Over", Toast.LENGTH_SHORT).show();
-            Intent myIntent = new Intent(ssQuiz.this, ssQuizResult.class);
+            Intent myIntent = new Intent(ssRev.this, ssRevResult.class);
             myIntent.putExtra("total", String.valueOf(total));
             myIntent.putExtra("correct", String.valueOf(correct));
             myIntent.putExtra("incorrect", String.valueOf(wrong));
@@ -76,7 +73,7 @@ public class ssQuiz extends AppCompatActivity {
             reference.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    final ssQuizQ questions = dataSnapshot.getValue(ssQuizQ.class);
+                    final ssRevQ questions = dataSnapshot.getValue(ssRevQ.class);
                     t1_question.setText(questions.getQuestion());
                     b1.setText(questions.getOption1());
                     b2.setText(questions.getOption2());

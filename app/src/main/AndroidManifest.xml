@@ -17,7 +17,14 @@
         android:roundIcon="@drawable/logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SelectionStatements.ssQuiz.ssQuiz"></activity>
+        <activity android:name=".SelectionStatements.ssL.ssL4" />
+        <activity android:name=".SelectionStatements.ssL.ssL3" />
+        <activity android:name=".SelectionStatements.ssL.ssL2" />
+        <activity android:name=".SelectionStatements.ssL.ssL1" />
+        <activity android:name=".SelectionStatements.ssQuiz.ssRevResult" />
+        <activity android:name=".SelectionStatements.ssQuiz.ssRev" />
+        <activity android:name=".SelectionStatements.ssQuiz.ssQuizResult" />
+        <activity android:name=".SelectionStatements.ssQuiz.ssQuiz" />
         <activity android:name=".Iteration.Iteration" />
         <activity android:name=".SelectionStatements.SS" />
         <activity android:name=".Operators.opQuiz.opQuizResult" />

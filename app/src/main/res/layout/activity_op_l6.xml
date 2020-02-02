@@ -6,8 +6,7 @@
     android:id="@+id/ScrollView01"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/bgcolour"
-    tools:context=".Variables.varL.varL2">
+    android:background="@drawable/bgcolour">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
