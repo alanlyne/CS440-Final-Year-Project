@@ -17,6 +17,10 @@
         android:roundIcon="@drawable/logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Iteration.iterationQuiz.iterationRevResult"></activity>
+        <activity android:name=".Iteration.iterationQuiz.iterationRev" />
+        <activity android:name=".Iteration.iterationQuiz.iterationQuizResult" />
+        <activity android:name=".Iteration.iterationQuiz.iterationQuiz" />
         <activity android:name=".SelectionStatements.ssL.ssL4" />
         <activity android:name=".SelectionStatements.ssL.ssL3" />
         <activity android:name=".SelectionStatements.ssL.ssL2" />
