@@ -118,8 +118,8 @@ public class varL3 extends AppCompatActivity {
         });
     }
     private void addCounter(){
-        if(Menu.counter == 12) {
-            Menu.counter = 13;
+        if(Menu.counter == 13) {
+            Menu.counter = 14;
             menuCounter counter = new menuCounter(Menu.counter);
             databaseName.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(counter);
             System.out.println("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
