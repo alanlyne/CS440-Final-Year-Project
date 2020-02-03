@@ -49,7 +49,6 @@ public class ResultActivity extends AppCompatActivity {
         backToMenu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent menu = new Intent(ResultActivity.this,Menu.class);
                 startActivity(menu);
 

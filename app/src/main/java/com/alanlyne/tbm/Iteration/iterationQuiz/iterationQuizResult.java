@@ -69,7 +69,7 @@ public class iterationQuizResult extends AppCompatActivity {
 
         System.out.println("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
         if (correct.compareTo(total) == 0) {
-            counter = 40;
+            counter = 50;
             menuCounter counter = new menuCounter(Menu.counter);
             databaseName.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(counter);
         }
