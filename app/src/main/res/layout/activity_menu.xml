@@ -20,41 +20,114 @@
             android:id="@+id/btnSignOut"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="161dp"
             android:layout_marginTop="44dp"
-            android:layout_marginEnd="162dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="50dp"
             android:background="@drawable/b_round"
             android:text="Sign Out"
             android:textColor="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/a6" />
+            app:layout_constraintTop_toBottomOf="@+id/a12" />
 
         <Button
-            android:textColor="@android:color/white"
-            android:background="@drawable/b_round"
             android:id="@+id/a5"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginTop="44dp"
+            android:background="@drawable/b_round"
             android:text="Iteration"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@+id/a7"
             app:layout_constraintEnd_toStartOf="@+id/a6"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/a3" />
 
         <Button
-            android:textColor="@android:color/white"
-            android:background="@drawable/b_round"
             android:id="@+id/a6"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginTop="44dp"
+            android:background="@drawable/b_round"
             android:text="Strings"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@+id/a8"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/a5"
             app:layout_constraintTop_toBottomOf="@+id/a4" />
+
+        <Button
+            android:id="@+id/a8"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/b_round"
+            android:text="Boolean"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/a7"
+            app:layout_constraintTop_toBottomOf="@+id/a6" />
+
+        <Button
+            android:id="@+id/a10"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/b_round"
+            android:text="Nested Loops"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/a9"
+            app:layout_constraintTop_toBottomOf="@+id/a8" />
+
+        <Button
+            android:id="@+id/a11"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/b_round"
+            android:text="2D Arrays"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@+id/a12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/a9" />
+
+        <Button
+            android:id="@+id/a12"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/b_round"
+            android:text="Methods"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/a11"
+            app:layout_constraintTop_toBottomOf="@+id/a10" />
+
+        <Button
+            android:id="@+id/a9"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/b_round"
+            android:text="Arrays"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@+id/a10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/a7" />
+
+        <Button
+            android:id="@+id/a7"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/b_round"
+            android:text="User Input"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toStartOf="@+id/a8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/a5" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -70,13 +143,13 @@
             app:layout_constraintVertical_bias="0.023" />
 
         <Button
-            android:textColor="@android:color/white"
             android:id="@+id/wip"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginTop="49dp"
-            android:text="What is programming?"
             android:background="@drawable/b_round"
+            android:text="What is programming?"
+            android:textColor="@android:color/white"
             app:layout_constraintBottom_toTopOf="@+id/a3"
             app:layout_constraintEnd_toStartOf="@+id/a2"
             app:layout_constraintHorizontal_bias="0.5"
@@ -84,13 +157,13 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
         <Button
-            android:textColor="@android:color/white"
-            android:background="@drawable/b_round"
             android:id="@+id/a2"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginTop="49dp"
+            android:background="@drawable/b_round"
             android:text="Variables"
+            android:textColor="@android:color/white"
             app:layout_constraintBottom_toTopOf="@+id/a4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -98,32 +171,26 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
         <Button
-            android:textColor="@android:color/white"
-            android:background="@drawable/b_round"
             android:id="@+id/a3"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginStart="37dp"
-            android:layout_marginLeft="37dp"
             android:layout_marginTop="44dp"
+            android:background="@drawable/b_round"
             android:text="Operators"
+            android:textColor="@android:color/white"
             app:layout_constraintBottom_toTopOf="@+id/a5"
             app:layout_constraintEnd_toStartOf="@+id/a4"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/wip" />
 
         <Button
-            android:textColor="@android:color/white"
-            android:background="@drawable/b_round"
             android:id="@+id/a4"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginStart="37dp"
-            android:layout_marginLeft="37dp"
             android:layout_marginTop="44dp"
-            android:layout_marginEnd="37dp"
-            android:layout_marginRight="37dp"
+            android:background="@drawable/b_round"
             android:text="Selection Statements"
+            android:textColor="@android:color/white"
             app:layout_constraintBottom_toTopOf="@+id/a6"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"

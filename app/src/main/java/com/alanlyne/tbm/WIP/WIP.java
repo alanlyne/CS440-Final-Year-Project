@@ -31,43 +31,31 @@ public class WIP extends AppCompatActivity {
         setContentView(R.layout.activity_wip);
 
         x = findViewById(R.id.x);
-        x.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent x = new Intent(WIP.this, Menu.class);
-                startActivity(x);
-            }
+        x.setOnClickListener(v -> {
+            Intent x = new Intent(WIP.this, Menu.class);
+            startActivity(x);
         });
 
         databaseName = FirebaseDatabase.getInstance().getReference("counter");
 
         l1 = findViewById(R.id.l1);
-        l1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent l1 = new Intent(WIP.this, wipL1.class);
-                startActivity(l1);
-            }
+        l1.setOnClickListener(v -> {
+            Intent l1 = new Intent(WIP.this, wipL1.class);
+            startActivity(l1);
         });
 
         l2 = findViewById(R.id.l2);
         if(Menu.counter < 1) { l2.setEnabled(false); }
-        l2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent l2 = new Intent(WIP.this, wipL2.class);
-                startActivity(l2);
-            }
+        l2.setOnClickListener(v -> {
+            Intent l2 = new Intent(WIP.this, wipL2.class);
+            startActivity(l2);
         });
 
         l3 = findViewById(R.id.l3);
         if(Menu.counter < 2) { l3.setEnabled(false); }
-        l3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent l3 = new Intent(WIP.this, wipL3.class);
-                startActivity(l3);
-            }
+        l3.setOnClickListener(v -> {
+            Intent l3 = new Intent(WIP.this, wipL3.class);
+            startActivity(l3);
         });
 
         quiz = findViewById(R.id.wipQuiz);

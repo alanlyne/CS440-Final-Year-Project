@@ -17,7 +17,16 @@
         android:roundIcon="@drawable/logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Iteration.iterationL.iterationL4"></activity>
+        <activity android:name=".Strings.stringsQuiz.stringsQuizResult"></activity>
+        <activity android:name=".Strings.stringsQuiz.stringsQuiz" />
+        <activity android:name=".Strings.stringsQuiz.stringsRevResult" />
+        <activity android:name=".Strings.stringsQuiz.stringsRev" />
+        <activity android:name=".Strings.stringsL.stringsL4" />
+        <activity android:name=".Strings.stringsL.stringsL3" />
+        <activity android:name=".Strings.stringsL.stringsL2" />
+        <activity android:name=".Strings.stringsL.stringsL1" />
+        <activity android:name=".Strings.Strings" />
+        <activity android:name=".Iteration.iterationL.iterationL4" />
         <activity android:name=".Iteration.iterationL.iterationL3" />
         <activity android:name=".Iteration.iterationL.iterationL2" />
         <activity android:name=".Iteration.iterationL.iterationL1" />
