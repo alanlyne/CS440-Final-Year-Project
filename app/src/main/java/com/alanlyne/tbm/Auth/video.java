@@ -9,9 +9,7 @@ import android.os.Bundle;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-import com.alanlyne.tbm.Menu.Menu;
 import com.alanlyne.tbm.R;
-import com.alanlyne.tbm.Variables.Var;
 
 public class video extends AppCompatActivity {
     VideoView videoView;

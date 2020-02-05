@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgcolour">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/head_round"
+        android:fontFamily="@font/open_sans"
+        android:padding="10dp"
+        android:text="Nested Loops"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/revision"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/revision"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/b_round"
+        android:text="Revision"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/l1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/l1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/b_round"
+        android:text="What is a variable?"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/l2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/revision" />
+
+    <Button
+        android:id="@+id/l2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/b_round"
+        android:text="Primitive Data Types"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/l3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l1" />
+
+    <Button
+        android:id="@+id/l3"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/b_round"
+        android:text="Using Variables"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/l4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l2" />
+
+    <Button
+        android:id="@+id/l4"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/b_round"
+        android:text="Challenges"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/quiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l3" />
+
+    <Button
+        android:id="@+id/quiz"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/b_round"
+        android:text="Quiz"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l4" />
+
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="15dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:text="x"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginLeft="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
