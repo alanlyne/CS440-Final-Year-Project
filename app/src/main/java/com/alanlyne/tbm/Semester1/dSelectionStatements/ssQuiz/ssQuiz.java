@@ -69,7 +69,7 @@ public class ssQuiz extends AppCompatActivity {
             startActivity(myIntent);
 
         } else {
-            reference = FirebaseDatabase.getInstance().getReference().child("opRev").child(String.valueOf(computerCount));//NEEDS TO CHANGE
+            reference = FirebaseDatabase.getInstance().getReference().child("ssQuiz").child(String.valueOf(computerCount));//NEEDS TO CHANGE
             total++;
             reference.addValueEventListener(new ValueEventListener() {
                 @Override

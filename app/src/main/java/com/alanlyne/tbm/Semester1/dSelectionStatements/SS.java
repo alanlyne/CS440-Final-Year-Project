@@ -14,13 +14,17 @@ import com.alanlyne.tbm.Semester1.dSelectionStatements.ssL.ssL1;
 import com.alanlyne.tbm.Semester1.dSelectionStatements.ssL.ssL2;
 import com.alanlyne.tbm.Semester1.dSelectionStatements.ssL.ssL3;
 import com.alanlyne.tbm.Semester1.dSelectionStatements.ssL.ssL4;
+import com.alanlyne.tbm.Semester1.dSelectionStatements.ssL.ssL5;
+import com.alanlyne.tbm.Semester1.dSelectionStatements.ssL.ssL6;
+import com.alanlyne.tbm.Semester1.dSelectionStatements.ssL.ssL7;
+import com.alanlyne.tbm.Semester1.dSelectionStatements.ssL.ssL8;
 import com.alanlyne.tbm.Semester1.dSelectionStatements.ssQuiz.ssQuiz;
 import com.alanlyne.tbm.Semester1.dSelectionStatements.ssQuiz.ssRev;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class SS extends AppCompatActivity {
-    Button quiz, l1, l2, l3, l4, revision;
+    Button quiz, l1, l2, l3, l4, l5, l6, l7, l8, revision;
     TextView x;
 
     DatabaseReference databaseName;
@@ -90,9 +94,45 @@ public class SS extends AppCompatActivity {
                 startActivity(l4);
             }
         });
+        l5 = findViewById(R.id.l5);
+        if(Menu.counter < 35) { l5.setEnabled(false); }
+        l5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent l5 = new Intent(SS.this, ssL5.class);
+                startActivity(l5);
+            }
+        });
+        l6 = findViewById(R.id.l6);
+        if(Menu.counter < 36) { l6.setEnabled(false); }
+        l6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent l6 = new Intent(SS.this, ssL6.class);
+                startActivity(l6);
+            }
+        });
+        l7 = findViewById(R.id.l7);
+        if(Menu.counter < 37) { l7.setEnabled(false); }
+        l7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent l7 = new Intent(SS.this, ssL7.class);
+                startActivity(l7);
+            }
+        });
+        l8 = findViewById(R.id.l8);
+        if(Menu.counter < 38) { l8.setEnabled(false); }
+        l8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent l8 = new Intent(SS.this, ssL8.class);
+                startActivity(l8);
+            }
+        });
 
         quiz = findViewById(R.id.quiz);
-        if(Menu.counter < 35) { quiz.setEnabled(false); }
+        if(Menu.counter < 39) { quiz.setEnabled(false); }
         quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

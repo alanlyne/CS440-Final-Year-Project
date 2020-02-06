@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:background="@drawable/bgcolour">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/View01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
 
     <TextView
         android:id="@+id/textView4"
@@ -63,7 +73,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="80dp"
         android:background="@drawable/b_round"
-        android:text="Primitive Data Types"
+        android:text="if Statements"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/l3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,7 +86,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="25dp"
         android:background="@drawable/b_round"
-        android:text="Using Variables"
+        android:text="if...else Statements"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/l4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,34 +100,91 @@
         android:layout_height="50dp"
         android:layout_marginTop="25dp"
         android:background="@drawable/b_round"
-        android:text="Challenges"
+        android:text="Switch Statements"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/quiz"
+        app:layout_constraintBottom_toTopOf="@+id/l5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/l3" />
 
     <Button
-        android:id="@+id/quiz"
+        android:id="@+id/l5"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/b_round"
-        android:text="Quiz"
+        android:text="Ternary Operations"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/l6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/l4" />
+
+    <Button
+        android:id="@+id/l6"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/b_round"
+        android:text="Relational Operators"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/l7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l5" />
+
+    <Button
+        android:id="@+id/l7"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/b_round"
+        android:text="Assignment V Comparison"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/l8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l6" />
+
+        <Button
+            android:id="@+id/l8"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/b_round"
+            android:text="Challenges"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@+id/quiz"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/l7" />
+
+        <Button
+            android:id="@+id/quiz"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/b_round"
+            android:text="Quiz"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/l8" />
 
     <TextView
         android:id="@+id/x"
         android:layout_width="15dp"
         android:layout_height="35dp"
         android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
         android:text="x"
         android:textColor="@android:color/white"
         android:textSize="30sp"
@@ -126,7 +193,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        android:layout_marginLeft="10dp" />
+        app:layout_constraintVertical_bias="0.0" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

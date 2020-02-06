@@ -36,10 +36,6 @@ public class ssL2 extends AppCompatActivity {
         t2 = findViewById(R.id.t2);
         t3 = findViewById(R.id.t3);
         t4 = findViewById(R.id.t4);
-        t5 = findViewById(R.id.t5);
-        t6 = findViewById(R.id.t6);
-        t7 = findViewById(R.id.t7);
-        t8 = findViewById(R.id.t8);
         b1 = findViewById(R.id.b1);
 
         x = findViewById(R.id.x);
@@ -85,22 +81,6 @@ public class ssL2 extends AppCompatActivity {
                     tv.setVisibility(View.VISIBLE);
                 }
                 if (counter > 4) {
-                    TextView tv = findViewById(R.id.t5);
-                    tv.setVisibility(View.VISIBLE);
-                }
-                if (counter > 5) {
-                    TextView tv = findViewById(R.id.t6);
-                    tv.setVisibility(View.VISIBLE);
-                }
-                if (counter > 6) {
-                    TextView tv = findViewById(R.id.t7);
-                    tv.setVisibility(View.VISIBLE);
-                }
-                if (counter > 7) {
-                    TextView tv = findViewById(R.id.t8);
-                    tv.setVisibility(View.VISIBLE);
-                }
-                if (counter > 8) {
                     Button b1 = findViewById(R.id.b1);
                     b1.setVisibility(View.VISIBLE);
                     b1.setOnClickListener(new View.OnClickListener() {
