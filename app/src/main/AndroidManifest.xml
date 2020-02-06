@@ -17,7 +17,11 @@
         android:roundIcon="@drawable/logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Semester1.k2dArray.arrayQuiz.array2DQuizResult"></activity>
+        <activity android:name=".Semester1.k2dArray.arrayL.array2DL4"></activity>
+        <activity android:name=".Semester1.k2dArray.arrayL.array2DL3" />
+        <activity android:name=".Semester1.k2dArray.arrayL.array2DL2" />
+        <activity android:name=".Semester1.k2dArray.arrayL.array2DL1" />
+        <activity android:name=".Semester1.k2dArray.arrayQuiz.array2DQuizResult" />
         <activity android:name=".Semester1.k2dArray.arrayQuiz.array2DQuiz" />
         <activity android:name=".Semester1.k2dArray.arrayQuiz.array2DRevResult" />
         <activity android:name=".Semester1.k2dArray.arrayQuiz.array2DRev" />
