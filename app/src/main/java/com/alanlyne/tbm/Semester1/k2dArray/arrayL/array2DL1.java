@@ -51,7 +51,6 @@ public class array2DL1 extends AppCompatActivity {
 
         View view = findViewById(R.id.View01);
         view.setOnTouchListener(new View.OnTouchListener() {
-
             @Override
             public boolean onTouch(View view, MotionEvent event) {
 

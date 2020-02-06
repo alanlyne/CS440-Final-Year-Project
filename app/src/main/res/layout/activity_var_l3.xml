@@ -155,7 +155,7 @@
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="When declaring variable names, they are;\nCase sensitive.\nCan contin numbers, letters, underscore and dollar symbol.\nCannot contain whitespace.\nCannot be a keyword.\nand must be unique within scope.\nWe can also re-assign a variable by simply letting the variable name equal the new value\ne.g. num = 10;"
+            android:text="When declaring variable names, they are;\nCase sensitive.\nCan contain numbers, letters, underscore and dollar symbol.\nCannot contain whitespace.\nCannot be a keyword and must be unique within scope.\nWe can also re-assign a variable by simply letting the variable name equal the new value\ne.g. num = 10;"
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
             android:textSize="15sp"

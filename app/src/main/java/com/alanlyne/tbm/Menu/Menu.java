@@ -53,6 +53,22 @@ public class Menu extends AppCompatActivity {
 
                     image.setImageResource(R.drawable.c1);
                 }
+                if (counter >= 20 && counter < 30) {
+
+                    image.setImageResource(R.drawable.c2);
+                }
+                if (counter >= 30 && counter < 40) {
+
+                    image.setImageResource(R.drawable.c3);
+                }
+                if (counter >= 40 && counter < 50) {
+
+                    image.setImageResource(R.drawable.c4);
+                }
+                if (counter >= 50 && counter < 60) {
+
+                    image.setImageResource(R.drawable.c5);
+                }
 
 
                 wip = findViewById(R.id.wip);

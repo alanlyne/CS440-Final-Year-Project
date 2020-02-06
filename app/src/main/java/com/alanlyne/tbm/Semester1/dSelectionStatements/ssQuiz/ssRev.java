@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.alanlyne.tbm.Semester1.cOperators.op;
 import com.alanlyne.tbm.R;
+import com.alanlyne.tbm.Semester1.dSelectionStatements.SS;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -45,7 +46,7 @@ public class ssRev extends AppCompatActivity {
         x.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent x = new Intent(ssRev.this, op.class);
+                Intent x = new Intent(ssRev.this, SS.class);
                 startActivity(x);
             }
         });
@@ -68,7 +69,7 @@ public class ssRev extends AppCompatActivity {
             startActivity(myIntent);
 
         } else {
-            reference = FirebaseDatabase.getInstance().getReference().child("opRev").child(String.valueOf(computerCount));//NEEDS TO CHANGE
+            reference = FirebaseDatabase.getInstance().getReference().child("ssRev").child(String.valueOf(computerCount));//NEEDS TO CHANGE
             total++;
             reference.addValueEventListener(new ValueEventListener() {
                 @Override

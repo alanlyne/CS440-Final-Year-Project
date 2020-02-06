@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.alanlyne.tbm.Semester1.cOperators.op;
 import com.alanlyne.tbm.R;
+import com.alanlyne.tbm.Semester1.dSelectionStatements.SS;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -45,7 +46,7 @@ public class ssQuiz extends AppCompatActivity {
         x.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent x = new Intent(ssQuiz.this, op.class);
+                Intent x = new Intent(ssQuiz.this, SS.class);
                 startActivity(x);
             }
         });

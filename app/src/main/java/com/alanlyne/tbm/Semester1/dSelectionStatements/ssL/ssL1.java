@@ -8,6 +8,7 @@ import android.os.SystemClock;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.alanlyne.tbm.Menu.Menu;
@@ -19,7 +20,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class ssL1 extends AppCompatActivity {
-    TextView t0, t1, t2, t3, t4, t5, t6, t7, t8, x;
+    TextView t0, t1,t3, t4, t5, t6, t7, t8, x;
+    ImageView t2;
     Button b1;
     int counter = 0;
     DatabaseReference databaseName;
@@ -73,7 +75,7 @@ public class ssL1 extends AppCompatActivity {
 
                 }
                 if (counter > 1) {
-                    TextView tv = findViewById(R.id.t2);
+                    ImageView tv = findViewById(R.id.t2);
                     tv.setVisibility(View.VISIBLE);
                 }
                 if (counter > 2) {
@@ -89,18 +91,6 @@ public class ssL1 extends AppCompatActivity {
                     tv.setVisibility(View.VISIBLE);
                 }
                 if (counter > 5) {
-                    TextView tv = findViewById(R.id.t6);
-                    tv.setVisibility(View.VISIBLE);
-                }
-                if (counter > 6) {
-                    TextView tv = findViewById(R.id.t7);
-                    tv.setVisibility(View.VISIBLE);
-                }
-                if (counter > 7) {
-                    TextView tv = findViewById(R.id.t8);
-                    tv.setVisibility(View.VISIBLE);
-                }
-                if (counter > 8) {
                     Button b1 = findViewById(R.id.b1);
                     b1.setVisibility(View.VISIBLE);
                     b1.setOnClickListener(new View.OnClickListener() {
