@@ -10,15 +10,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.alanlyne.tbm.Semester1.eIteration.Iteration;
 import com.alanlyne.tbm.Menu.Menu;
 import com.alanlyne.tbm.Menu.menuCounter;
 import com.alanlyne.tbm.R;
+import com.alanlyne.tbm.Semester1.eIteration.Iteration;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class iterationL4 extends AppCompatActivity {
+public class iterationL5 extends AppCompatActivity {
 
     TextView t0, t1, t2, t3, t4, t5, t6, t7, t8, x;
     Button b1;
@@ -29,7 +29,7 @@ public class iterationL4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_iteration_l4);
+        setContentView(R.layout.activity_iteration_l5);
         databaseName = FirebaseDatabase.getInstance().getReference("counter");
 
         t0 = findViewById(R.id.t0);
@@ -48,7 +48,7 @@ public class iterationL4 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent x = new Intent(iterationL4.this, Iteration.class);
+                Intent x = new Intent(iterationL5.this, Iteration.class);
                 startActivity(x);
             }
         });
@@ -86,12 +86,16 @@ public class iterationL4 extends AppCompatActivity {
                     tv.setVisibility(View.VISIBLE);
                 }
                 if (counter > 4) {
+                    TextView tv = findViewById(R.id.t5);
+                    tv.setVisibility(View.VISIBLE);
+                }
+                if (counter > 5) {
                     Button b1 = findViewById(R.id.b1);
                     b1.setVisibility(View.VISIBLE);
                     b1.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Intent Menu = new Intent(iterationL4.this, Iteration.class);
+                            Intent Menu = new Intent(iterationL5.this, Iteration.class);
                             startActivity(Menu);
                             addCounter();
                         }
@@ -102,8 +106,8 @@ public class iterationL4 extends AppCompatActivity {
         });
     }
     private void addCounter(){
-        if(Menu.counter == 44) {
-            Menu.counter = 45;
+        if(Menu.counter == 45) {
+            Menu.counter = 46;
             menuCounter counter = new menuCounter(Menu.counter);
             databaseName.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(counter);
             System.out.println("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");

@@ -43,12 +43,9 @@ public class iterationQuiz extends AppCompatActivity {
         b4 = findViewById(R.id.button4);
 
         x = findViewById(R.id.x);
-        x.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent x = new Intent(iterationQuiz.this, Iteration.class);
-                startActivity(x);
-            }
+        x.setOnClickListener(v -> {
+            Intent x = new Intent(iterationQuiz.this, Iteration.class);
+            startActivity(x);
         });
 
         t1_question = findViewById(R.id.questionText);
@@ -87,13 +84,10 @@ public class iterationQuiz extends AppCompatActivity {
                             if (b1.getText().toString().equals(questions.getAnswer())) {
                                 b1.setBackgroundColor(Color.GREEN);
                                 Handler handler = new Handler();
-                                handler.postDelayed(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        correct++;
-                                        b1.setBackgroundResource(R.drawable.b_round);
-                                        updateQuestion();
-                                    }
+                                handler.postDelayed(() -> {
+                                    correct++;
+                                    b1.setBackgroundResource(R.drawable.b_round);
+                                    updateQuestion();
                                 }, 1500);
                             } else {
                                 wrong++;
@@ -109,150 +103,120 @@ public class iterationQuiz extends AppCompatActivity {
 
 
                                 Handler handler = new Handler();
-                                handler.postDelayed(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        //correct++;
-                                        b1.setBackgroundResource(R.drawable.b_round);
-                                        b2.setBackgroundResource(R.drawable.b_round);
-                                        b3.setBackgroundResource(R.drawable.b_round);
-                                        b4.setBackgroundResource(R.drawable.b_round);
-                                        updateQuestion();
-                                    }
+                                handler.postDelayed(() -> {
+                                    //correct++;
+                                    b1.setBackgroundResource(R.drawable.b_round);
+                                    b2.setBackgroundResource(R.drawable.b_round);
+                                    b3.setBackgroundResource(R.drawable.b_round);
+                                    b4.setBackgroundResource(R.drawable.b_round);
+                                    updateQuestion();
                                 }, 1500);
                             }
                         }
                     });
 
 
-                    b2.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            if (b2.getText().toString().equals(questions.getAnswer())) {
-                                b2.setBackgroundColor(Color.GREEN);
-                                Handler handler = new Handler();
-                                handler.postDelayed(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        correct++;
-                                        b2.setBackgroundResource(R.drawable.b_round);
-                                        updateQuestion();
-                                    }
-                                }, 1500);
-                            } else {
-                                wrong++;
-                                b2.setBackgroundColor(Color.RED);
+                    b2.setOnClickListener(v -> {
+                        if (b2.getText().toString().equals(questions.getAnswer())) {
+                            b2.setBackgroundColor(Color.GREEN);
+                            Handler handler = new Handler();
+                            handler.postDelayed(() -> {
+                                correct++;
+                                b2.setBackgroundResource(R.drawable.b_round);
+                                updateQuestion();
+                            }, 1500);
+                        } else {
+                            wrong++;
+                            b2.setBackgroundColor(Color.RED);
 
-                                if (b1.getText().toString().equals(questions.getAnswer())) {
-                                    b1.setBackgroundColor(Color.GREEN);
-                                } else if (b3.getText().toString().equals(questions.getAnswer())) {
-                                    b3.setBackgroundColor(Color.GREEN);
-                                } else if (b4.getText().toString().equals(questions.getAnswer())) {
-                                    b4.setBackgroundColor(Color.GREEN);
-                                }
-
-
-                                Handler handler = new Handler();
-                                handler.postDelayed(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        //correct++;
-                                        b1.setBackgroundResource(R.drawable.b_round);
-                                        b2.setBackgroundResource(R.drawable.b_round);
-                                        b3.setBackgroundResource(R.drawable.b_round);
-                                        b4.setBackgroundResource(R.drawable.b_round);
-                                        updateQuestion();
-                                    }
-                                }, 1500);
-                            }
-                        }
-                    });
-
-
-                    b3.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            if (b3.getText().toString().equals(questions.getAnswer())) {
+                            if (b1.getText().toString().equals(questions.getAnswer())) {
+                                b1.setBackgroundColor(Color.GREEN);
+                            } else if (b3.getText().toString().equals(questions.getAnswer())) {
                                 b3.setBackgroundColor(Color.GREEN);
-                                Handler handler = new Handler();
-                                handler.postDelayed(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        correct++;
-                                        b3.setBackgroundResource(R.drawable.b_round);
-                                        updateQuestion();
-                                    }
-                                }, 1500);
-                            } else {
-                                wrong++;
-                                b3.setBackgroundColor(Color.RED);
-
-                                if (b1.getText().toString().equals(questions.getAnswer())) {
-                                    b1.setBackgroundColor(Color.GREEN);
-                                } else if (b2.getText().toString().equals(questions.getAnswer())) {
-                                    b2.setBackgroundColor(Color.GREEN);
-                                } else if (b4.getText().toString().equals(questions.getAnswer())) {
-                                    b4.setBackgroundColor(Color.GREEN);
-                                }
-
-
-                                Handler handler = new Handler();
-                                handler.postDelayed(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        //correct++;
-                                        b1.setBackgroundResource(R.drawable.b_round);
-                                        b2.setBackgroundResource(R.drawable.b_round);
-                                        b3.setBackgroundResource(R.drawable.b_round);
-                                        b4.setBackgroundResource(R.drawable.b_round);
-                                        updateQuestion();
-                                    }
-                                }, 1500);
+                            } else if (b4.getText().toString().equals(questions.getAnswer())) {
+                                b4.setBackgroundColor(Color.GREEN);
                             }
+
+
+                            Handler handler = new Handler();
+                            handler.postDelayed(() -> {
+                                //correct++;
+                                b1.setBackgroundResource(R.drawable.b_round);
+                                b2.setBackgroundResource(R.drawable.b_round);
+                                b3.setBackgroundResource(R.drawable.b_round);
+                                b4.setBackgroundResource(R.drawable.b_round);
+                                updateQuestion();
+                            }, 1500);
                         }
                     });
 
 
-                    b4.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View v) {
-                            if (b4.getText().toString().equals(questions.getAnswer())) {
+                    b3.setOnClickListener(v -> {
+                        if (b3.getText().toString().equals(questions.getAnswer())) {
+                            b3.setBackgroundColor(Color.GREEN);
+                            Handler handler = new Handler();
+                            handler.postDelayed(() -> {
+                                correct++;
+                                b3.setBackgroundResource(R.drawable.b_round);
+                                updateQuestion();
+                            }, 1500);
+                        } else {
+                            wrong++;
+                            b3.setBackgroundColor(Color.RED);
+
+                            if (b1.getText().toString().equals(questions.getAnswer())) {
+                                b1.setBackgroundColor(Color.GREEN);
+                            } else if (b2.getText().toString().equals(questions.getAnswer())) {
+                                b2.setBackgroundColor(Color.GREEN);
+                            } else if (b4.getText().toString().equals(questions.getAnswer())) {
                                 b4.setBackgroundColor(Color.GREEN);
-                                Handler handler = new Handler();
-                                handler.postDelayed(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        correct++;
-                                        b4.setBackgroundResource(R.drawable.b_round);
-                                        updateQuestion();
-                                    }
-                                }, 1500);
-                            } else {
-                                wrong++;
-                                b4.setBackgroundColor(Color.RED);
-
-                                if (b1.getText().toString().equals(questions.getAnswer())) {
-                                    b1.setBackgroundColor(Color.GREEN);
-                                } else if (b3.getText().toString().equals(questions.getAnswer())) {
-                                    b3.setBackgroundColor(Color.GREEN);
-                                } else if (b2.getText().toString().equals(questions.getAnswer())) {
-                                    b2.setBackgroundColor(Color.GREEN);
-                                }
-
-
-                                Handler handler = new Handler();
-                                handler.postDelayed(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        //correct++;
-                                        b1.setBackgroundResource(R.drawable.b_round);
-                                        b2.setBackgroundResource(R.drawable.b_round);
-                                        b3.setBackgroundResource(R.drawable.b_round);
-                                        b4.setBackgroundResource(R.drawable.b_round);
-                                        updateQuestion();
-                                    }
-                                }, 1500);
                             }
+
+
+                            Handler handler = new Handler();
+                            handler.postDelayed(() -> {
+                                //correct++;
+                                b1.setBackgroundResource(R.drawable.b_round);
+                                b2.setBackgroundResource(R.drawable.b_round);
+                                b3.setBackgroundResource(R.drawable.b_round);
+                                b4.setBackgroundResource(R.drawable.b_round);
+                                updateQuestion();
+                            }, 1500);
+                        }
+                    });
+
+
+                    b4.setOnClickListener(v -> {
+                        if (b4.getText().toString().equals(questions.getAnswer())) {
+                            b4.setBackgroundColor(Color.GREEN);
+                            Handler handler = new Handler();
+                            handler.postDelayed(() -> {
+                                correct++;
+                                b4.setBackgroundResource(R.drawable.b_round);
+                                updateQuestion();
+                            }, 1500);
+                        } else {
+                            wrong++;
+                            b4.setBackgroundColor(Color.RED);
+
+                            if (b1.getText().toString().equals(questions.getAnswer())) {
+                                b1.setBackgroundColor(Color.GREEN);
+                            } else if (b3.getText().toString().equals(questions.getAnswer())) {
+                                b3.setBackgroundColor(Color.GREEN);
+                            } else if (b2.getText().toString().equals(questions.getAnswer())) {
+                                b2.setBackgroundColor(Color.GREEN);
+                            }
+
+
+                            Handler handler = new Handler();
+                            handler.postDelayed(() -> {
+                                //correct++;
+                                b1.setBackgroundResource(R.drawable.b_round);
+                                b2.setBackgroundResource(R.drawable.b_round);
+                                b3.setBackgroundResource(R.drawable.b_round);
+                                b4.setBackgroundResource(R.drawable.b_round);
+                                updateQuestion();
+                            }, 1500);
                         }
                     });
 

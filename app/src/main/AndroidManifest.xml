@@ -17,7 +17,8 @@
         android:roundIcon="@drawable/logo_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Semester1.dSelectionStatements.ssL.ssL8"></activity>
+        <activity android:name=".Semester1.eIteration.iterationL.iterationL5"></activity>
+        <activity android:name=".Semester1.dSelectionStatements.ssL.ssL8" />
         <activity android:name=".Semester1.dSelectionStatements.ssL.ssL7" />
         <activity android:name=".Semester1.dSelectionStatements.ssL.ssL6" />
         <activity android:name=".Semester1.dSelectionStatements.ssL.ssL5" />

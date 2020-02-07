@@ -67,7 +67,7 @@ public class iterationRev extends AppCompatActivity {
             startActivity(myIntent);
 
         } else {
-            reference = FirebaseDatabase.getInstance().getReference().child("iterationQuiz").child(String.valueOf(computerCount));
+            reference = FirebaseDatabase.getInstance().getReference().child("iterationRev").child(String.valueOf(computerCount));
             total++;
             reference.addValueEventListener(new ValueEventListener() {
                 @Override

@@ -9,9 +9,9 @@
     android:background="@drawable/bgcolour">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/View01"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/View01"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent">
@@ -24,7 +24,7 @@
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="What is iteration?"
+            android:text="Challenges"
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
             android:textSize="15sp"
@@ -43,7 +43,7 @@
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Simply said, iteration allows a program to &quot;Loop&quot; repeat a section of code a number of times."
+            android:text="You already know what to do."
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
             android:textSize="15sp"
@@ -62,7 +62,7 @@
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="In Java we have 3 types of iteration, or &quot;loops&quot; which I will call them going forward.\nwhile\nfor\nand do...while."
+            android:text="Q1 - Write a Java program that prints out the numbers 1 to 10 on separate lines.\nDo this using a for loop, while loop and do...while loop separably."
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
             android:textSize="15sp"
@@ -81,7 +81,7 @@
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="A loop repeats the same set of instructions until a condition has been met to finish the loop.\nPlease examine the flow chart below. Do y"
+            android:text="Q2 - Write a Java program that outputs all prime numbers between 0 and 1000."
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
             android:textSize="15sp"
@@ -92,21 +92,24 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/t2" />
 
-        <ImageView
+        <TextView
             android:id="@+id/t4"
-            android:layout_width="354dp"
-            android:layout_height="465dp"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
+            android:text="Q3 - Write a Java program that computes the sum of all numbers between 0 and 100 that are multiples of 4"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
             android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/b1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/t3"
-            app:srcCompat="@drawable/iterationflow" />
+            app:layout_constraintTop_toBottomOf="@+id/t3" />
 
         <Button
             android:id="@+id/b1"
@@ -115,14 +118,13 @@
             android:layout_marginStart="150dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="150dp"
-            android:layout_marginBottom="25dp"
+            android:layout_marginBottom="300dp"
             android:background="@drawable/b_round"
             android:text="Continue"
             android:textColor="@android:color/white"
             android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/t4" />
 

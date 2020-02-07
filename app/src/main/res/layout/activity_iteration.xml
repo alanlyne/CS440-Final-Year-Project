@@ -48,7 +48,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="80dp"
         android:background="@drawable/b_round"
-        android:text="What is a variable?"
+        android:text="What is Iteration?"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/l2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,7 +63,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="80dp"
         android:background="@drawable/b_round"
-        android:text="Primitive Data Types"
+        android:text="While Loop"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/l3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -76,7 +76,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="25dp"
         android:background="@drawable/b_round"
-        android:text="Using Variables"
+        android:text="For Loop"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/l4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,19 +90,33 @@
         android:layout_height="50dp"
         android:layout_marginTop="25dp"
         android:background="@drawable/b_round"
-        android:text="Challenges"
+        android:text="Do While Loop"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/quiz"
+        app:layout_constraintBottom_toTopOf="@+id/l5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/l3" />
 
     <Button
+        android:id="@+id/l5"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/b_round"
+        android:text="Challanges"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/quiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l4" />
+
+    <Button
         android:id="@+id/quiz"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="25dp"
         android:layout_marginBottom="50dp"
         android:background="@drawable/b_round"
         android:text="Quiz"
@@ -111,7 +125,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/l4" />
+        app:layout_constraintTop_toBottomOf="@+id/l5" />
 
     <TextView
         android:id="@+id/x"

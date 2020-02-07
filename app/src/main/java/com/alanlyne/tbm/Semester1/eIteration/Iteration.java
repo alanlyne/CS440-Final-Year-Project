@@ -20,7 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class Iteration extends AppCompatActivity {
 
-    Button quiz, l1, l2, l3, l4, revision;
+    Button quiz, l1, l2, l3, l4, l5, revision;
     TextView x;
 
     DatabaseReference databaseName;
@@ -28,7 +28,7 @@ public class Iteration extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ss);
+        setContentView(R.layout.activity_iteration);
 
         x = findViewById(R.id.x);
         x.setOnClickListener(v -> {
@@ -72,8 +72,15 @@ public class Iteration extends AppCompatActivity {
             startActivity(l4);
         });
 
+        l5 = findViewById(R.id.l5);
+        if(Menu.counter < 45) { l5.setEnabled(false); }
+        l5.setOnClickListener(v -> {
+            Intent l5 = new Intent(Iteration.this, iterationL4.class);
+            startActivity(l5);
+        });
+
         quiz = findViewById(R.id.quiz);
-        if(Menu.counter < 45) { quiz.setEnabled(false); }
+        if(Menu.counter < 46) { quiz.setEnabled(false); }
         quiz.setOnClickListener(v -> {
             Intent quiz= new Intent(Iteration.this, iterationQuiz.class);
             startActivity(quiz);
