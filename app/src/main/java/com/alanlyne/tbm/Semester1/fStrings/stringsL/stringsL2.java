@@ -20,7 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class stringsL2 extends AppCompatActivity {
 
-    TextView t0, t1, t2, t3, t4, t5, t6, t7, t8, x;
+    TextView t0, t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12, t13, x;
     Button b1;
     int counter = 0;
     DatabaseReference databaseName;
@@ -41,6 +41,11 @@ public class stringsL2 extends AppCompatActivity {
         t6 = findViewById(R.id.t6);
         t7 = findViewById(R.id.t7);
         t8 = findViewById(R.id.t8);
+        t9 = findViewById(R.id.t9);
+        t10 = findViewById(R.id.t10);
+        t11 = findViewById(R.id.t11);
+        t12 = findViewById(R.id.t12);
+        t13 = findViewById(R.id.t13);
         b1 = findViewById(R.id.b1);
 
         x = findViewById(R.id.x);
@@ -102,6 +107,26 @@ public class stringsL2 extends AppCompatActivity {
                     tv.setVisibility(View.VISIBLE);
                 }
                 if (counter > 8) {
+                    TextView tv = findViewById(R.id.t9);
+                    tv.setVisibility(View.VISIBLE);
+                }
+                if (counter > 9) {
+                    TextView tv = findViewById(R.id.t10);
+                    tv.setVisibility(View.VISIBLE);
+                }
+                if (counter > 10) {
+                    TextView tv = findViewById(R.id.t11);
+                    tv.setVisibility(View.VISIBLE);
+                }
+                if (counter > 11) {
+                    TextView tv = findViewById(R.id.t12);
+                    tv.setVisibility(View.VISIBLE);
+                }
+                if (counter > 12) {
+                    TextView tv = findViewById(R.id.t13);
+                    tv.setVisibility(View.VISIBLE);
+                }
+                if (counter > 13) {
                     Button b1 = findViewById(R.id.b1);
                     b1.setVisibility(View.VISIBLE);
                     b1.setOnClickListener(new View.OnClickListener() {

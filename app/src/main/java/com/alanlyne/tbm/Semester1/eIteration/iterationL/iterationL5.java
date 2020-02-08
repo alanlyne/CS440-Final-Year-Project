@@ -86,10 +86,6 @@ public class iterationL5 extends AppCompatActivity {
                     tv.setVisibility(View.VISIBLE);
                 }
                 if (counter > 4) {
-                    TextView tv = findViewById(R.id.t5);
-                    tv.setVisibility(View.VISIBLE);
-                }
-                if (counter > 5) {
                     Button b1 = findViewById(R.id.b1);
                     b1.setVisibility(View.VISIBLE);
                     b1.setOnClickListener(new View.OnClickListener() {

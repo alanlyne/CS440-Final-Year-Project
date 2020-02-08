@@ -15,6 +15,9 @@ import com.alanlyne.tbm.Semester1.dSelectionStatements.SS;
 import com.alanlyne.tbm.Semester1.fStrings.Strings;
 import com.alanlyne.tbm.Semester1.aWIP.WIP;
 import com.alanlyne.tbm.Semester1.gInput.Input;
+import com.alanlyne.tbm.Semester1.iArrays.Arrays;
+import com.alanlyne.tbm.Semester1.jNestedLoops.nloop;
+import com.alanlyne.tbm.Semester1.k2dArray.Array2D;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -118,7 +121,7 @@ public class Menu extends AppCompatActivity {
                     a6.setEnabled(false);
                 }
                 a6.setOnClickListener(v -> {
-                    Intent menu = new Intent(Menu.this, Input.class);
+                    Intent menu = new Intent(Menu.this, Strings.class);
                     startActivity(menu);
                 });
 
@@ -127,7 +130,7 @@ public class Menu extends AppCompatActivity {
                     a7.setEnabled(false);
                 }
                 a7.setOnClickListener(v -> {
-                    Intent menu = new Intent(Menu.this, Boolean.class);
+                    Intent menu = new Intent(Menu.this, Input.class);
                     startActivity(menu);
                 });
 
@@ -136,7 +139,7 @@ public class Menu extends AppCompatActivity {
                     a8.setEnabled(false);
                 }
                 a8.setOnClickListener(v -> {
-                    Intent menu = new Intent(Menu.this, Strings.class);
+                    Intent menu = new Intent(Menu.this, Boolean.class);
                     startActivity(menu);
                 });
 
@@ -145,7 +148,7 @@ public class Menu extends AppCompatActivity {
                     a9.setEnabled(false);
                 }
                 a9.setOnClickListener(v -> {
-                    Intent menu = new Intent(Menu.this, Strings.class);
+                    Intent menu = new Intent(Menu.this, Arrays.class);
                     startActivity(menu);
                 });
 
@@ -154,7 +157,7 @@ public class Menu extends AppCompatActivity {
                     a10.setEnabled(false);
                 }
                 a10.setOnClickListener(v -> {
-                    Intent menu = new Intent(Menu.this, Strings.class);
+                    Intent menu = new Intent(Menu.this, nloop.class);
                     startActivity(menu);
                 });
 
@@ -163,7 +166,7 @@ public class Menu extends AppCompatActivity {
                     a11.setEnabled(false);
                 }
                 a11.setOnClickListener(v -> {
-                    Intent menu = new Intent(Menu.this, Strings.class);
+                    Intent menu = new Intent(Menu.this, Array2D.class);
                     startActivity(menu);
                 });
 
