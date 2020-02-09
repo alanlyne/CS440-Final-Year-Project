@@ -144,7 +144,7 @@ public class Menu extends AppCompatActivity {
                 });
 
                 a9 = findViewById(R.id.a9);
-                if (counter < 70) {
+                if (counter < 80) {
                     a9.setEnabled(false);
                 }
                 a9.setOnClickListener(v -> {
@@ -153,7 +153,7 @@ public class Menu extends AppCompatActivity {
                 });
 
                 a10 = findViewById(R.id.a10);
-                if (counter < 80) {
+                if (counter < 90) {
                     a10.setEnabled(false);
                 }
                 a10.setOnClickListener(v -> {
@@ -162,7 +162,7 @@ public class Menu extends AppCompatActivity {
                 });
 
                 a11 = findViewById(R.id.a11);
-                if (counter < 90) {
+                if (counter < 100) {
                     a11.setEnabled(false);
                 }
                 a11.setOnClickListener(v -> {
