@@ -49,7 +49,6 @@
         <activity android:name=".Semester1.iArrays.arrayQuiz.arrayRevResult" />
         <activity android:name=".Semester1.iArrays.arrayQuiz.arrayRev" />
         <activity android:name=".Semester1.iArrays.Arrays" />
-        <activity android:name=".Semester1.hBoolean.booL.booL4" />
         <activity android:name=".Semester1.hBoolean.booL.booL3" />
         <activity android:name=".Semester1.hBoolean.booL.booL2" />
         <activity android:name=".Semester1.hBoolean.booL.booL1" />

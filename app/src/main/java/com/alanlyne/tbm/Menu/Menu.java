@@ -15,6 +15,7 @@ import com.alanlyne.tbm.Semester1.dSelectionStatements.SS;
 import com.alanlyne.tbm.Semester1.fStrings.Strings;
 import com.alanlyne.tbm.Semester1.aWIP.WIP;
 import com.alanlyne.tbm.Semester1.gInput.Input;
+import com.alanlyne.tbm.Semester1.hBoolean.Boolean;
 import com.alanlyne.tbm.Semester1.iArrays.Arrays;
 import com.alanlyne.tbm.Semester1.jNestedLoops.nloop;
 import com.alanlyne.tbm.Semester1.k2dArray.Array2D;
@@ -174,10 +175,10 @@ public class Menu extends AppCompatActivity {
                 if (counter < 110) {
                     a12.setEnabled(false);
                 }
-                a12.setOnClickListener(v -> {
-                    Intent menu = new Intent(Menu.this, Strings.class);
-                    startActivity(menu);
-                });
+//                a12.setOnClickListener(v -> {
+//                    Intent menu = new Intent(Menu.this, Strings.class);
+//                    startActivity(menu);
+//                });
 
                 //Move to Sign out
                 signOut = findViewById(R.id.btnSignOut);

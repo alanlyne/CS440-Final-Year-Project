@@ -11,7 +11,6 @@ import com.alanlyne.tbm.R;
 import com.alanlyne.tbm.Semester1.hBoolean.booL.booL1;
 import com.alanlyne.tbm.Semester1.hBoolean.booL.booL2;
 import com.alanlyne.tbm.Semester1.hBoolean.booL.booL3;
-import com.alanlyne.tbm.Semester1.hBoolean.booL.booL4;
 import com.alanlyne.tbm.Semester1.hBoolean.booQuiz.booQuiz;
 import com.alanlyne.tbm.Semester1.hBoolean.booQuiz.booRev;
 import com.google.firebase.database.DatabaseReference;
@@ -63,15 +62,8 @@ public class Boolean extends AppCompatActivity {
             startActivity(l3);
         });
 
-        l4 = findViewById(R.id.l4);
-        if(Menu.counter < 74) { l4.setEnabled(false); }
-        l4.setOnClickListener(v -> {
-            Intent l4 = new Intent(Boolean.this, booL4.class);
-            startActivity(l4);
-        });
-
         quiz = findViewById(R.id.quiz);
-        if(Menu.counter < 75) { quiz.setEnabled(false); }
+        if(Menu.counter < 74) { quiz.setEnabled(false); }
         quiz.setOnClickListener(v -> {
             Intent quiz= new Intent(Boolean.this, booQuiz.class);
             startActivity(quiz);
