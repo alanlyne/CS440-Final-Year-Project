@@ -81,7 +81,7 @@
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="A loop repeats the same set of instructions until a condition has been met to finish the loop.\nPlease examine the flow chart below. Do y"
+            android:text="A loop repeats the same set of instructions until a condition has been met to finish the loop.\nPlease examine the flow chart below. Do you understand what is happening?"
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
             android:textSize="15sp"
