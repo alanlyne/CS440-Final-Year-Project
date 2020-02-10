@@ -11,7 +11,6 @@ import com.alanlyne.tbm.R;
 import com.alanlyne.tbm.Semester1.jNestedLoops.nloopL.nloopL1;
 import com.alanlyne.tbm.Semester1.jNestedLoops.nloopL.nloopL2;
 import com.alanlyne.tbm.Semester1.jNestedLoops.nloopL.nloopL3;
-import com.alanlyne.tbm.Semester1.jNestedLoops.nloopL.nloopL4;
 import com.alanlyne.tbm.Semester1.jNestedLoops.nloopQuiz.nloopQuiz;
 import com.alanlyne.tbm.Semester1.jNestedLoops.nloopQuiz.nloopRev;
 import com.google.firebase.database.DatabaseReference;
@@ -64,15 +63,8 @@ public class nloop extends AppCompatActivity {
             startActivity(l3);
         });
 
-        l4 = findViewById(R.id.l4);
-        if(Menu.counter < 94) { l4.setEnabled(false); }
-        l4.setOnClickListener(v -> {
-            Intent l4 = new Intent(nloop.this, nloopL4.class);
-            startActivity(l4);
-        });
-
         quiz = findViewById(R.id.quiz);
-        if(Menu.counter < 95) { quiz.setEnabled(false); }
+        if(Menu.counter < 94) { quiz.setEnabled(false); }
         quiz.setOnClickListener(v -> {
             Intent quiz= new Intent(nloop.this, nloopQuiz.class);
             startActivity(quiz);

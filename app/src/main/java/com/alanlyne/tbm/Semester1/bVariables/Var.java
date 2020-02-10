@@ -3,7 +3,6 @@ package com.alanlyne.tbm.Semester1.bVariables;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import com.alanlyne.tbm.Menu.Menu;
@@ -63,7 +62,7 @@ public class Var extends AppCompatActivity {
             startActivity(l3);
         });
 
-        l4 = findViewById(R.id.l4);
+        l4 = findViewById(R.id.l3);
         if(Menu.counter < 14) { l4.setEnabled(false); }
         l4.setOnClickListener(v -> {
             Intent l4 = new Intent(Var.this, varL4.class);

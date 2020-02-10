@@ -81,7 +81,7 @@
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="sum = a * b;\nThe variable &quot;sum&quot; now has the variable of 500 from multiplying a and b together."
+            android:text="Examine the flowchart below and see if you can create your own examples to help ypu understand nested loops."
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
             android:textSize="15sp"
@@ -92,101 +92,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/t2" />
 
-        <TextView
+        <ImageView
             android:id="@+id/t4"
-            android:layout_width="350sp"
-            android:layout_height="wrap_content"
+            android:layout_width="350dp"
+            android:layout_height="605dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="sum--;\n Can you guess what the value of sum is now?"
-            android:textColor="@android:color/black"
-            android:textColorHighlight="#FF000000"
-            android:textSize="15sp"
-            android:visibility="invisible"
-            app:layout_constraintBottom_toTopOf="@+id/t5"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/t3" />
-
-        <TextView
-            android:id="@+id/t5"
-            android:layout_width="350sp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/edit_round"
-            android:gravity="center"
-            android:padding="10dp"
-            android:text="&quot;sum&quot; remembers what it has stored previously."
-            android:textColor="@android:color/black"
-            android:textColorHighlight="#FF000000"
-            android:textSize="15sp"
-            android:visibility="invisible"
-            app:layout_constraintBottom_toTopOf="@+id/t6"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/t4" />
-
-
-        <TextView
-            android:id="@+id/t6"
-            android:layout_width="350sp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/edit_round"
-            android:gravity="center"
-            android:padding="10dp"
-            android:text="sum = b % a;\n&quot;sum&quot; now has a valu eof 0, as 50/10 has no remainder."
-            android:textColor="@android:color/black"
-            android:textColorHighlight="#FF000000"
-            android:textSize="15sp"
-            android:visibility="invisible"
-            app:layout_constraintBottom_toTopOf="@+id/t7"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/t5" />
-
-        <TextView
-            android:id="@+id/t7"
-            android:layout_width="350sp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/edit_round"
-            android:gravity="center"
-            android:padding="10dp"
-            android:text="char\nA unicode character e.g 'a','b'\n(u0000 to uffff) or (0 to 65535)\nDefault of null"
-            android:textColor="@android:color/black"
-            android:textColorHighlight="#FF000000"
-            android:textSize="15sp"
-            android:visibility="invisible"
-            app:layout_constraintBottom_toTopOf="@+id/t8"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.504"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/t6" />
-
-        <TextView
-            android:id="@+id/t8"
-            android:layout_width="350sp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/edit_round"
-            android:gravity="center"
-            android:padding="10dp"
-            android:text="boolean\nLogical true or false\ntrue or false\nDefault of false"
-            android:textColor="@android:color/black"
-            android:textColorHighlight="#FF000000"
-            android:textSize="15sp"
             android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/b1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/t7" />
+            app:layout_constraintTop_toBottomOf="@+id/t3"
+            app:srcCompat="@drawable/nloopflow" />
 
         <Button
             android:id="@+id/b1"
@@ -203,7 +123,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/t8" />
+            app:layout_constraintTop_toBottomOf="@+id/t4" />
 
         <TextView
             android:id="@+id/x"

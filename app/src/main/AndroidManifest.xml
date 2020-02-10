@@ -31,7 +31,6 @@
         <activity android:name=".Semester1.k2dArray.arrayQuiz.array2DRevResult" />
         <activity android:name=".Semester1.k2dArray.arrayQuiz.array2DRev" />
         <activity android:name=".Semester1.k2dArray.Array2D" />
-        <activity android:name=".Semester1.jNestedLoops.nloopL.nloopL4" />
         <activity android:name=".Semester1.jNestedLoops.nloopL.nloopL3" />
         <activity android:name=".Semester1.jNestedLoops.nloopL.nloopL2" />
         <activity android:name=".Semester1.jNestedLoops.nloopL.nloopL1" />

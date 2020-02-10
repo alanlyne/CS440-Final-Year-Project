@@ -85,7 +85,7 @@ public class SS extends AppCompatActivity {
             }
         });
 
-        l4 = findViewById(R.id.l4);
+        l4 = findViewById(R.id.l3);
         if(Menu.counter < 34) { l4.setEnabled(false); }
         l4.setOnClickListener(new View.OnClickListener() {
             @Override

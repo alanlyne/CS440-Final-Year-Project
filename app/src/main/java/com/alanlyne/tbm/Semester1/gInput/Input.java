@@ -62,7 +62,7 @@ public class Input extends AppCompatActivity {
             startActivity(l3);
         });
 
-        l4 = findViewById(R.id.l4);
+        l4 = findViewById(R.id.l3);
         if(Menu.counter < 64) { l4.setEnabled(false); }
         l4.setOnClickListener(v -> {
             Intent l4 = new Intent(Input.this, inputL4.class);

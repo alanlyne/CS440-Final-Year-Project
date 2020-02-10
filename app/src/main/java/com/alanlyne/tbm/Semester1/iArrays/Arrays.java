@@ -64,7 +64,7 @@ public class Arrays extends AppCompatActivity {
             startActivity(l3);
         });
 
-        l4 = findViewById(R.id.l4);
+        l4 = findViewById(R.id.l3);
         if(Menu.counter < 84) { l4.setEnabled(false); }
         l4.setOnClickListener(v -> {
             Intent l4 = new Intent(Arrays.this, arrayL4.class);

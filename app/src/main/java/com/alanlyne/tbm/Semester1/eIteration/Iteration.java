@@ -66,7 +66,7 @@ public class Iteration extends AppCompatActivity {
             startActivity(l3);
         });
 
-        l4 = findViewById(R.id.l4);
+        l4 = findViewById(R.id.l3);
         if(Menu.counter < 44) { l4.setEnabled(false); }
         l4.setOnClickListener(v -> {
             Intent l4 = new Intent(Iteration.this, iterationL4.class);
