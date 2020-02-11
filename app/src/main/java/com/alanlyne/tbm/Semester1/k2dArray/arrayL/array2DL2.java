@@ -20,7 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class array2DL2 extends AppCompatActivity {
 
-    TextView t0, t1, t2, t3, t4, t5, t6, t7, t8, x;
+    TextView t0, t1, t2, t3, t4, t5, t6, t7, t8, t9, x;
     Button b1;
     int counter = 0;
     DatabaseReference databaseName;
@@ -41,6 +41,7 @@ public class array2DL2 extends AppCompatActivity {
         t6 = findViewById(R.id.t6);
         t7 = findViewById(R.id.t7);
         t8 = findViewById(R.id.t8);
+        t9 = findViewById(R.id.t9);
         b1 = findViewById(R.id.b1);
 
         x = findViewById(R.id.x);
@@ -99,6 +100,10 @@ public class array2DL2 extends AppCompatActivity {
                     tv.setVisibility(View.VISIBLE);
                 }
                 if (counter > 8) {
+                    TextView tv = findViewById(R.id.t9);
+                    tv.setVisibility(View.VISIBLE);
+                }
+                if (counter > 9) {
                     Button b1 = findViewById(R.id.b1);
                     b1.setVisibility(View.VISIBLE);
                     b1.setOnClickListener(v -> {

@@ -43,35 +43,35 @@ public class Array2D extends AppCompatActivity {
         });
 
         l1 = findViewById(R.id.l1);
-        if(Menu.counter < 91) { l1.setEnabled(false); }
+        if(Menu.counter < 101) { l1.setEnabled(false); }
         l1.setOnClickListener(v -> {
             Intent l1 = new Intent(Array2D.this, array2DL1.class);
             startActivity(l1);
         });
 
         l2 = findViewById(R.id.l2);
-        if(Menu.counter < 92) { l2.setEnabled(false); }
+        if(Menu.counter < 102) { l2.setEnabled(false); }
         l2.setOnClickListener(v -> {
             Intent l2 = new Intent(Array2D.this, array2DL2.class);
             startActivity(l2);
         });
 
         l3 = findViewById(R.id.l3);
-        if(Menu.counter < 93) { l3.setEnabled(false); }
+        if(Menu.counter < 103) { l3.setEnabled(false); }
         l3.setOnClickListener(v -> {
             Intent l3 = new Intent(Array2D.this, array2DL3.class);
             startActivity(l3);
         });
 
-        l4 = findViewById(R.id.l3);
-        if(Menu.counter < 94) { l4.setEnabled(false); }
+        l4 = findViewById(R.id.l4);
+        if(Menu.counter < 104) { l4.setEnabled(false); }
         l4.setOnClickListener(v -> {
             Intent l4 = new Intent(Array2D.this, array2DL4.class);
             startActivity(l4);
         });
 
         quiz = findViewById(R.id.quiz);
-        if(Menu.counter < 95) { quiz.setEnabled(false); }
+        if(Menu.counter < 105) { quiz.setEnabled(false); }
         quiz.setOnClickListener(v -> {
             Intent quiz= new Intent(Array2D.this, array2DQuiz.class);
             startActivity(quiz);

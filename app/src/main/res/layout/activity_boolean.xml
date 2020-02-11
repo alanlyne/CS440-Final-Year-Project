@@ -65,13 +65,13 @@
         android:background="@drawable/b_round"
         android:text="AND &amp; OR &amp; NOT"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/l3"
+        app:layout_constraintBottom_toTopOf="@+id/l4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/l1" />
 
     <Button
-        android:id="@+id/l3"
+        android:id="@+id/l4"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginTop="25dp"
@@ -97,7 +97,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/l3" />
+        app:layout_constraintTop_toBottomOf="@+id/l4" />
 
     <TextView
         android:id="@+id/x"

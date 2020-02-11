@@ -63,7 +63,7 @@ public class Strings extends AppCompatActivity {
             }
         });
 
-        l3 = findViewById(R.id.l3);
+        l3 = findViewById(R.id.l4);
         if(Menu.counter < 53) { l3.setEnabled(false); }
         l3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,7 +73,7 @@ public class Strings extends AppCompatActivity {
             }
         });
 
-        l4 = findViewById(R.id.l3);
+        l4 = findViewById(R.id.l4);
         if(Menu.counter < 54) { l4.setEnabled(false); }
         l4.setOnClickListener(new View.OnClickListener() {
             @Override

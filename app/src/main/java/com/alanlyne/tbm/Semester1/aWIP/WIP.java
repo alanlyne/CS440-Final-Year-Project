@@ -51,7 +51,7 @@ public class WIP extends AppCompatActivity {
             startActivity(l2);
         });
 
-        l3 = findViewById(R.id.l3);
+        l3 = findViewById(R.id.l4);
         if(Menu.counter < 2) { l3.setEnabled(false); }
         l3.setOnClickListener(v -> {
             Intent l3 = new Intent(WIP.this, wipL3.class);

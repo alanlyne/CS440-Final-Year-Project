@@ -48,7 +48,7 @@ public class array2DQuizResult extends AppCompatActivity {
 
         backToMenu.setOnClickListener(v -> {
 
-            Intent menu = new Intent(array2DQuizResult.this, Array2D.class);
+            Intent menu = new Intent(array2DQuizResult.this, Menu.class);
             startActivity(menu);
 
         });

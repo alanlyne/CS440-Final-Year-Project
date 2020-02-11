@@ -75,7 +75,7 @@ public class op extends AppCompatActivity {
             }
         });
 
-        l3 = findViewById(R.id.l3);
+        l3 = findViewById(R.id.l4);
         if(Menu.counter < 23) { l3.setEnabled(false); }
         l3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,7 +85,7 @@ public class op extends AppCompatActivity {
             }
         });
 
-        l4 = findViewById(R.id.l3);
+        l4 = findViewById(R.id.l4);
         if(Menu.counter < 24) { l4.setEnabled(false); }
         l4.setOnClickListener(new View.OnClickListener() {
             @Override

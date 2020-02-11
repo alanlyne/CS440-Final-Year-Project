@@ -29,7 +29,7 @@ public class array2DL3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_array2_dl1);
+        setContentView(R.layout.activity_array2_dl3);
         databaseName = FirebaseDatabase.getInstance().getReference("counter");
 
         t0 = findViewById(R.id.t0);
@@ -91,14 +91,6 @@ public class array2DL3 extends AppCompatActivity {
                     tv.setVisibility(View.VISIBLE);
                 }
                 if (counter > 6) {
-                    TextView tv = findViewById(R.id.t7);
-                    tv.setVisibility(View.VISIBLE);
-                }
-                if (counter > 7) {
-                    TextView tv = findViewById(R.id.t8);
-                    tv.setVisibility(View.VISIBLE);
-                }
-                if (counter > 8) {
                     Button b1 = findViewById(R.id.b1);
                     b1.setVisibility(View.VISIBLE);
                     b1.setOnClickListener(v -> {

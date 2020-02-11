@@ -57,14 +57,14 @@ public class Arrays extends AppCompatActivity {
             startActivity(l2);
         });
 
-        l3 = findViewById(R.id.l3);
+        l3 = findViewById(R.id.l4);
         if(Menu.counter < 83) { l3.setEnabled(false); }
         l3.setOnClickListener(v -> {
             Intent l3 = new Intent(Arrays.this, arrayL3.class);
             startActivity(l3);
         });
 
-        l4 = findViewById(R.id.l3);
+        l4 = findViewById(R.id.l4);
         if(Menu.counter < 84) { l4.setEnabled(false); }
         l4.setOnClickListener(v -> {
             Intent l4 = new Intent(Arrays.this, arrayL4.class);
