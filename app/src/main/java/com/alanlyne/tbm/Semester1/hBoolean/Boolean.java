@@ -55,7 +55,7 @@ public class Boolean extends AppCompatActivity {
             startActivity(l2);
         });
 
-        l3 = findViewById(R.id.l4);
+        l3 = findViewById(R.id.l3);
         if(Menu.counter < 73) { l3.setEnabled(false); }
         l3.setOnClickListener(v -> {
             Intent l3 = new Intent(Boolean.this, booL3.class);

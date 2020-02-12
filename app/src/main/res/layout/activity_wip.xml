@@ -26,22 +26,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="123dp"
-        android:layout_marginEnd="123dp"
-        android:background="@drawable/b_round"
-        android:text="Reset?"
-        android:textColor="@android:color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.827" />
-
-    <Button
         android:id="@+id/l1"
         android:layout_width="250dp"
         android:layout_height="50dp"
@@ -65,10 +49,25 @@
         android:background="@drawable/b_round"
         android:text="What's a Computer Program?"
         android:textColor="@android:color/white"
-        app:layout_constraintBottom_toTopOf="@+id/l4"
+        app:layout_constraintBottom_toTopOf="@+id/l3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/l1" />
+
+    <Button
+        android:id="@+id/l3"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/b_round"
+        android:text="Hello, World"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/l4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/l2" />
 
     <Button
         android:id="@+id/l4"
@@ -78,19 +77,19 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="80dp"
         android:background="@drawable/b_round"
-        android:text="Hello, World"
+        android:text="Plagiarism"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/wipQuiz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/l2" />
+        app:layout_constraintTop_toBottomOf="@+id/l3" />
 
     <Button
         android:id="@+id/wipQuiz"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_marginTop="25dp"
-        android:layout_marginBottom="250dp"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/b_round"
         android:text="Revise"
         android:textColor="@android:color/white"

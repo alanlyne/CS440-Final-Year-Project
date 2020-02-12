@@ -20,7 +20,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class WIP extends AppCompatActivity {
-    Button reset, quiz, l1, l2, l3;
+    Button quiz, l1, l2, l3;
     TextView x;
 
     DatabaseReference databaseName;
@@ -51,7 +51,7 @@ public class WIP extends AppCompatActivity {
             startActivity(l2);
         });
 
-        l3 = findViewById(R.id.l4);
+        l3 = findViewById(R.id.l3);
         if(Menu.counter < 2) { l3.setEnabled(false); }
         l3.setOnClickListener(v -> {
             Intent l3 = new Intent(WIP.this, wipL3.class);
@@ -67,26 +67,5 @@ public class WIP extends AppCompatActivity {
                 startActivity(quiz);
             }
         });
-
-
-
-        reset = findViewById(R.id.reset);
-
-        reset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //Menu.counter = 1;
-                Intent menu = new Intent(WIP.this,Menu.class);
-                startActivity(menu);
-
-                resetCounter();
-            }
-        });
     }
-
-    private void resetCounter(){
-        Menu.counter = 0;
-        menuCounter counter = new menuCounter(Menu.counter);
-        databaseName.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(counter);
-        }
-    }
+}

@@ -63,7 +63,7 @@ public class Strings extends AppCompatActivity {
             }
         });
 
-        l3 = findViewById(R.id.l4);
+        l3 = findViewById(R.id.l3);
         if(Menu.counter < 53) { l3.setEnabled(false); }
         l3.setOnClickListener(new View.OnClickListener() {
             @Override

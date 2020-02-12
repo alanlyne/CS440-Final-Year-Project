@@ -56,7 +56,7 @@ public class nloop extends AppCompatActivity {
             startActivity(l2);
         });
 
-        l3 = findViewById(R.id.l4);
+        l3 = findViewById(R.id.l3);
         if(Menu.counter < 93) { l3.setEnabled(false); }
         l3.setOnClickListener(v -> {
             Intent l3 = new Intent(nloop.this, nloopL3.class);

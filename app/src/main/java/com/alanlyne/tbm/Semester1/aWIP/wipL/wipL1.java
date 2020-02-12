@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.SystemClock;
+import android.speech.tts.TextToSpeech;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +20,8 @@ import com.alanlyne.tbm.Semester1.aWIP.WIP;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.Locale;
 
 public class wipL1 extends AppCompatActivity{
 
@@ -68,6 +72,9 @@ public class wipL1 extends AppCompatActivity{
                     tv.setVisibility(View.VISIBLE);
                     ImageView i1 = findViewById(R.id.i1);
                     i1.setVisibility(View.VISIBLE);
+
+
+
                 }
                 if (counter > 2) {
                     TextView tv = findViewById(R.id.t2);
