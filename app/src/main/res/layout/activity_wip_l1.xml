@@ -41,13 +41,11 @@
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Below you will see the learning curve for computer science in blue\n
-The Green represents a course with 'rote' or linear style of learning.\n
-Lastly, the lower purple line referents someone who has not done the work necessary to achieve an acceptable level of knowledge in Computer Science"
+            android:text="Below, you will see the\n Programming Learning Curve.\n(Click the image to see it in better detail.)"
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
             android:textSize="15sp"
-            android:visibility="visible"
+            android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/i1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -61,19 +59,90 @@ Lastly, the lower purple line referents someone who has not done the work necess
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Holy fuck, that actually worked!\n NOW LETS GET OUT OF HERE!!!\nYou know what to do."
+            android:text="The curves on this graph show a person’s progress with learning to computer program against time (year of degree)."
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/t3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/i1" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="The black wavy line indicates the normal progress of learning to program through a 4 year degree (This curve applies to everyone, if you have programmed before you came to Maynooth, then you will be further along the curve)."
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/t4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t2" />
+
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="The blue line shows a different curve for a general “facts-based” subject. Notice that there is a nice return in “subject expertise” for the time spent on the subject. This is not the case with the wavy computer programming line which is more of a “hard slog”."
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/t5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t3" />
+
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="The red line on the graph shows what happens when some one does not spend adequate time learning to program."
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/t6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t4" />
+
+        <TextView
+            android:id="@+id/t6"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Learning how to program is very hard, but it can be done by anyone. As long as they are willing to put in the effort and work required. In this app we will help you do &quot;The Bare Minimum&quot; in order to achieve this."
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
             android:textSize="15sp"
             android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/b1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/i1" />
+            app:layout_constraintTop_toBottomOf="@+id/t5" />
 
         <Button
-            android:textColor="@android:color/white"
             android:id="@+id/b1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -83,25 +152,28 @@ Lastly, the lower purple line referents someone who has not done the work necess
             android:layout_marginBottom="20dp"
             android:background="@drawable/b_round"
             android:text="Continue"
+            android:textColor="@android:color/white"
             android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/t2" />
+            app:layout_constraintTop_toBottomOf="@+id/t6" />
 
         <ImageView
             android:id="@+id/i1"
-            android:layout_width="255dp"
-            android:layout_height="126dp"
-            android:visibility="invisible"
+            android:layout_width="400dp"
+            android:layout_height="228dp"
+            android:layout_marginStart="5dp"
             android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/t2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/t1"
-            app:srcCompat="@android:color/holo_green_dark" />
+            app:srcCompat="@drawable/cs_lc" />
 
         <TextView
             android:id="@+id/x"

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -19,10 +20,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class wipL3 extends AppCompatActivity {
-    TextView t0, t1, t2, x;
+    TextView t0, t1, t2, t3, t4, t5, t6, t7, t8, x;
     Button b1;
     int counter = 0;
     DatabaseReference databaseName;
+    private long mLastClickTime = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,37 +35,73 @@ public class wipL3 extends AppCompatActivity {
         t0 = findViewById(R.id.t0);
         t1 = findViewById(R.id.t1);
         t2 = findViewById(R.id.t2);
+        t3 = findViewById(R.id.t3);
+        t4 = findViewById(R.id.t4);
+        t5 = findViewById(R.id.t5);
+        t6 = findViewById(R.id.t6);
+        t7 = findViewById(R.id.t7);
+        t8 = findViewById(R.id.t8);
         b1 = findViewById(R.id.b1);
-        setContentView(R.layout.activity_wip_l3);
 
         x = findViewById(R.id.x);
         x.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Intent x = new Intent(wipL3.this, WIP.class);
                 startActivity(x);
             }
         });
 
-        View view = findViewById(R.id.ScrollView01);
+        View view = findViewById(R.id.View01);
         view.setOnTouchListener(new View.OnTouchListener() {
 
             @Override
             public boolean onTouch(View view, MotionEvent event) {
-                counter++;
 
+                if (SystemClock.elapsedRealtime() - mLastClickTime < 500) {
+                    System.out.println("Fun");
+                }
+                else {
+                    mLastClickTime = SystemClock.elapsedRealtime();
+
+                    counter++;
+                }
                 System.out.println(counter);
                 if (counter > 0) {
                     TextView tv = findViewById(R.id.t1);
                     tv.setVisibility(View.VISIBLE);
-                    ImageView i1 = findViewById(R.id.i1);
-                    i1.setVisibility(View.VISIBLE);
+
                 }
-                if (counter > 2) {
+                if (counter > 1) {
                     TextView tv = findViewById(R.id.t2);
                     tv.setVisibility(View.VISIBLE);
                 }
+                if (counter > 2) {
+                    TextView tv = findViewById(R.id.t3);
+                    tv.setVisibility(View.VISIBLE);
+                }
+                if (counter > 3) {
+                    TextView tv = findViewById(R.id.t4);
+                    tv.setVisibility(View.VISIBLE);
+                }
                 if (counter > 4) {
+                    TextView tv = findViewById(R.id.t5);
+                    tv.setVisibility(View.VISIBLE);
+                }
+                if (counter > 5) {
+                    TextView tv = findViewById(R.id.t6);
+                    tv.setVisibility(View.VISIBLE);
+                }
+                if (counter > 6) {
+                    TextView tv = findViewById(R.id.t7);
+                    tv.setVisibility(View.VISIBLE);
+                }
+                if (counter > 7) {
+                    TextView tv = findViewById(R.id.t8);
+                    tv.setVisibility(View.VISIBLE);
+                }
+                if (counter > 8) {
                     Button b1 = findViewById(R.id.b1);
                     b1.setVisibility(View.VISIBLE);
                     b1.setOnClickListener(new View.OnClickListener() {
@@ -84,6 +122,7 @@ public class wipL3 extends AppCompatActivity {
             Menu.counter = 3;
             menuCounter counter = new menuCounter(Menu.counter);
             databaseName.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(counter);
+            System.out.println("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
         }
     }
 }

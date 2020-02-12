@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ScrollView01"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/bgcolour"
-    android:fillViewport="true"
-    >
+    android:background="@drawable/bgcolour">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraint_layout1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/View01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:textColor="@android:color/black"
             android:id="@+id/t0"
-            android:layout_width="300sp"
+            android:layout_width="350sp"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Welcome to your first lesson!\nThe Learning Curve\nIncase you forgot, tap the screen to continue."
+            android:text="What is a Computer Program?"
+            android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
             android:textSize="15sp"
             android:visibility="visible"
@@ -35,33 +37,147 @@
 
         <TextView
             android:id="@+id/t1"
-            android:layout_width="300sp"
+            android:layout_width="350sp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Below you will see the learning curve for computer science in blue\n
-The Green represents a course with 'rote' or linear style of learning.\n
-Lastly, the lower purple line referents someone who has not done the work necessary to achieve an acceptable level of knowledge in Computer Science"
+            android:text="A computer program is a set of instructions that performs a specific task when ran. We will be using the programming language, Java, to write our computer programs."
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
             android:textSize="15sp"
             android:visibility="invisible"
-            app:layout_constraintBottom_toTopOf="@+id/i1"
+            app:layout_constraintBottom_toTopOf="@+id/t2"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/t0" />
 
         <TextView
             android:id="@+id/t2"
-            android:layout_width="300sp"
+            android:layout_width="350sp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Holy fuck, that actually worked!\n NOW LETS GET OUT OF HERE!!!\nYou know what to do."
+            android:text="In order to make a good computer program, it must be;"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/t3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t1" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Readable.\nSo other programmers can understand the program and have comments that provide an explanation for what the program does."
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/t4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t2" />
+
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Modular.\nThe program should be broke down into pieces which each individually performing a task"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/t5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t3" />
+
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Robust\nThe program should be able to handle and cases. The program should never crash."
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/t6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t4" />
+
+
+        <TextView
+            android:id="@+id/t6"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="When we are creating our computer program, we need to be able to plan ahead and know step by step what should be done."
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/t7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t5" />
+
+        <TextView
+            android:id="@+id/t7"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="To do this, we user algorithms.\nAlgorithms are a detailed step of instructions in order to solve the problem given."
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/t8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t6" />
+
+        <TextView
+            android:id="@+id/t8"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Think of an algorithm like, how to make a sandwich.\nOnly with a computer program, we need to tell the program to open the drawer to get the break and every little detail in-between.\nIt is important to break up a problem into it's individual components. The problem may look impossible but when you take a step back and look at it piece by piece, it becomes a lot more doable."
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
             android:textSize="15sp"
@@ -70,10 +186,9 @@ Lastly, the lower purple line referents someone who has not done the work necess
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/i1" />
+            app:layout_constraintTop_toBottomOf="@+id/t7" />
 
         <Button
-            android:textColor="@android:color/white"
             android:id="@+id/b1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -83,25 +198,12 @@ Lastly, the lower purple line referents someone who has not done the work necess
             android:layout_marginBottom="20dp"
             android:background="@drawable/b_round"
             android:text="Continue"
+            android:textColor="@android:color/white"
             android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/t2" />
-
-        <ImageView
-            android:id="@+id/i1"
-            android:layout_width="255dp"
-            android:layout_height="126dp"
-            android:visibility="invisible"
-            android:layout_marginTop="20dp"
-            app:layout_constraintBottom_toTopOf="@+id/t2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/t1"
-            app:srcCompat="@android:color/holo_green_dark" />
+            app:layout_constraintTop_toBottomOf="@+id/t8" />
 
         <TextView
             android:id="@+id/x"
@@ -122,3 +224,4 @@ Lastly, the lower purple line referents someone who has not done the work necess
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
+

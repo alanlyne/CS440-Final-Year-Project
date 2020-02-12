@@ -25,7 +25,7 @@ import java.util.Locale;
 
 public class wipL1 extends AppCompatActivity{
 
-    TextView t0, t1, t2, x;
+    TextView t0, t1, t2, t3, t4, t5, t6, x;
     Button b1;
     int counter = 0;
     DatabaseReference databaseName;
@@ -40,7 +40,12 @@ public class wipL1 extends AppCompatActivity{
         t0 = findViewById(R.id.t0);
         t1 = findViewById(R.id.t1);
         t2 = findViewById(R.id.t2);
+        t3 = findViewById(R.id.t3);
+        t4 = findViewById(R.id.t4);
+        t5 = findViewById(R.id.t5);
+        t6 = findViewById(R.id.t6);
         b1 = findViewById(R.id.b1);
+        ImageView i1 = findViewById(R.id.i1);
         setContentView(R.layout.activity_wip_l1);
 
         x = findViewById(R.id.x);
@@ -52,7 +57,9 @@ public class wipL1 extends AppCompatActivity{
             }
         });
 
-        View view = findViewById(R.id.ScrollView01);
+
+
+        View view = findViewById(R.id.constraint_layout1);
         view.setOnTouchListener(new View.OnTouchListener() {
 
             @Override
@@ -73,14 +80,37 @@ public class wipL1 extends AppCompatActivity{
                     ImageView i1 = findViewById(R.id.i1);
                     i1.setVisibility(View.VISIBLE);
 
-
-
+                    i1.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            if(i1.getVisibility() == View.VISIBLE){
+                                Intent img = new Intent(wipL1.this, lc.class);
+                                startActivity(img);
+                            }
+                        }
+                    });
                 }
-                if (counter > 2) {
+                if (counter > 1) {
                     TextView tv = findViewById(R.id.t2);
                     tv.setVisibility(View.VISIBLE);
                 }
+                if (counter > 2) {
+                    TextView tv = findViewById(R.id.t3);
+                    tv.setVisibility(View.VISIBLE);
+                }
+                if (counter > 3) {
+                    TextView tv = findViewById(R.id.t4);
+                    tv.setVisibility(View.VISIBLE);
+                }
                 if (counter > 4) {
+                    TextView tv = findViewById(R.id.t5);
+                    tv.setVisibility(View.VISIBLE);
+                }
+                if (counter > 5) {
+                    TextView tv = findViewById(R.id.t6);
+                    tv.setVisibility(View.VISIBLE);
+                }
+                if (counter > 6) {
                     Button b1 = findViewById(R.id.b1);
                     b1.setVisibility(View.VISIBLE);
                     b1.setOnClickListener(new View.OnClickListener() {

@@ -1,26 +1,170 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bgcolour"
-    tools:context=".Semester1.aWIP.wipL.wipL4">
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bgcolour">
 
-    <Button
-        android:background="@drawable/edit_round"
-        android:id="@+id/finishL4"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/View01"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginLeft="158dp"
-        android:layout_marginTop="254dp"
-        android:layout_marginEnd="165dp"
-        android:layout_marginRight="165dp"
-        android:layout_marginBottom="429dp"
-        android:text="Finish"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/t0"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Plagiarism"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/t1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="One thing you will come across throughput the course of your degree is plagiarism."
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/t2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t0" />
+
+        <TextView
+            android:id="@+id/t2"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="While helping others and asking for help is recommended, you should never, under any circumstance, copy someone else's or give anyone else your code."
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/t3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t1" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Copying someone else’s code or from the web will most probably destroy your learning."
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/t4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t2" />
+
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="You can't learn from by copying, you have to try it yourself and be willing to fail and try again at the beginning in order succeed."
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/t5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t3" />
+
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="The next section will be a short quiz to see what you hav learned. Following from that we will have have a quick revision quiz to help you enforce what you have learned."
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/b1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t4" />
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="200dp"
+            android:background="@drawable/b_round"
+            android:text="Continue"
+            android:textColor="@android:color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t5" />
+
+        <TextView
+            android:id="@+id/x"
+            android:layout_width="15dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:text="x"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/t0"
+            app:layout_constraintEnd_toEndOf="@+id/t0"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

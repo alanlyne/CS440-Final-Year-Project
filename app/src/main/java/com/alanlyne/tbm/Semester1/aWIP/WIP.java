@@ -14,13 +14,14 @@ import com.alanlyne.tbm.R;
 import com.alanlyne.tbm.Semester1.aWIP.wipL.wipL1;
 import com.alanlyne.tbm.Semester1.aWIP.wipL.wipL2;
 import com.alanlyne.tbm.Semester1.aWIP.wipL.wipL3;
+import com.alanlyne.tbm.Semester1.aWIP.wipL.wipL4;
 import com.alanlyne.tbm.Semester1.aWIP.wipQuiz.wipQuiz;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class WIP extends AppCompatActivity {
-    Button quiz, l1, l2, l3;
+    Button quiz, l1, l2, l3, l4;
     TextView x;
 
     DatabaseReference databaseName;
@@ -58,8 +59,15 @@ public class WIP extends AppCompatActivity {
             startActivity(l3);
         });
 
+        l4 = findViewById(R.id.l4);
+        if(Menu.counter < 3) { l4.setEnabled(false); }
+        l4.setOnClickListener(v -> {
+            Intent l4 = new Intent(WIP.this, wipL4.class);
+            startActivity(l4);
+        });
+
         quiz = findViewById(R.id.wipQuiz);
-        if(Menu.counter < 3) { quiz.setEnabled(false); }
+        if(Menu.counter < 4) { quiz.setEnabled(false); }
         quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
