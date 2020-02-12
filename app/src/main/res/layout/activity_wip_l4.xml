@@ -43,7 +43,7 @@
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="One thing you will come across throughput the course of your degree is plagiarism."
+            android:text="One thing you will come across throughout the course of your degree is plagiarism."
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
             android:textSize="15sp"

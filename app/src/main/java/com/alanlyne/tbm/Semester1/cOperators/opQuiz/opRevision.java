@@ -57,7 +57,7 @@ public class opRevision extends AppCompatActivity {
 
     private void updateQuestion() {
         computerCount++;
-        if (computerCount > 2) {
+        if (computerCount > 3) {
             Toast.makeText(getApplicationContext(), "Game Over", Toast.LENGTH_SHORT).show();
             Intent myIntent = new Intent(opRevision.this, opRevResult.class);
             myIntent.putExtra("total", String.valueOf(total));

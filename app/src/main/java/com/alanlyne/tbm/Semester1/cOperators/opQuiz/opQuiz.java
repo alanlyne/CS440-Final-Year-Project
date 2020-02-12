@@ -58,7 +58,7 @@ public class opQuiz extends AppCompatActivity {
 
     private void updateQuestion() {
         computerCount++;
-        if (computerCount > 2) {
+        if (computerCount > 5) {
             Toast.makeText(getApplicationContext(), "Game Over", Toast.LENGTH_SHORT).show();
             Intent myIntent = new Intent(opQuiz.this, opQuizResult.class);
             myIntent.putExtra("total", String.valueOf(total));
@@ -67,7 +67,7 @@ public class opQuiz extends AppCompatActivity {
             startActivity(myIntent);
 
         } else {
-            reference = FirebaseDatabase.getInstance().getReference().child("opRev").child(String.valueOf(computerCount));
+            reference = FirebaseDatabase.getInstance().getReference().child("opQuiz").child(String.valueOf(computerCount));
             total++;
             reference.addValueEventListener(new ValueEventListener() {
                 @Override

@@ -58,7 +58,7 @@ public class varQuiz extends AppCompatActivity {
 
     private void updateQuestion() {
         computerCount++;
-        if (computerCount > 3) {
+        if (computerCount > 5) {
             Toast.makeText(getApplicationContext(), "Game Over", Toast.LENGTH_SHORT).show();
             Intent myIntent = new Intent(varQuiz.this, varQuizResult.class);
             myIntent.putExtra("total", String.valueOf(total));

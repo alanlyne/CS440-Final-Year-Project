@@ -60,7 +60,7 @@ public class ssRev extends AppCompatActivity {
 
     private void updateQuestion() {
         computerCount++;
-        if (computerCount > 2) {
+        if (computerCount > 5) {
             Toast.makeText(getApplicationContext(), "Game Over", Toast.LENGTH_SHORT).show();
             Intent myIntent = new Intent(ssRev.this, ssRevResult.class);
             myIntent.putExtra("total", String.valueOf(total));

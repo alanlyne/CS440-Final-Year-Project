@@ -14,6 +14,7 @@
     "option4" : "Kildare",
     "question" : "Where am I?"
   } ],
+
   "array2DRev" : [ null, {
     "answer" : "array2DRev",
     "option1" : "Sean",
@@ -29,6 +30,7 @@
     "option4" : "Kildare",
     "question" : "Where am I?"
   } ],
+
   "arrayQuiz" : [ null, {
     "answer" : "arrayQuiz",
     "option1" : "Sean",
@@ -44,6 +46,7 @@
     "option4" : "Kildare",
     "question" : "Where am I?"
   } ],
+
   "arrayRev" : [ null, {
     "answer" : "arrayRev",
     "option1" : "Sean",
@@ -59,6 +62,7 @@
     "option4" : "Kildare",
     "question" : "Where am I?"
   } ],
+
   "booQuiz" : [ null, {
     "answer" : "booQuiz",
     "option1" : "Sean",
@@ -74,6 +78,7 @@
     "option4" : "Kildare",
     "question" : "Where am I?"
   } ],
+  
   "booRev" : [ null, {
     "answer" : "booRev",
     "option1" : "Sean",
@@ -89,6 +94,7 @@
     "option4" : "Kildare",
     "question" : "Where am I?"
   } ],
+
   "counter" : {
     "35nzS2kV7VfulTX60T6Fxa8i7AJ3" : {
       "counter" : 0
@@ -172,6 +178,7 @@
       "counter" : 0
     }
   },
+
   "inputQuiz" : [ null, {
     "answer" : "inputQuiz",
     "option1" : "Sean",
@@ -187,6 +194,7 @@
     "option4" : "Kildare",
     "question" : "Where am I?"
   } ],
+
   "inputRev" : [ null, {
     "answer" : "inputRev",
     "option1" : "Sean",
@@ -202,6 +210,7 @@
     "option4" : "Kildare",
     "question" : "Where am I?"
   } ],
+
   "iterationQuiz" : [ null, {
     "answer" : "iterationQuiz",
     "option1" : "Sean",
@@ -217,21 +226,44 @@
     "option4" : "Kildare",
     "question" : "Where am I?"
   } ],
+
   "iterationRev" : [ null, {
-    "answer" : "iterationRev",
-    "option1" : "Sean",
-    "option2" : "iterationRev",
-    "option3" : "Kevin",
-    "option4" : "Raymond",
-    "question" : "iterationRev?"
+    "answer" : "a = (condition) ? true : false;",
+    "option1" : "a = (condition) ? true ? false;",
+    "option2" : "a = (condition) ? true : false;",
+    "option3" : "a = (condition) : true ? false;",
+    "option4" : "a = (condition) : true : false;",
+    "question" : "What is the layout of a ternary operator?"
   }, {
-    "answer" : "Kildare",
-    "option1" : "Dublin",
-    "option2" : "Cork",
-    "option3" : "Wexford",
-    "option4" : "Kildare",
-    "question" : "Where am I?"
+    "answer" : "int a = 100;",
+    "option1" : "a = 100;",
+    "option2" : "int a = 100;",
+    "option3" : "int a == 100;",
+    "option4" : "int a = 100",
+    "question" : "What do we use to assign a value to a variable?"
+  }, {
+    "answer" : "char a = 'a';",
+    "option1" : "character = 'a';",
+    "option2" : "char a = a;",
+    "option3" : "char a = \"a\";",
+    "option4" : "char a = 'a';",
+    "question" : "Which of these is the correct way to initialise and assign a char?"
+  }, {
+    "answer" : "11",
+    "option1" : "11",
+    "option2" : "9",
+    "option3" : "Error",
+    "option4" : "10",
+    "question" : "What is the result of the following?\nint a = 10;\nif(a == 10){\n    a++;\n}else{\n    a--;\n}"
+  }, {
+    "answer" : "Reduces the value of a variable by 1",
+    "option1" : "Increases the value of a variable by 1",
+    "option2" : "Reduces the value of a variable by 1",
+    "option3" : "Increases the value of a variable by a user given amount",
+    "option4" : "Concatenates a 1 to the beginning of a variable",
+    "question" : "What does increment (--) do?"
   } ],
+
   "nloopQuiz" : [ null, {
     "answer" : "nloopQuiz",
     "option1" : "Sean",
@@ -247,6 +279,7 @@
     "option4" : "Kildare",
     "question" : "Where am I?"
   } ],
+
   "nloopRev" : [ null, {
     "answer" : "nloopRev",
     "option1" : "Sean",
@@ -262,66 +295,141 @@
     "option4" : "Kildare",
     "question" : "Where am I?"
   } ],
+
   "opQuiz" : [ null, {
-    "answer" : "opQuiz",
-    "option1" : "sam",
-    "option2" : "opQuiz",
-    "option3" : "jam",
-    "option4" : "can",
-    "question" : "Some opQuiz questions"
+    "answer" : "Nothing, \"b\" stays as 5",
+    "option1" : "\"b\" becomes 1",
+    "option2" : "Nothing, \"b\" stays as 5",
+    "option3" : "\"b\" defaults to 0",
+    "option4" : "Error",
+    "question" : "What happens to \"b\" following this operation.\nint a = 1, b = 5;\na=b;"
   }, {
-    "answer" : "white",
-    "option1" : "blue",
-    "option2" : "green",
-    "option3" : "white",
-    "option4" : "black",
-    "question" : "Rice colour"
+    "answer" : "They are used to perform operations on variables and values.",
+    "option1" : "They multiply two variables together.",
+    "option2" : "They save 100s of lives a day",
+    "option3" : "They are used to perform operations on variables and values.",
+    "option4" : "It returns the remainder from a division.",
+    "question" : "What is an operator?"
+  }, {
+    "answer" : "2",
+    "option1" : "4",
+    "option2" : "14",
+    "option3" : "120",
+    "option4" : "2",
+    "question" : "What is the value of sum?\nint sum = 20%6;"
+  }, {
+    "answer" : "Increases the value of a variable by 1",
+    "option1" : "Increases the value of a variable by 1",
+    "option2" : "Reduces the value of a variable by 1",
+    "option3" : "Increases the value of a variable by a user given amount",
+    "option4" : "Concatenates a 1 to the beginning of a variable",
+    "question" : "What does increment (++) do?"
+  }, {
+    "answer" : "Error",
+    "option1" : "15",
+    "option2" : "50",
+    "option3" : "Error",
+    "option4" : "5",
+    "question" : "What is the result of the follwoing code?\nint x = 10;\nx *= 5"
   } ],
+
   "opRev" : [ null, {
-    "answer" : "op",
-    "option1" : "sam",
-    "option2" : "op",
-    "option3" : "jam",
-    "option4" : "can",
-    "question" : "Some opRev questions"
+    "answer" : "float fish = 19.7;",
+    "option1" : "float fish = 19.7;",
+    "option2" : "int a = 10, b = 20;",
+    "option3" : "char a = 'a';",
+    "option4" : "double dash = 20.0;",
+    "question" : "Which one of the following declarations is NOT correct?"
   }, {
-    "answer" : "white",
-    "option1" : "blue",
-    "option2" : "green",
-    "option3" : "white",
-    "option4" : "black",
-    "question" : "Rice colour"
+    "answer" : "19hats",
+    "option1" : "iceCream",
+    "option2" : "Maynooth",
+    "option3" : "19hats",
+    "option4" : "real_Mouse",
+    "question" : "Which one of the following is NOT a correct variable name?"
+  } , {
+    "answer" : "Error",
+    "option1" : "b",
+    "option2" : "\"99\"",
+    "option3" : "Error",
+    "option4" : "99",
+    "question" : "What does the following program output?\nint b = 99;\nSystem.out.println(\"b\")"
   } ],
+
   "ssQuiz" : [ null, {
-    "answer" : "SSquiz",
-    "option1" : "Sean",
-    "option2" : "SSquiz",
-    "option3" : "Kevin",
-    "option4" : "Raymond",
-    "question" : "SS Quiz?"
+    "answer" : "It allows a program to test several conditions and execute instructions based on their outcome",
+    "option1" : "Its makes your program more efficient and reduces runtime errors.",
+    "option2" : "It allows a program to test several conditions and execute instructions based on your favorite colour M&M",
+    "option3" : "It allows a program to test several conditions and execute instructions based on their outcome",
+    "option4" : "It allows a program to test several conditions and execute instructions based on the number of selection statements",
+    "question" : "What is a Selection Statement?"
   }, {
-    "answer" : "Kildare",
-    "option1" : "Dublin",
-    "option2" : "Cork",
-    "option3" : "Wexford",
-    "option4" : "Kildare",
-    "question" : "Where am I?"
+    "answer" : "2",
+    "option1" : "1",
+    "option2" : "2",
+    "option3" : "3",
+    "option4" : "4",
+    "question" : "How many choices are possible when using a single if-else statement?"
+  }, {
+    "answer" : "11",
+    "option1" : "11",
+    "option2" : "9",
+    "option3" : "Error",
+    "option4" : "10",
+    "question" : "What is the result of the following?\nint a = 10;\nif(a == 10){\n    a++;\n}else{\n    a--;\n}"
+  }, {
+    "answer" : "It allows us to check multiple conditions",
+    "option1" : "It is easier to use than a single if statement",
+    "option2" : "It allows us to check multiple conditions",
+    "option3" : "We can check one condition at a time",
+    "option4" : "7",
+    "question" : "Why do we use an if...else statement?"
+  }, {
+    "answer" : "Equal to (==) is used to compare two values equal to each other. Equal (=) is used for assigning",
+    "option1" : "There is no difference",
+    "option2" : "Equal to (==) is used for assigning. Equal (=) is used to compare two values equal to each other",
+    "option3" : "They allow users to compare and assign values at the same time when used together",
+    "option4" : "equal to (==) is used to compare two values equal to each other. Equal (=) is used for assigning",
+    "question" : "What is the different between equal (=) and equal to (==)?"
   } ],
+
   "ssRev" : [ null, {
-    "answer" : "SSrev",
-    "option1" : "Sean",
-    "option2" : "SSrev",
-    "option3" : "Kevin",
-    "option4" : "Raymond",
-    "question" : "SSrev?"
+    "answer" : "999",
+    "option1" : "1001",
+    "option2" : "-1000",
+    "option3" : "999",
+    "option4" : "1000",
+    "question" : "What is the result of the follwing?\n1000--;"
   }, {
-    "answer" : "Kildare",
-    "option1" : "Dublin",
-    "option2" : "Cork",
-    "option3" : "Wexford",
-    "option4" : "Kildare",
-    "question" : "Where am I?"
+    "answer" : "0.0f",
+    "option1" : "0",
+    "option2" : "0.0",
+    "option3" : "f",
+    "option4" : "0.0f",
+    "question" : "The default value of a static float variable in Java is"
+  }, {
+    "answer" : "triple",
+    "option1" : "double",
+    "option2" : "char",
+    "option3" : "triple",
+    "option4" : "int",
+    "question" : "Which of these are not a Variable?"
+  }, {
+    "answer" : "3",
+    "option1" : "4",
+    "option2" : "3.333",
+    "option3" : "Error",
+    "option4" : "3",
+    "question" : "What is the value of sum?\nint sum = 20/6;"
+  }, {
+    "answer" : "All the above",
+    "option1" : "It may destroy your learning",
+    "option2" : "It will get you in trouble",
+    "option3" : "Plagiarism is unethical",
+    "option4" : "All the above",
+    "question" : "Why is plagiarism bad?"
   } ],
+
   "stringsQuiz" : [ null, {
     "answer" : "stringsQuiz",
     "option1" : "Sean",
@@ -337,6 +445,7 @@
     "option4" : "Kildare",
     "question" : "Where am I?"
   } ],
+
   "stringsRev" : [ null, {
     "answer" : "stringsRev",
     "option1" : "Sean",
@@ -352,6 +461,7 @@
     "option4" : "Kildare",
     "question" : "Where am I?"
   } ],
+
   "varQuestions" : [ null, {
     "answer" : "0",
     "option1" : "0",
@@ -372,23 +482,39 @@
     "option2" : "I am 20years old",
     "option3" : "Error",
     "option4" : "I am 20 years old",
-    "question" : "What is the output of the following code?\nint a = 20, b = 99;\nSystem.out.println(\"I am \" + a + \"years old\")"
-  } ],
-  "varRev" : [ null, {
-    "answer" : "Alan",
-    "option1" : "Sean",
-    "option2" : "Alan",
-    "option3" : "Kevin",
-    "option4" : "Raymond",
-    "question" : "What is the name?"
+    "question" : "What is the output of the following code?\nint a = 20, b = 99;\nSystem.out.println(\"I am \" + a + \"years old\");"
   }, {
-    "answer" : "Kildare",
-    "option1" : "Dublin",
-    "option2" : "Cork",
-    "option3" : "Wexford",
-    "option4" : "Kildare",
-    "question" : "Where are the?"
+    "answer" : "a = 9;",
+    "option1" : "int a = 5;",
+    "option2" : "int a;",
+    "option3" : "int a, b;",
+    "option4" : "a = 9;",
+    "question" : "Which of these is NOT a correct way to declare a variable?"
+  }, {
+    "answer" : "It is used to store a value or data type",
+    "option1" : "It is used to solve computer problems",
+    "option2" : "A type of cryptocurrency",
+    "option3" : "It is used to store numbers.",
+    "option4" : "It is used to store a value or data type",
+    "question" : "What is a Variable?"
   } ],
+
+  "varRev" : [ null, {
+    "answer" : "System.out.print",
+    "option1" : "System.out.println",
+    "option2" : "System.out.print",
+    "option3" : "system.out.print",
+    "option4" : "System.out.println",
+    "question" : "On order to print and not go to a new line we do.."
+  }, {
+    "answer" : ";",
+    "option1" : ";",
+    "option2" : ".",
+    "option3" : "Nothing",
+    "option4" : ":",
+    "question" : "Whast must we out at the end of every statement in Java?"
+  } ],
+
   "wipQuestions" : [ null, {
     "answer" : "A detailed step of instructions",
     "option1" : "A detailed step of instructions",
@@ -409,6 +535,6 @@
     "option2" : "No",
     "option3" : "Only on bank holidays",
     "option4" : "What is code?",
-    "question" : "Should you copy someone else's code?"
+    "question" : "Should you copy someone else's code for assignments?"
   } ]
 }
