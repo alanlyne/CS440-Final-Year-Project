@@ -59,7 +59,7 @@ public class wipQuiz extends AppCompatActivity {
 
     private void updateQuestion() {
         computerCount++;
-        if (computerCount > 2) {
+        if (computerCount > 3) {
             Toast.makeText(getApplicationContext(),"Game Over",Toast.LENGTH_SHORT).show();
             Intent myIntent = new Intent(wipQuiz.this,ResultActivity.class);
             myIntent.putExtra("total",String.valueOf(total));
