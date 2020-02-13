@@ -53,7 +53,7 @@ public class inputQuiz extends AppCompatActivity {
 
     private void updateQuestion() {
         computerCount++;
-        if (computerCount > 2) {
+        if (computerCount > 5) {
             Toast.makeText(getApplicationContext(), "Game Over", Toast.LENGTH_SHORT).show();
             Intent myIntent = new Intent(inputQuiz.this, inputQuizResult.class);
             myIntent.putExtra("total", String.valueOf(total));

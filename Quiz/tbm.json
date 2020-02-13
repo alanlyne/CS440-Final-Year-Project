@@ -32,67 +32,151 @@
   } ],
 
   "arrayQuiz" : [ null, {
-    "answer" : "arrayQuiz",
-    "option1" : "Sean",
-    "option2" : "arrayQuiz",
-    "option3" : "Kevin",
-    "option4" : "Raymond",
-    "question" : "arrayQuiz?"
+    "answer" : "6",
+    "option1" : "9",
+    "option2" : "12",
+    "option3" : "6",
+    "option4" : "8",
+    "question" : "What is the value at position 4 in the array?\n{9, 4, 12, 2, 6, 8, 18}"
   }, {
-    "answer" : "Kildare",
-    "option1" : "Dublin",
-    "option2" : "Cork",
-    "option3" : "Wexford",
-    "option4" : "Kildare",
-    "question" : "Where am I?"
-  } ],
+    "answer" : "7",
+    "option1" : "0",
+    "option2" : "5",
+    "option3" : "6",
+    "option4" : "7",
+    "question" : "What is the length of the array?\n{9, 4, 12, 2, 6, 8, 18}"
+  }, {
+    "answer" : "String[] months = new String[12];",
+    "option1" : "String[] months = new String[12];",
+    "option2" : "String months = new String[12];",
+    "option3" : "String[] months = new String[];",
+    "option4" : "String[12] months = new String[];",
+    "question" : "How do we create an array of 12 strings called months?"
+  }, {
+    "answer" : "It is a container that holds a constant fixed number of same value types",
+    "option1" : "It is a container that holds a constant fixed number of different value types",
+    "option2" : "It is a container that holds a constant fixed number of same value types",
+    "option3" : "It is a container that holds a number of same value types",
+    "option4" : "It is a container that holds a constant fixed number of same similar value types",
+    "question" : "What is an array?"
+  }, {
+    "answer" : "2345",
+    "option1" : "12345",
+    "option2" : "1234",
+    "option3" : "01234",
+    "option4" : "2345",
+    "question" : "What is the result of the following?\nint myArray[] = {1, 2, 3, 4, 5};\nfor(int i = 1; i < myArray.length; i++){\n    System.out.print(myArray[i]);\n}"
+  }],
 
   "arrayRev" : [ null, {
-    "answer" : "arrayRev",
-    "option1" : "Sean",
-    "option2" : "arrayRev",
-    "option3" : "Kevin",
-    "option4" : "Raymond",
-    "question" : "arrayRev?"
+    "answer" : "0.0",
+    "option1" : "0",
+    "option2" : "0.0",
+    "option3" : "null",
+    "option4" : "1.0",
+    "question" : "What is the default value of a double?"
   }, {
-    "answer" : "Kildare",
-    "option1" : "Dublin",
-    "option2" : "Cork",
-    "option3" : "Wexford",
-    "option4" : "Kildare",
-    "question" : "Where am I?"
+    "answer" : "ooth University",
+    "option1" : "nooth University",
+    "option2" : "Maynooth University",
+    "option3" : "oth University",
+    "option4" : "ooth University",
+    "question" : "What is the result of the following?\nString s1 = new String(\"Maynooth University\");\ns1.substring(4);"
+  }, {
+    "answer" : "11",
+    "option1" : "11",
+    "option2" : "9",
+    "option3" : "Error",
+    "option4" : "10",
+    "question" : "What is the result of the following?\nint a = 10;\nif(a == 10){\n    a++;\n}else{\n    a--;\n}"
+  }, {
+    "answer" : "False",
+    "option1" : "True",
+    "option2" : "Error",
+    "option3" : "False",
+    "option4" : "None of the above",
+    "question" : "What is the result of the following?\nint a=30;\nif(a == 40){\n    System.out.println(\"True\");\n}else{\n    System.out.println(\"False\");\n}"
+  }, {
+    "answer" : "True",
+    "option1" : "True",
+    "option2" : "False",
+    "option3" : "Error",
+    "option4" : "None of the above",
+    "question" : "What is the result of the follwoing?\nString s1 = new String(\"Maynooth\");\nString s1 = new String(\"maynooth\");\ns1.equalsignoresCase(s2);"
   } ],
 
   "booQuiz" : [ null, {
-    "answer" : "booQuiz",
-    "option1" : "Sean",
-    "option2" : "booQuiz",
-    "option3" : "Kevin",
-    "option4" : "Raymond",
-    "question" : "booQuiz?"
+    "answer" : "true",
+    "option1" : "true",
+    "option2" : "false",
+    "option3" : "Error",
+    "option4" : "None of the above",
+    "question" : "What is the output of the following?\nint a = 14; b= 4;\nboolean x = (a>b)?true:false;"
   }, {
-    "answer" : "Kildare",
-    "option1" : "Dublin",
-    "option2" : "Cork",
-    "option3" : "Wexford",
-    "option4" : "Kildare",
-    "question" : "Where am I?"
+    "answer" : "It is used to produce a true or false value",
+    "option1" : "It is used to produce a false value",
+    "option2" : "It is used to produce a true value",
+    "option3" : "It is used to produce a true or false value",
+    "option4" : "None of the above",
+    "question" : "What are boolean expressions?"
+  }, {
+    "answer" : "None of the above",
+    "option1" : "False",
+    "option2" : "Error",
+    "option3" : "true",
+    "option4" : "None of the above",
+    "question" : "What is the result of the following?\nint a=0,b=5,c=10,d=15;\nif(d>a)&&(a<b){\n    System.out.println(\"True\");\n}else{\n    System.out.println(\"False\");\n}"
+  }, {
+    "answer" : "True",
+    "option1" : "False",
+    "option2" : "True",
+    "option3" : "Error",
+    "option4" : "None of the above",
+    "question" : "What is the result of the following?\nint a=0,b=5,c=10,d=15;\nif(d>a)||(a>b){\n    System.out.println(\"True\");\n}else{\n    System.out.println(\"False\");\n}"
+  }, {
+    "answer" : "True",
+    "option1" : "True",
+    "option2" : "Error",
+    "option3" : "False",
+    "option4" : "None of the above",
+    "question" : "What is the result of the following?\nint a=30;\nif(a != 40){\n    System.out.println(\"True\");\n}else{\n    System.out.println(\"False\");\n}"
   } ],
   
   "booRev" : [ null, {
-    "answer" : "booRev",
-    "option1" : "Sean",
-    "option2" : "booRev",
-    "option3" : "Kevin",
-    "option4" : "Raymond",
-    "question" : "booRev?"
+    "answer" : "true",
+    "option1" : "0",
+    "option2" : "true",
+    "option3" : "false",
+    "option4" : "-3",
+    "question" : "Which is the result of the following?\nString s1 = new String(\"abc\");\nString s2 = new String(\"def\");\nSystem.out.println(s1.equals(s2));"
   }, {
-    "answer" : "Kildare",
-    "option1" : "Dublin",
-    "option2" : "Cork",
-    "option3" : "Wexford",
-    "option4" : "Kildare",
-    "question" : "Where am I?"
+    "answer" : "\"0\"",
+    "option1" : "0",
+    "option2" : "\"0\"",
+    "option3" : "Zero",
+    "option4" : "Error",
+    "question" : "What is the result of the follwoing?\nint a = 0;\nnew String s1 = Integer.toString(a);"
+  }, {
+    "answer" : "Nothing",
+    "option1" : "1 2 3 4",
+    "option2" : "0 1 2 3 4 5",
+    "option3" : "Nothing",
+    "option4" : "0 1 2 3 4",
+    "question" : "What is the result of the following?\nfor(int i = 0; i > 5; i++){\n    System.out.println(i);\n}"
+  }, {
+    "answer" : "\"b\" becomes 1",
+    "option1" : "\"b\" becomes 1",
+    "option2" : "Nothing, \"b\" stays as 5",
+    "option3" : "\"b\" defaults to 0",
+    "option4" : "Error",
+    "question" : "What happens to \"b\" following this operation.\nint a = 1, b = 5;\nb=a;"
+  }, {
+    "answer" : "double a = 50;",
+    "option1" : "double a = 5.0;",
+    "option2" : "double a;",
+    "option3" : "double a = 50;",
+    "option4" : "double a = 19200158.415421;",
+    "question" : "Which of these is NOT a correct way to declare a variable?"
   } ],
 
   "counter" : {
@@ -180,35 +264,77 @@
   },
 
   "inputQuiz" : [ null, {
-    "answer" : "inputQuiz",
-    "option1" : "Sean",
-    "option2" : "inputQuiz",
-    "option3" : "Kevin",
-    "option4" : "Raymond",
-    "question" : "inputQuiz?"
+    "answer" : "import java.util.Scanner;",
+    "option1" : "import java.util.Scanner;",
+    "option2" : "import java.util.input;",
+    "option3" : "import java.util.scanner;",
+    "option4" : "import java.util.Input;",
+    "question" : "Which of these is the correct way to get the Scanner class?"
   }, {
-    "answer" : "Kildare",
-    "option1" : "Dublin",
-    "option2" : "Cork",
-    "option3" : "Wexford",
-    "option4" : "Kildare",
-    "question" : "Where am I?"
+    "answer" : "Scanner sc = new Scanner(System.in);",
+    "option1" : "Scanner sc = new Scanner(Input.in);",
+    "option2" : "Scanner sc =  Scanner(system.in);",
+    "option3" : "Scanner sc = new Scanner(System.in);",
+    "option4" : "Scanner sc = Scanner(System.in);",
+    "question" : "How do we create a Scanner instance in our program?"
+  }, {
+    "answer" : ".nextChar()",
+    "option1" : ".nextInt()",
+    "option2" : ".nextChar()",
+    "option3" : ".nextFloat()",
+    "option4" : ".nextDouble()",
+    "question" : "Which of these is NOT an input method?"
+  }, {
+    "answer" : ".hasNextString()",
+    "option1" : ".hasNextLine()",
+    "option2" : ".hasNextFloat()",
+    "option3" : ".hasNextInt()",
+    "option4" : ".hasNextString()",
+    "question" : "Which of these is NOT a boolean input method?"
+  }, {
+    "answer" : "42.0",
+    "option1" : "s1",
+    "option2" : "42.0",
+    "option3" : "42",
+    "option4" : "\"42\"",
+    "question" : "What is the result of the follwoing?\nString s1 = new String(\"42\");\ndouble a = Double.parseDouble(s1);"
   } ],
 
   "inputRev" : [ null, {
-    "answer" : "inputRev",
-    "option1" : "Sean",
-    "option2" : "inputRev",
-    "option3" : "Kevin",
-    "option4" : "Raymond",
-    "question" : "inputRev?"
+    "answer" : "2147483647",
+    "option1" : "74812",
+    "option2" : "2571398",
+    "option3" : "2147483647",
+    "option4" : "There is no max",
+    "question" : "What is the max size of an int?"
   }, {
-    "answer" : "Kildare",
-    "option1" : "Dublin",
-    "option2" : "Cork",
-    "option3" : "Wexford",
-    "option4" : "Kildare",
-    "question" : "Where am I?"
+    "answer" : "0 1 2 3 4",
+    "option1" : "1 2 3 4",
+    "option2" : "0 1 2 3 4 5",
+    "option3" : "jjjjj",
+    "option4" : "0 1 2 3 4",
+    "question" : "What type of result of the following?\nfor(int i = 0; i < 5; i++){\n    System.out.println(i + \" \");\n}\nSystem.out.println( );"
+  }, {
+    "answer" : "2",
+    "option1" : "4",
+    "option2" : "14",
+    "option3" : "120",
+    "option4" : "2",
+    "question" : "What is the value of sum?\nint sum = 20%6;"
+  }, {
+    "answer" : "Error",
+    "option1" : "On",
+    "option2" : "Off",
+    "option3" : "Error",
+    "option4" : "\"Off\"",
+    "question" : "What is the output of the follwing\nString state = \"on\";\nif(state = \"on\"){\n    System.out.println(\"On\");\n}else{\n    System.out.println(\"Off\");\n}"
+  }, {
+    "answer" : "0",
+    "option1" : "0",
+    "option2" : "true",
+    "option3" : "false",
+    "option4" : "-3",
+    "question" : "Which is the result of the following?\nString s1 = new String(\"abc\");\nString s2 = new String(\"abc\");\nSystem.out.println(s1.compareTo(s2));"
   } ],
 
   "iterationQuiz" : [ null, {
@@ -236,12 +362,12 @@
     "answer" : "0 1 2 3 4",
     "option1" : "1 2 3 4",
     "option2" : "0 1 2 3 4 5",
-    "option3" : "jjjjj",
+    "option3" : "iiiii",
     "option4" : "0 1 2 3 4",
-    "question" : "What type of result of the following?\nfor(int i = 0; i < 5; i++){\n    System.out.println(i + \" \");\n}\nSystem.out.println( );"
+    "question" : "What is the result of the following?\nfor(int i = 0; i < 5; i++){\n    System.out.println(i + \" \");\n}\nSystem.out.println( );"
   }, {
     "answer" : "5 4 3 2 1 0 -1 -2 -3 -4",
-    "option1" : " -5 -4 -3 -2 -1 0",
+    "option1" : "-5 -4 -3 -2 -1 0",
     "option2" : "5 4 3 2 1 0",
     "option3" : "5 4 3 2 1 0 -1 -2 -3 -4",
     "option4" : "5 4 3 2 1 0 -1 -2 -3 -4 -5",
@@ -286,35 +412,77 @@
   } ],
 
   "nloopQuiz" : [ null, {
-    "answer" : "nloopQuiz",
-    "option1" : "Sean",
-    "option2" : "nloopQuiz",
-    "option3" : "Kevin",
-    "option4" : "Raymond",
-    "question" : "nloopQuiz?"
+    "answer" : "False",
+    "option1" : "True",
+    "option2" : "False",
+    "option3" : "Maybe",
+    "option4" : "The meaning of life",
+    "question" : "In nested loops the outer loop must be terminated before the inner loop"
   }, {
-    "answer" : "Kildare",
-    "option1" : "Dublin",
-    "option2" : "Cork",
-    "option3" : "Wexford",
-    "option4" : "Kildare",
-    "question" : "Where am I?"
+    "answer" : "A loop within a loop",
+    "option1" : "A while loop withen a for loop",
+    "option2" : "A loop on its own",
+    "option3" : "A loop followed by another loop",
+    "option4" : "A loop within a loop",
+    "question" : "What is a nested loop?"
+  }, {
+    "answer" : "00001111",
+    "option1" : "00001111",
+    "option2" : "01",
+    "option3" : "0101010101",
+    "option4" : "0001111",
+    "question" : "What is the result of the following?\nfor(int i = 0; i < 2; i++){\n    for(int j = 0; j <= 3; j++){\n        System.out.println(i);\n    }\n}"
+  }, {
+    "answer" : "6",
+    "option1" : "3",
+    "option2" : "6",
+    "option3" : "1",
+    "option4" : "9",
+    "question" : "How many times does the nested loop run?\nfor(int i = 1; i <= 3; i++){\n    for(int j = 1; j <= i; j++){\n    }\n}"
+  }, {
+    "answer" : "One fewer time than the main loop",
+    "option1" : "Forever",
+    "option2" : "One fewer time than the main loop",
+    "option3" : "Each time the main loop is run",
+    "option4" : "One more time than the main loop",
+    "question" : "How often is the inner loop of a nested loop run?"
   } ],
 
   "nloopRev" : [ null, {
-    "answer" : "nloopRev",
-    "option1" : "Sean",
-    "option2" : "nloopRev",
-    "option3" : "Kevin",
-    "option4" : "Raymond",
-    "question" : "nloopRev?"
+    "answer" : "String s = new String \"The Bare Minimum\";",
+    "option1" : "String s = new String(\"The Bare Minimum\");",
+    "option2" : "String s = new String \"The Bare Minimum\";",
+    "option3" : "String s = \"The Bare Minimum\";",
+    "option4" : "String s; s = \"The Bare Minimum\";",
+    "question" : "Which of these is NOT how you initialize a String?"
   }, {
-    "answer" : "Kildare",
-    "option1" : "Dublin",
-    "option2" : "Cork",
-    "option3" : "Wexford",
-    "option4" : "Kildare",
-    "question" : "Where am I?"
+    "answer" : "String[] Cars = new String[5];",
+    "option1" : "String[] Cars = new String[5];",
+    "option2" : "String Cars = new String[5];",
+    "option3" : "String[] Cars = new String[];",
+    "option4" : "String[5] Cars = new String[];",
+    "question" : "How do we create an array of 5 strings called Cars?"
+  }, {
+    "answer" : ".nextChar()",
+    "option1" : ".nextInt()",
+    "option2" : ".nextChar()",
+    "option3" : ".nextFloat()",
+    "option4" : ".nextDouble()",
+    "question" : "Which of these is NOT an input method?"
+  }, {
+    "answer" : "true",
+    "option1" : "true",
+    "option2" : "false",
+    "option3" : "Error",
+    "option4" : "None of the above",
+    "question" : "What is the output of the following?\nint a = 14; b= 4;\nboolean x = (a>b)?true:false;"
+  }, {
+    "answer" : "5 4 3 2 1 0 -1 -2 -3 -4 -5",
+    "option1" : "-5 -4 -3 -2 -1 0",
+    "option2" : "5 4 3 2 1 0",
+    "option3" : "5 4 3 2 1 0 -1 -2 -3 -4",
+    "option4" : "5 4 3 2 1 0 -1 -2 -3 -4 -5",
+    "question" : "What type of result of the following?\nfor(int i = 5; i >= -5; i--){\n    System.out.println(j + \" \");\n}\nSystem.out.println( );"
   } ],
 
   "opQuiz" : [ null, {
@@ -452,19 +620,40 @@
   } ],
 
   "stringsQuiz" : [ null, {
-    "answer" : "stringsQuiz",
-    "option1" : "Sean",
-    "option2" : "stringsQuiz",
-    "option3" : "Kevin",
-    "option4" : "Raymond",
-    "question" : "stringsQuiz?"
+    "answer" : ".length()",
+    "option1" : ".length",
+    "option2" : ".size()",
+    "option3" : ".length()",
+    "option4" : ".Lenth()",
+    "question" : "How do we find the length of a String?"
   }, {
-    "answer" : "Kildare",
-    "option1" : "Dublin",
-    "option2" : "Cork",
-    "option3" : "Wexford",
-    "option4" : "Kildare",
-    "question" : "Where am I?"
+    "answer" : "String s = new String \"Hello, World\";",
+    "option1" : "String s = new String(\"Hello, World\");",
+    "option2" : "String s = new String \"Hello, World\";",
+    "option3" : "String s = \"Hello, World\";",
+    "option4" : "String s; s = \"Hello World\";",
+    "question" : "Which of these is NOT how you initialize a String?"
+  }, {
+    "answer" : ".subString()",
+    "option1" : ".toUpperCase()",
+    "option2" : ".charAt()",
+    "option3" : ".subString()",
+    "option4" : ".indexOf()",
+    "question" : "Which of these is NOT a valid String method?"
+  }, {
+    "answer" : "Hell#, W#rld",
+    "option1" : "Hell#, World",
+    "option2" : "Hell#, W#rld",
+    "option3" : "Hello, W#rld",
+    "option4" : "Hello, World",
+    "question" : "Which is the result of the following?\nString s1 = new String(\"Hello, World\");\nString s2 = s1.replace('o','#');\nSystem.out.print(s2);"
+  }, {
+    "answer" : "-3",
+    "option1" : "0",
+    "option2" : "true",
+    "option3" : "false",
+    "option4" : "-3",
+    "question" : "Which is the result of the following?\nString s1 = new String(\"abc\");\nString s2 = new String(\"def\");\nSystem.out.println(s1.compareTo(s2));"
   } ],
 
   "stringsRev" : [ null, {
@@ -505,12 +694,12 @@
   } ],
 
   "varQuestions" : [ null, {
-    "answer" : "0",
-    "option1" : "0",
-    "option2" : "1",
-    "option3" : "-1",
-    "option4" : "Null",
-    "question" : "What is the output of the following?\nString s = \"My String\";\nSystem.out.println(s.charAt(s.toUpperCase().length()));"
+    "answer" : "32",
+    "option1" : "4",
+    "option2" : "8",
+    "option3" : "16",
+    "option4" : "32",
+    "question" : "How much space in memory (in bits) does an int occupy?"
   }, {
     "answer" : "String",
     "option1" : "char",

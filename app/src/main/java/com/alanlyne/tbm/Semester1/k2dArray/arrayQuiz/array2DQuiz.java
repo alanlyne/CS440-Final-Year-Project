@@ -54,7 +54,7 @@ public class array2DQuiz extends AppCompatActivity {
 
     private void updateQuestion() {
         computerCount++;
-        if (computerCount > 2) {
+        if (computerCount > 5) {
             Toast.makeText(getApplicationContext(), "Game Over", Toast.LENGTH_SHORT).show();
             Intent myIntent = new Intent(array2DQuiz.this, array2DQuizResult.class);
             myIntent.putExtra("total", String.valueOf(total));

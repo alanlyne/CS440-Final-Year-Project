@@ -119,7 +119,7 @@
             android:background="@drawable/edit_round"
             android:gravity="left"
             android:padding="10dp"
-            android:text="int a = 0;\nString s1 = new String(Integer.toString(a));\n\ndouble b = 0.0;\nString s2 = new String(Integer.toDouble(b));\n\nfloat c = 0.0f;\nString s3 = new String(Integer.toString(c));\n\nlong d = 0;\nString s4 = new String(Long.toString(d));\n\nshort e = 0;\nString s1 = new String(Short.toString(e));"
+            android:text="int a = 0;\nString s1 = new String(Integer.toString(a));\n\ndouble b = 0.0;\nString s2 = new String(Integer.toString(b));\n\nfloat c = 0.0f;\nString s3 = new String(Integer.toString(c));\n\nlong d = 0;\nString s4 = new String(Long.toString(d));\n\nshort e = 0;\nString s1 = new String(Short.toString(e));"
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
             android:textSize="15sp"
