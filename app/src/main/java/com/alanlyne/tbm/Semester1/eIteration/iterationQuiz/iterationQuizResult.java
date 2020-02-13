@@ -42,10 +42,10 @@ public class iterationQuizResult extends AppCompatActivity {
 
         setValues();
 
-//        if(Menu.counter == 28) {
+        if(Menu.counter < 50) {
         System.out.println("FUCKKKKKKKKKKKKKKKKKKKKK");
         addCounter();
-        //}
+        }
 
         backToMenu.setOnClickListener(new View.OnClickListener() {
             @Override

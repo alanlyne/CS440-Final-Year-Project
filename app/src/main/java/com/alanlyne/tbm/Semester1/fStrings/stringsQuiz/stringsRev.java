@@ -54,7 +54,7 @@ public class stringsRev extends AppCompatActivity {
 
     private void updateQuestion() {
         computerCount++;
-        if (computerCount > 2) {
+        if (computerCount > 5) {
             Toast.makeText(getApplicationContext(), "Game Over", Toast.LENGTH_SHORT).show();
             Intent myIntent = new Intent(stringsRev.this, stringsRevResult.class);
             myIntent.putExtra("total", String.valueOf(total));

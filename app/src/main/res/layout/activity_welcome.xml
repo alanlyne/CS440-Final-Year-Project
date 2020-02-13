@@ -60,7 +60,7 @@
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Holy fuck, that actually worked!\n NOW LETS GET OUT OF HERE!!!\nYou know what to do."
+            android:text="Stuff will eventually go here."
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
             android:visibility="invisible"

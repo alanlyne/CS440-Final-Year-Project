@@ -212,19 +212,40 @@
   } ],
 
   "iterationQuiz" : [ null, {
-    "answer" : "iterationQuiz",
-    "option1" : "Sean",
-    "option2" : "iterationQuiz",
-    "option3" : "Kevin",
-    "option4" : "Raymond",
-    "question" : "iterationQuiz?"
+    "answer" : "while loop, for loop, do...while loop",
+    "option1" : "count up loop, count down loop, infinite loop",
+    "option2" : "infinite loop, counting loop, nested loop",
+    "option3" : "while loop, for loop, do...while loop",
+    "option4" : "counting loop,  sentinel-controlled loop,  and result-controlled loop",
+    "question" : "What are the three general types of looping structures?"
   }, {
-    "answer" : "Kildare",
-    "option1" : "Dublin",
-    "option2" : "Cork",
-    "option3" : "Wexford",
-    "option4" : "Kildare",
-    "question" : "Where am I?"
+    "answer" : "Iteration allows a program to repeat a section of code",
+    "option1" : "Iteration allows a program to run away from it's problems",
+    "option2" : "Iteration allows a program to execute a section of code based on a condition",
+    "option3" : "Iteration assings a value to a variable",
+    "option4" : "Iteration allows a program to repeat a section of code",
+    "question" : "What is Iteration?"
+  }, {
+    "answer" : "do...while",
+    "option1" : "do...while",
+    "option2" : "while",
+    "option3" : "if...else",
+    "option4" : "for",
+    "question" : "What type of loop is this?\ndo{\n    statement;\n    update;\n}while(condition);"
+  }, {
+    "answer" : "0 1 2 3 4",
+    "option1" : "1 2 3 4",
+    "option2" : "0 1 2 3 4 5",
+    "option3" : "jjjjj",
+    "option4" : "0 1 2 3 4",
+    "question" : "What type of result of the following?\nfor(int i = 0; i < 5; i++){\n    System.out.println(i + \" \");\n}\nSystem.out.println( );"
+  }, {
+    "answer" : "5 4 3 2 1 0 -1 -2 -3 -4",
+    "option1" : " -5 -4 -3 -2 -1 0",
+    "option2" : "5 4 3 2 1 0",
+    "option3" : "5 4 3 2 1 0 -1 -2 -3 -4",
+    "option4" : "5 4 3 2 1 0 -1 -2 -3 -4 -5",
+    "question" : "What type of result of the following?\nfor(int i = 5; i > -5; i--){\n    System.out.println(j + \" \");\n}\nSystem.out.println( );"
   } ],
 
   "iterationRev" : [ null, {
@@ -447,19 +468,40 @@
   } ],
 
   "stringsRev" : [ null, {
-    "answer" : "stringsRev",
-    "option1" : "Sean",
-    "option2" : "stringsRev",
-    "option3" : "Kevin",
-    "option4" : "Raymond",
-    "question" : "stringsRev?"
+    "answer" : "123",
+    "option1" : "123",
+    "option2" : "0123",
+    "option3" : "012",
+    "option4" : "12",
+    "question" : "What is the output of the following?\nint p = 0;\nwhile(p < 3){\n    p++;\n    System.out.print(p);\n}"
   }, {
-    "answer" : "Kildare",
-    "option1" : "Dublin",
-    "option2" : "Cork",
-    "option3" : "Wexford",
-    "option4" : "Kildare",
-    "question" : "Where am I?"
+    "answer" : "Block",
+    "option1" : "Branch",
+    "option2" : "Brick",
+    "option3" : "Blob",
+    "option4" : "Block",
+    "question" : "A sequence of statements contained within a pair of braces (\"{\" and \"}\") is called a?"
+  }, {
+    "answer" : "++",
+    "option1" : "-",
+    "option2" : "++",
+    "option3" : "--",
+    "option4" : "+",
+    "question" : "__________ operator increases the value of the operand by 1."
+  }, {
+    "answer" : "7",
+    "option1" : "9",
+    "option2" : "8",
+    "option3" : "10",
+    "option4" : "7",
+    "question" : "What is the value of the following expression?\n(2 - 6) / 2 + 9"
+  }, {
+    "answer" : "1 3 5 7 9",
+    "option1" : "1 3 5 7 9",
+    "option2" : "1 2 3 4 5 6 7 8 9",
+    "option3" : "1 2 3 4 5 6 7 8 9 10",
+    "option4" : "13579",
+    "question" : "What is the output of the following?\nfor(int i = 1; i <= 10; i++){\n    System.out.println(i + \" \");\n    i++;\n}"
   } ],
 
   "varQuestions" : [ null, {
@@ -468,7 +510,7 @@
     "option2" : "1",
     "option3" : "-1",
     "option4" : "Null",
-    "question" : "The default value of a static integer variable in Java is"
+    "question" : "What is the output of the following?\nString s = \"My String\";\nSystem.out.println(s.charAt(s.toUpperCase().length()));"
   }, {
     "answer" : "String",
     "option1" : "char",
