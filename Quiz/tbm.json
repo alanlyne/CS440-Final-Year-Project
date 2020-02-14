@@ -1,18 +1,39 @@
 {
   "array2DQuiz" : [ null, {
-    "answer" : "array2DQuiz",
-    "option1" : "Sean",
-    "option2" : "array2DQuiz",
-    "option3" : "Kevin",
-    "option4" : "Raymond",
-    "question" : "array2DQuiz?"
+    "answer" : "7.9",
+    "option1" : "7.3",
+    "option2" : "9.2",
+    "option3" : "7.9",
+    "option4" : "None of the above",
+    "question" : "What is in values[2][1]?\ndouble[][] my2DArray = {{1.2, 9.0, 3.2},{9.2, 0.5, 1.5, -1.2},{7.3, 7.9, 4.8}};"
   }, {
-    "answer" : "Kildare",
-    "option1" : "Dublin",
-    "option2" : "Cork",
-    "option3" : "Wexford",
-    "option4" : "Kildare",
-    "question" : "Where am I?"
+    "answer" : "my2DArray = new Double[5][7];",
+    "option1" : "my2DArray = new stuff[5][7];",
+    "option2" : "my2DArray = new Double[5][7];",
+    "option3" : "my2DArray = double[5][7];",
+    "option4" : "my2DArray = double[7][5];",
+    "question" : "Given, double[][] my2DArray;\nHow to we construct an array with 5 rows and 7 columns?"
+  }, {
+    "answer" : "int[][] array = new int[7][];",
+    "option1" : "int[][] array = new int[7][];",
+    "option2" : "int[][] array = new int[7];",
+    "option3" : "int[][] array = new int[][7];",
+    "option4" : "int[] array[7] = new int[];",
+    "question" : "How do we construct a 2D array with 7 rows but no columns"
+  }, {
+    "answer" : "2D Arrays are used to create data in two dimensions",
+    "option1" : "2D Arrays are used to create data in three dimensions",
+    "option2" : "2D Arrays are used to create two arrays at once",
+    "option3" : "2D Arrays are used to create an array with only two elements",
+    "option4" : "2D Arrays are used to create data in two dimensions",
+    "question" : "What are 2D Arrays?"
+  }, {
+    "answer" : "9.0",
+    "option1" : "1.2",
+    "option2" : "9.2",
+    "option3" : "0.5",
+    "option4" : "None of the above",
+    "question" : "What is in values[0][1]?\ndouble[][] my2DArray = {{1.2, 9.0, 3.2},{9.2, 0.5, 1.5, -1.2},{7.3, 7.9, 4.8}};"
   } ],
 
   "array2DRev" : [ null, {
@@ -23,12 +44,33 @@
     "option4" : "Raymond",
     "question" : "array2DRev?"
   }, {
-    "answer" : "Kildare",
-    "option1" : "Dublin",
-    "option2" : "Cork",
-    "option3" : "Wexford",
-    "option4" : "Kildare",
-    "question" : "Where am I?"
+    "answer" : "One more time than the inner loop",
+    "option1" : "Forever",
+    "option2" : "One fewer time than the inner loop",
+    "option3" : "Each time the inner loop is run",
+    "option4" : "One more time than the inner loop",
+    "question" : "How often is the outer loop of a nested loop run?"
+  }, {
+    "answer" : "5",
+    "option1" : "0",
+    "option2" : "5",
+    "option3" : "6",
+    "option4" : "4",
+    "question" : "What is the length of the array?\n{59, 1, 67, 472, 982}"
+  }, {
+    "answer" : "True",
+    "option1" : "False",
+    "option2" : "Error",
+    "option3" : "True",
+    "option4" : "None of the above",
+    "question" : "What is the result of the following?\nint a=110,b=25,c=310,d=415;\nif(d>a)&&(a<b){\n    System.out.println(\"True\");\n}else{\n    System.out.println(\"False\");\n}"
+  }, {
+    "answer" : "None of the above",
+    "option1" : "s1",
+    "option2" : "42.0",
+    "option3" : "42",
+    "option4" : "None of the above",
+    "question" : "What is the result of the follwoing?\nString s1 = new String(\"42\");\ndouble a = Integer.parseDouble(s1);"
   } ],
 
   "arrayQuiz" : [ null, {
