@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.alanlyne.tbm.Menu.Menu;
 import com.alanlyne.tbm.Menu.menuCounter;
@@ -84,6 +85,7 @@ public class wipL1 extends AppCompatActivity{
                         @Override
                         public void onClick(View v) {
                             if(i1.getVisibility() == View.VISIBLE){
+                                Toast.makeText(wipL1.this, "Hold the screen to return", Toast.LENGTH_SHORT).show();
                                 Intent img = new Intent(wipL1.this, lc.class);
                                 startActivity(img);
                             }

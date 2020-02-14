@@ -35,14 +35,13 @@
     "option4" : "None of the above",
     "question" : "What is in values[0][1]?\ndouble[][] my2DArray = {{1.2, 9.0, 3.2},{9.2, 0.5, 1.5, -1.2},{7.3, 7.9, 4.8}};"
   } ],
-
   "array2DRev" : [ null, {
-    "answer" : "array2DRev",
-    "option1" : "Sean",
-    "option2" : "array2DRev",
-    "option3" : "Kevin",
-    "option4" : "Raymond",
-    "question" : "array2DRev?"
+    "answer" : "while loop, for loop, do...while loop",
+    "option1" : "count up loop, count down loop, infinite loop",
+    "option2" : "infinite loop, counting loop, nested loop",
+    "option3" : "while loop, for loop, do...while loop",
+    "option4" : "counting loop,  sentinel-controlled loop,  and result-controlled loop",
+    "question" : "What are the three general types of looping structures?"
   }, {
     "answer" : "One more time than the inner loop",
     "option1" : "Forever",
@@ -72,7 +71,6 @@
     "option4" : "None of the above",
     "question" : "What is the result of the follwoing?\nString s1 = new String(\"42\");\ndouble a = Integer.parseDouble(s1);"
   } ],
-
   "arrayQuiz" : [ null, {
     "answer" : "6",
     "option1" : "9",
@@ -108,8 +106,7 @@
     "option3" : "01234",
     "option4" : "2345",
     "question" : "What is the result of the following?\nint myArray[] = {1, 2, 3, 4, 5};\nfor(int i = 1; i < myArray.length; i++){\n    System.out.print(myArray[i]);\n}"
-  }],
-
+  } ],
   "arrayRev" : [ null, {
     "answer" : "0.0",
     "option1" : "0",
@@ -146,7 +143,6 @@
     "option4" : "None of the above",
     "question" : "What is the result of the follwoing?\nString s1 = new String(\"Maynooth\");\nString s1 = new String(\"maynooth\");\ns1.equalsignoresCase(s2);"
   } ],
-
   "booQuiz" : [ null, {
     "answer" : "true",
     "option1" : "true",
@@ -183,7 +179,6 @@
     "option4" : "None of the above",
     "question" : "What is the result of the following?\nint a=30;\nif(a != 40){\n    System.out.println(\"True\");\n}else{\n    System.out.println(\"False\");\n}"
   } ],
-  
   "booRev" : [ null, {
     "answer" : "true",
     "option1" : "0",
@@ -220,7 +215,6 @@
     "option4" : "double a = 19200158.415421;",
     "question" : "Which of these is NOT a correct way to declare a variable?"
   } ],
-
   "counter" : {
     "35nzS2kV7VfulTX60T6Fxa8i7AJ3" : {
       "counter" : 0
@@ -230,6 +224,9 @@
     },
     "3sxiHoZWpJg9Mo0fVnecMmAQ8HE3" : {
       "counter" : 1
+    },
+    "4dg2LsQKZ2cMXvzuTgVaDf0Yvp73" : {
+      "counter" : 100
     },
     "5PFpZ6O1NqWcZztb3gBNKgjr5rk2" : {
       "counter" : 0
@@ -304,7 +301,6 @@
       "counter" : 0
     }
   },
-
   "inputQuiz" : [ null, {
     "answer" : "import java.util.Scanner;",
     "option1" : "import java.util.Scanner;",
@@ -341,7 +337,6 @@
     "option4" : "\"42\"",
     "question" : "What is the result of the follwoing?\nString s1 = new String(\"42\");\ndouble a = Double.parseDouble(s1);"
   } ],
-
   "inputRev" : [ null, {
     "answer" : "2147483647",
     "option1" : "74812",
@@ -378,7 +373,6 @@
     "option4" : "-3",
     "question" : "Which is the result of the following?\nString s1 = new String(\"abc\");\nString s2 = new String(\"abc\");\nSystem.out.println(s1.compareTo(s2));"
   } ],
-
   "iterationQuiz" : [ null, {
     "answer" : "while loop, for loop, do...while loop",
     "option1" : "count up loop, count down loop, infinite loop",
@@ -415,7 +409,6 @@
     "option4" : "5 4 3 2 1 0 -1 -2 -3 -4 -5",
     "question" : "What type of result of the following?\nfor(int i = 5; i > -5; i--){\n    System.out.println(j + \" \");\n}\nSystem.out.println( );"
   } ],
-
   "iterationRev" : [ null, {
     "answer" : "a = (condition) ? true : false;",
     "option1" : "a = (condition) ? true ? false;",
@@ -438,7 +431,7 @@
     "option4" : "char a = 'a';",
     "question" : "Which of these is the correct way to initialise and assign a char?"
   }, {
-    "answer" : "11",
+    "answer" : "10",
     "option1" : "11",
     "option2" : "9",
     "option3" : "Error",
@@ -450,16 +443,15 @@
     "option2" : "Reduces the value of a variable by 1",
     "option3" : "Increases the value of a variable by a user given amount",
     "option4" : "Concatenates a 1 to the beginning of a variable",
-    "question" : "What does increment (--) do?"
+    "question" : "What does decrement (--) do?"
   } ],
-
   "nloopQuiz" : [ null, {
     "answer" : "False",
     "option1" : "True",
     "option2" : "False",
     "option3" : "Maybe",
     "option4" : "The meaning of life",
-    "question" : "In nested loops the outer loop must be terminated before the inner loop"
+    "question" : "In nested loops, the outer loop must be terminated before the inner loop"
   }, {
     "answer" : "A loop within a loop",
     "option1" : "A while loop withen a for loop",
@@ -489,7 +481,6 @@
     "option4" : "One more time than the main loop",
     "question" : "How often is the inner loop of a nested loop run?"
   } ],
-
   "nloopRev" : [ null, {
     "answer" : "String s = new String \"The Bare Minimum\";",
     "option1" : "String s = new String(\"The Bare Minimum\");",
@@ -526,7 +517,6 @@
     "option4" : "5 4 3 2 1 0 -1 -2 -3 -4 -5",
     "question" : "What type of result of the following?\nfor(int i = 5; i >= -5; i--){\n    System.out.println(j + \" \");\n}\nSystem.out.println( );"
   } ],
-
   "opQuiz" : [ null, {
     "answer" : "Nothing, \"b\" stays as 5",
     "option1" : "\"b\" becomes 1",
@@ -563,7 +553,6 @@
     "option4" : "5",
     "question" : "What is the result of the follwoing code?\nint x = 10;\nx *= 5"
   } ],
-
   "opRev" : [ null, {
     "answer" : "float fish = 19.7;",
     "option1" : "float fish = 19.7;",
@@ -578,7 +567,7 @@
     "option3" : "19hats",
     "option4" : "real_Mouse",
     "question" : "Which one of the following is NOT a correct variable name?"
-  } , {
+  }, {
     "answer" : "Error",
     "option1" : "b",
     "option2" : "\"99\"",
@@ -586,7 +575,6 @@
     "option4" : "99",
     "question" : "What does the following program output?\nint b = 99;\nSystem.out.println(\"b\")"
   } ],
-
   "ssQuiz" : [ null, {
     "answer" : "It allows a program to test several conditions and execute instructions based on their outcome",
     "option1" : "Its makes your program more efficient and reduces runtime errors.",
@@ -620,10 +608,9 @@
     "option1" : "There is no difference",
     "option2" : "Equal to (==) is used for assigning. Equal (=) is used to compare two values equal to each other",
     "option3" : "They allow users to compare and assign values at the same time when used together",
-    "option4" : "equal to (==) is used to compare two values equal to each other. Equal (=) is used for assigning",
-    "question" : "What is the different between equal (=) and equal to (==)?"
+    "option4" : "Equal to (==) is used to compare two values equal to each other. Equal (=) is used for assigning",
+    "question" : "What is the difference between equal (=) and equal to (==)?"
   } ],
-
   "ssRev" : [ null, {
     "answer" : "999",
     "option1" : "1001",
@@ -660,7 +647,6 @@
     "option4" : "All the above",
     "question" : "Why is plagiarism bad?"
   } ],
-
   "stringsQuiz" : [ null, {
     "answer" : ".length()",
     "option1" : ".length",
@@ -697,7 +683,6 @@
     "option4" : "-3",
     "question" : "Which is the result of the following?\nString s1 = new String(\"abc\");\nString s2 = new String(\"def\");\nSystem.out.println(s1.compareTo(s2));"
   } ],
-
   "stringsRev" : [ null, {
     "answer" : "123",
     "option1" : "123",
@@ -734,7 +719,6 @@
     "option4" : "13579",
     "question" : "What is the output of the following?\nfor(int i = 1; i <= 10; i++){\n    System.out.println(i + \" \");\n    i++;\n}"
   } ],
-
   "varQuestions" : [ null, {
     "answer" : "32",
     "option1" : "4",
@@ -767,18 +751,17 @@
     "answer" : "It is used to store a value or data type",
     "option1" : "It is used to solve computer problems",
     "option2" : "A type of cryptocurrency",
-    "option3" : "It is used to store numbers.",
+    "option3" : "It is used to store numbers",
     "option4" : "It is used to store a value or data type",
     "question" : "What is a Variable?"
   } ],
-
   "varRev" : [ null, {
     "answer" : "System.out.print",
     "option1" : "System.out.println",
     "option2" : "System.out.print",
     "option3" : "system.out.print",
-    "option4" : "System.out.println",
-    "question" : "On order to print and not go to a new line we do.."
+    "option4" : "System.out.printLn",
+    "question" : "In order to print and not go to a new line we do..."
   }, {
     "answer" : ";",
     "option1" : ";",
@@ -787,7 +770,6 @@
     "option4" : ":",
     "question" : "Whast must we out at the end of every statement in Java?"
   } ],
-
   "wipQuestions" : [ null, {
     "answer" : "A detailed step of instructions",
     "option1" : "A detailed step of instructions",

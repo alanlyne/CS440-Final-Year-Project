@@ -76,7 +76,7 @@ public class loginActivity extends AppCompatActivity {
                                 Toast.makeText(loginActivity.this, "Login Error, Please Try Again", Toast.LENGTH_SHORT).show();
                             }else{
                                 //Intent intToHome = new Intent(loginActivity.this,com.alanlyne.tbm.Menu.Menu.class);
-                                Intent intToHome = new Intent(loginActivity.this, welcome.class);
+                                Intent intToHome = new Intent(loginActivity.this, Menu.class);
                                 startActivity(intToHome);
                             }
                         }

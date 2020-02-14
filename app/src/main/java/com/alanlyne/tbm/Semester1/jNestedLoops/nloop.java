@@ -56,12 +56,12 @@ public class nloop extends AppCompatActivity {
             startActivity(l2);
         });
 
-//        l3 = findViewById(R.id.l3);
-//        if(Menu.counter < 93) { l3.setEnabled(false); }
-//        l3.setOnClickListener(v -> {
-//            Intent l3 = new Intent(nloop.this, nloopL3.class);
-//            startActivity(l3);
-//        });
+        l3 = findViewById(R.id.l3);
+        if(Menu.counter < 93) { l3.setEnabled(false); }
+        l3.setOnClickListener(v -> {
+            Intent l3 = new Intent(nloop.this, nloopL3.class);
+            startActivity(l3);
+        });
 
         quiz = findViewById(R.id.quiz);
         if(Menu.counter < 94) { quiz.setEnabled(false); }

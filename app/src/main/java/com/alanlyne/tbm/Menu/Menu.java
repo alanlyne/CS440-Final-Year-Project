@@ -192,9 +192,9 @@ public class Menu extends AppCompatActivity {
                 });
 
                 a12 = findViewById(R.id.a12);
-                if (counter < 110) {
+                //if (counter < 110) {
                     a12.setEnabled(false);
-                }
+                //}
 //                a12.setOnClickListener(v -> {
 //                    Intent menu = new Intent(Menu.this, Strings.class);
 //                    startActivity(menu);

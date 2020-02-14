@@ -60,7 +60,7 @@
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Stuff will eventually go here."
+            android:text="Beta version 0.5"
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
             android:visibility="invisible"

@@ -48,7 +48,7 @@ public class nloopQuizResult extends AppCompatActivity {
 
         backToMenu.setOnClickListener(v -> {
 
-            Intent menu = new Intent(nloopQuizResult.this, nloop.class);
+            Intent menu = new Intent(nloopQuizResult.this, Menu.class);
             startActivity(menu);
 
         });

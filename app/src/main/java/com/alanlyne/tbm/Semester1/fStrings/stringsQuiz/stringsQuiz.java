@@ -82,7 +82,7 @@ public class stringsQuiz extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             if (b1.getText().toString().equals(questions.getAnswer())) {
-                                b1.setBackgroundColor(Color.GREEN);
+                                b1.setBackgroundResource(R.drawable.quizgreen);
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override
@@ -94,14 +94,14 @@ public class stringsQuiz extends AppCompatActivity {
                                 }, 1500);
                             } else {
                                 wrong++;
-                                b1.setBackgroundColor(Color.RED);
+                                b1.setBackgroundResource(R.drawable.quizred);
 
                                 if (b2.getText().toString().equals(questions.getAnswer())) {
-                                    b2.setBackgroundColor(Color.GREEN);
+                                    b2.setBackgroundResource(R.drawable.quizgreen);
                                 } else if (b3.getText().toString().equals(questions.getAnswer())) {
-                                    b3.setBackgroundColor(Color.GREEN);
+                                    b3.setBackgroundResource(R.drawable.quizgreen);
                                 } else if (b4.getText().toString().equals(questions.getAnswer())) {
-                                    b4.setBackgroundColor(Color.GREEN);
+                                    b4.setBackgroundResource(R.drawable.quizgreen);
                                 }
 
 
@@ -126,7 +126,7 @@ public class stringsQuiz extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             if (b2.getText().toString().equals(questions.getAnswer())) {
-                                b2.setBackgroundColor(Color.GREEN);
+                                b2.setBackgroundResource(R.drawable.quizgreen);
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override
@@ -138,14 +138,14 @@ public class stringsQuiz extends AppCompatActivity {
                                 }, 1500);
                             } else {
                                 wrong++;
-                                b2.setBackgroundColor(Color.RED);
+                                b2.setBackgroundResource(R.drawable.quizred);;
 
                                 if (b1.getText().toString().equals(questions.getAnswer())) {
-                                    b1.setBackgroundColor(Color.GREEN);
+                                    b1.setBackgroundResource(R.drawable.quizgreen);
                                 } else if (b3.getText().toString().equals(questions.getAnswer())) {
-                                    b3.setBackgroundColor(Color.GREEN);
+                                    b3.setBackgroundResource(R.drawable.quizgreen);
                                 } else if (b4.getText().toString().equals(questions.getAnswer())) {
-                                    b4.setBackgroundColor(Color.GREEN);
+                                    b4.setBackgroundResource(R.drawable.quizgreen);
                                 }
 
 
@@ -170,7 +170,7 @@ public class stringsQuiz extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             if (b3.getText().toString().equals(questions.getAnswer())) {
-                                b3.setBackgroundColor(Color.GREEN);
+                                b3.setBackgroundResource(R.drawable.quizgreen);
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override
@@ -182,14 +182,14 @@ public class stringsQuiz extends AppCompatActivity {
                                 }, 1500);
                             } else {
                                 wrong++;
-                                b3.setBackgroundColor(Color.RED);
+                                b3.setBackgroundResource(R.drawable.quizred);
 
                                 if (b1.getText().toString().equals(questions.getAnswer())) {
-                                    b1.setBackgroundColor(Color.GREEN);
+                                    b1.setBackgroundResource(R.drawable.quizgreen);
                                 } else if (b2.getText().toString().equals(questions.getAnswer())) {
-                                    b2.setBackgroundColor(Color.GREEN);
+                                    b2.setBackgroundResource(R.drawable.quizgreen);
                                 } else if (b4.getText().toString().equals(questions.getAnswer())) {
-                                    b4.setBackgroundColor(Color.GREEN);
+                                    b4.setBackgroundResource(R.drawable.quizgreen);
                                 }
 
 
@@ -214,7 +214,7 @@ public class stringsQuiz extends AppCompatActivity {
                         @Override
                         public void onClick(View v) {
                             if (b4.getText().toString().equals(questions.getAnswer())) {
-                                b4.setBackgroundColor(Color.GREEN);
+                                b4.setBackgroundResource(R.drawable.quizgreen);
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override
@@ -226,14 +226,14 @@ public class stringsQuiz extends AppCompatActivity {
                                 }, 1500);
                             } else {
                                 wrong++;
-                                b4.setBackgroundColor(Color.RED);
+                                b4.setBackgroundResource(R.drawable.quizred);
 
                                 if (b1.getText().toString().equals(questions.getAnswer())) {
-                                    b1.setBackgroundColor(Color.GREEN);
+                                    b1.setBackgroundResource(R.drawable.quizgreen);
                                 } else if (b3.getText().toString().equals(questions.getAnswer())) {
-                                    b3.setBackgroundColor(Color.GREEN);
+                                    b3.setBackgroundResource(R.drawable.quizgreen);
                                 } else if (b2.getText().toString().equals(questions.getAnswer())) {
-                                    b2.setBackgroundColor(Color.GREEN);
+                                    b2.setBackgroundResource(R.drawable.quizgreen);
                                 }
 
 

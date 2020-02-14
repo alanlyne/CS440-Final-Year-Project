@@ -99,7 +99,7 @@
             android:layout_height="150dp"
             android:layout_marginTop="44dp"
             android:background="@drawable/b_round"
-            android:text="Methods"
+            android:text="Coming Soon"
             android:textColor="@android:color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/a11"
