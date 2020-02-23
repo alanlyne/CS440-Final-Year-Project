@@ -93,7 +93,6 @@ public class array2DQuiz extends AppCompatActivity {
                             } else {
                                 wrong++;
                                 b1.setBackgroundResource(R.drawable.quizred);
-
                                 if (b2.getText().toString().equals(questions.getAnswer())) {
                                     b2.setBackgroundResource(R.drawable.quizgreen);
                                 } else if (b3.getText().toString().equals(questions.getAnswer())) {
@@ -101,8 +100,6 @@ public class array2DQuiz extends AppCompatActivity {
                                 } else if (b4.getText().toString().equals(questions.getAnswer())) {
                                     b4.setBackgroundResource(R.drawable.quizgreen);
                                 }
-
-
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
                                     @Override

@@ -56,19 +56,19 @@ public class wipL2 extends AppCompatActivity {
         });
 
         View view = findViewById(R.id.View01);
-        view.setOnTouchListener(new View.OnTouchListener() {
 
+        view.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent event) {
 
                 if (SystemClock.elapsedRealtime() - mLastClickTime < 500) {
-                    System.out.println("Fun");
+                    System.out.println(" ");
                 }
                 else {
                     mLastClickTime = SystemClock.elapsedRealtime();
-
                     counter++;
                 }
+
                 System.out.println(counter);
                 if (counter > 0) {
                     TextView tv = findViewById(R.id.t1);

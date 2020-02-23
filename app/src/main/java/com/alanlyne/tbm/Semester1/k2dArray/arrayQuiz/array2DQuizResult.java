@@ -38,22 +38,16 @@ public class array2DQuizResult extends AppCompatActivity {
         total = i.getStringExtra("total");
         correct = i.getStringExtra("correct");
         incorrect = i.getStringExtra("incorrect");
-
         setValues();
-
         if(Menu.counter < 110) {
             System.out.println("FUCKKKKKKKKKKKKKKKKKKKKK");
             addCounter();
         }
-
         backToMenu.setOnClickListener(v -> {
-
             Intent menu = new Intent(array2DQuizResult.this, Menu.class);
             startActivity(menu);
-
         });
     }
-
     private void setValues()
     {
         t1_total.setText(total);
