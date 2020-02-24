@@ -102,4 +102,10 @@ public class arrayL4 extends AppCompatActivity {
             System.out.println("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
         }
     }
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(arrayL4.this, Arrays.class);
+        startActivity(end);
+    }
 }

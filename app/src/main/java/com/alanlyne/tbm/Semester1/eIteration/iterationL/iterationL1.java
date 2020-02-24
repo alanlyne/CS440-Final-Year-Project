@@ -107,4 +107,10 @@ public class iterationL1 extends AppCompatActivity {
             System.out.println("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
         }
     }
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(iterationL1.this, Iteration.class);
+        startActivity(end);
+    }
 }

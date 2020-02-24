@@ -141,4 +141,10 @@ public class SS extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(SS.this, Menu.class);
+        startActivity(end);
+    }
 }

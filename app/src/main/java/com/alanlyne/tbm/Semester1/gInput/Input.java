@@ -76,4 +76,10 @@ public class Input extends AppCompatActivity {
             startActivity(quiz);
         });
     }
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(Input.this, Menu.class);
+        startActivity(end);
+    }
 }

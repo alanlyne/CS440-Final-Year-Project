@@ -112,4 +112,10 @@ public class wipL4 extends AppCompatActivity {
             System.out.println("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
         }
     }
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(wipL4.this, WIP.class);
+        startActivity(end);
+    }
 }

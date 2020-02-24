@@ -69,4 +69,10 @@ public class Boolean extends AppCompatActivity {
             startActivity(quiz);
         });
     }
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(Boolean.this, Menu.class);
+        startActivity(end);
+    }
 }

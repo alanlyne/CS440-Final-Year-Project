@@ -57,6 +57,13 @@ public class iterationRev extends AppCompatActivity {
         //reverseTimer(60,timerTxt);
     }
 
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(iterationRev.this, Iteration.class);
+        startActivity(end);
+    }
+
     private void updateQuestion() {
         computerCount++;
         if (computerCount > 5) {

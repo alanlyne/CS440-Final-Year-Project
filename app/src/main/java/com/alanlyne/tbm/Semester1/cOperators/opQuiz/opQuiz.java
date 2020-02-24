@@ -57,6 +57,13 @@ public class opQuiz extends AppCompatActivity {
         //reverseTimer(60,timerTxt);
     }
 
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(opQuiz.this, op.class);
+        startActivity(end);
+    }
+
     private void updateQuestion() {
         computerCount++;
         if (computerCount > 5) {

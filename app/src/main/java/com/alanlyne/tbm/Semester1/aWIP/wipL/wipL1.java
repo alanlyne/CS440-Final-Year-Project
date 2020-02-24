@@ -135,5 +135,11 @@ public class wipL1 extends AppCompatActivity{
             databaseName.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(counter);
         }
     }
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(wipL1.this, WIP.class);
+        startActivity(end);
+    }
 }
 

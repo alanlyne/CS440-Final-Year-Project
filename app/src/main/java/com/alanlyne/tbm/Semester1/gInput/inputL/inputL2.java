@@ -106,4 +106,10 @@ public class inputL2 extends AppCompatActivity {
             System.out.println("AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH");
         }
     }
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(inputL2.this, Input.class);
+        startActivity(end);
+    }
 }

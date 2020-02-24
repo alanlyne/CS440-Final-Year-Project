@@ -87,5 +87,11 @@ public class Iteration extends AppCompatActivity {
             startActivity(quiz);
         });
     }
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(Iteration.this, Menu.class);
+        startActivity(end);
+    }
 }
 

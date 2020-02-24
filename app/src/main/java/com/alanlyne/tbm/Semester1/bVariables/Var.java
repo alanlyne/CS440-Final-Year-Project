@@ -76,4 +76,10 @@ public class Var extends AppCompatActivity {
             startActivity(quiz);
         });
     }
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(Var.this, Menu.class);
+        startActivity(end);
+    }
 }

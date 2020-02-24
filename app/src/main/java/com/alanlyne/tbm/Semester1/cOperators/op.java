@@ -135,4 +135,10 @@ public class op extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(op.this, Menu.class);
+        startActivity(end);
+    }
 }

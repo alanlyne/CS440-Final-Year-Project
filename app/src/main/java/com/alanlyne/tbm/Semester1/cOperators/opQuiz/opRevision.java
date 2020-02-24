@@ -56,6 +56,13 @@ public class opRevision extends AppCompatActivity {
         //reverseTimer(60,timerTxt);
     }
 
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(opRevision.this, op.class);
+        startActivity(end);
+    }
+
     private void updateQuestion() {
         computerCount++;
         if (computerCount > 3) {

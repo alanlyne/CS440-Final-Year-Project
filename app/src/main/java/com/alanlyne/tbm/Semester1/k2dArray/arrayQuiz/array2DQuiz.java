@@ -54,6 +54,13 @@ public class array2DQuiz extends AppCompatActivity {
         //reverseTimer(60,timerTxt);
     }
 
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(array2DQuiz.this, Array2D.class);
+        startActivity(end);
+    }
+
     private void updateQuestion() {
         computerCount++;
         if (computerCount > 5) {

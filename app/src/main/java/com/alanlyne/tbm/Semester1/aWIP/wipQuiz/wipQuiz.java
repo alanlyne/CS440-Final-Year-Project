@@ -57,6 +57,12 @@ public class wipQuiz extends AppCompatActivity {
         updateQuestion();
         //reverseTimer(60,timerTxt);
     }
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(wipQuiz.this, WIP.class);
+        startActivity(end);
+    }
 
     private void updateQuestion() {
         computerCount++;
@@ -288,6 +294,7 @@ public class wipQuiz extends AppCompatActivity {
                 }
             });
         }
+
     }
 
 //    public void reverseTimer(int seconds, final TextView tv){

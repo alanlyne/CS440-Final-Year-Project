@@ -54,6 +54,13 @@ public class arrayQuiz extends AppCompatActivity {
         //reverseTimer(60,timerTxt);
     }
 
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(arrayQuiz.this, Arrays.class);
+        startActivity(end);
+    }
+
     private void updateQuestion() {
         computerCount++;
         if (computerCount > 5) {

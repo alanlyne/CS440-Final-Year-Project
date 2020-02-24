@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import com.alanlyne.tbm.Menu.Menu;
 import com.alanlyne.tbm.R;
+import com.alanlyne.tbm.Semester1.iArrays.Arrays;
 import com.alanlyne.tbm.Semester1.k2dArray.arrayL.array2DL1;
 import com.alanlyne.tbm.Semester1.k2dArray.arrayL.array2DL2;
 import com.alanlyne.tbm.Semester1.k2dArray.arrayL.array2DL3;
@@ -76,5 +77,11 @@ public class Array2D extends AppCompatActivity {
             Intent quiz= new Intent(Array2D.this, array2DQuiz.class);
             startActivity(quiz);
         });
+    }
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(Array2D.this, Menu.class);
+        startActivity(end);
     }
 }

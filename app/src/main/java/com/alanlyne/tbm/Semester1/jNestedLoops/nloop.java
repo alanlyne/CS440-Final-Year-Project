@@ -70,4 +70,10 @@ public class nloop extends AppCompatActivity {
             startActivity(quiz);
         });
     }
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(nloop.this, Menu.class);
+        startActivity(end);
+    }
 }

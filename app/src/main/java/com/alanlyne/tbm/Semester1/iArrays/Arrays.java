@@ -78,4 +78,10 @@ public class Arrays extends AppCompatActivity {
             startActivity(quiz);
         });
     }
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(Arrays.this, Menu.class);
+        startActivity(end);
+    }
 }

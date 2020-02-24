@@ -93,4 +93,10 @@ public class Strings extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(Strings.this, Menu.class);
+        startActivity(end);
+    }
 }

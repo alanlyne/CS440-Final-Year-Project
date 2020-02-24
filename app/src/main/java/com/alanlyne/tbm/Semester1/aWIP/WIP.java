@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -25,6 +26,23 @@ public class WIP extends AppCompatActivity {
     TextView x;
 
     DatabaseReference databaseName;
+
+    /*@Override
+    public boolean onKeyDown(int keyCode, KeyEvent event)  {
+        if (keyCode == KeyEvent.KEYCODE_BACK ) {
+            x = findViewById(R.id.x);
+            x.setOnClickListener(v -> {
+                Intent x = new Intent(WIP.this, Menu.class);
+                //startActivity(x);
+                return startActivity(x);
+            });
+
+        }
+
+        return super.onKeyDown(keyCode, event);
+    }*/
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,5 +93,11 @@ public class WIP extends AppCompatActivity {
                 startActivity(quiz);
             }
         });
+    }
+    @Override
+    public void onBackPressed()
+    {
+        Intent end = new Intent(WIP.this, Menu.class);
+        startActivity(end);
     }
 }
