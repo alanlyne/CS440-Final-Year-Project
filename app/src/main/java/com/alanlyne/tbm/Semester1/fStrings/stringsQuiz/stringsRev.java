@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.SystemClock;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -25,7 +26,7 @@ public class stringsRev extends AppCompatActivity {
     int total = 0;
     int correct = 0;
     int wrong = 0;
-
+    private long mLastClickTime = 0;
     int computerCount = 0;
 
     DatabaseReference reference;
@@ -78,7 +79,13 @@ public class stringsRev extends AppCompatActivity {
                     b1.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            if (b1.getText().toString().equals(questions.getAnswer())) {
+                            if (SystemClock.elapsedRealtime() - mLastClickTime < 1500) {
+                                System.out.println("Fun");
+                            }
+                            else {
+                                mLastClickTime = SystemClock.elapsedRealtime();
+
+                                if (b1.getText().toString().equals(questions.getAnswer())) {
                                 b1.setBackgroundResource(R.drawable.quizgreen);
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
@@ -115,14 +122,20 @@ public class stringsRev extends AppCompatActivity {
                                     }
                                 }, 1500);
                             }
-                        }
+                        }}
                     });
 
 
                     b2.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            if (b2.getText().toString().equals(questions.getAnswer())) {
+                            if (SystemClock.elapsedRealtime() - mLastClickTime < 1500) {
+                                System.out.println("Fun");
+                            }
+                            else {
+                                mLastClickTime = SystemClock.elapsedRealtime();
+
+                                if (b2.getText().toString().equals(questions.getAnswer())) {
                                 b2.setBackgroundResource(R.drawable.quizgreen);
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
@@ -159,14 +172,20 @@ public class stringsRev extends AppCompatActivity {
                                     }
                                 }, 1500);
                             }
-                        }
+                        }}
                     });
 
 
                     b3.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            if (b3.getText().toString().equals(questions.getAnswer())) {
+                            if (SystemClock.elapsedRealtime() - mLastClickTime < 1500) {
+                                System.out.println("Fun");
+                            }
+                            else {
+                                mLastClickTime = SystemClock.elapsedRealtime();
+
+                                if (b3.getText().toString().equals(questions.getAnswer())) {
                                 b3.setBackgroundResource(R.drawable.quizgreen);
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
@@ -203,14 +222,20 @@ public class stringsRev extends AppCompatActivity {
                                     }
                                 }, 1500);
                             }
-                        }
+                        }}
                     });
 
 
                     b4.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            if (b4.getText().toString().equals(questions.getAnswer())) {
+                            if (SystemClock.elapsedRealtime() - mLastClickTime < 1500) {
+                                System.out.println("Fun");
+                            }
+                            else {
+                                mLastClickTime = SystemClock.elapsedRealtime();
+
+                                if (b4.getText().toString().equals(questions.getAnswer())) {
                                 b4.setBackgroundResource(R.drawable.quizgreen);
                                 Handler handler = new Handler();
                                 handler.postDelayed(new Runnable() {
@@ -247,7 +272,7 @@ public class stringsRev extends AppCompatActivity {
                                     }
                                 }, 1500);
                             }
-                        }
+                        }}
                     });
 
                 }
