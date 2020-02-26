@@ -75,6 +75,7 @@ public class wipL1 extends AppCompatActivity{
                 counter++;
 
                 System.out.println(counter);
+
                 if (counter > 0) {
                     TextView tv = findViewById(R.id.t1);
                     tv.setVisibility(View.VISIBLE);
@@ -92,6 +93,7 @@ public class wipL1 extends AppCompatActivity{
                         }
                     });
                 }
+
                 if (counter > 1) {
                     TextView tv = findViewById(R.id.t2);
                     tv.setVisibility(View.VISIBLE);

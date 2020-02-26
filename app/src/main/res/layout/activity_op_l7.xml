@@ -44,7 +44,7 @@
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Q1 - Write a Java program to subtract two different variables fom one another and adds up to 50.\nStore this answer in a new variables called subtract\nMultiple this answer by a final new variable and store this in a variable called sum\nPrint your result."
+            android:text="Q1 - Write a Java program to subtract two different variables fom one another.\nStore this answer in a new variable called subtract.\nMultiple this answer by another new variable you have created and store this in a variable called answer.\nPrint your result."
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
             android:textSize="15sp"

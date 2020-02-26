@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.alanlyne.tbm">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -16,126 +17,353 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".Semester1.aWIP.wipL.lc" />
-        <activity android:name=".Semester1.eIteration.iterationL.iterationL5" />
-        <activity android:name=".Semester1.dSelectionStatements.ssL.ssL8" />
-        <activity android:name=".Semester1.dSelectionStatements.ssL.ssL7" />
-        <activity android:name=".Semester1.dSelectionStatements.ssL.ssL6" />
-        <activity android:name=".Semester1.dSelectionStatements.ssL.ssL5" />
-        <activity android:name=".Semester1.k2dArray.arrayL.array2DL4" />
-        <activity android:name=".Semester1.k2dArray.arrayL.array2DL3" />
-        <activity android:name=".Semester1.k2dArray.arrayL.array2DL2" />
-        <activity android:name=".Semester1.k2dArray.arrayL.array2DL1" />
-        <activity android:name=".Semester1.k2dArray.arrayQuiz.array2DQuizResult" />
-        <activity android:name=".Semester1.k2dArray.arrayQuiz.array2DQuiz" />
-        <activity android:name=".Semester1.k2dArray.arrayQuiz.array2DRevResult" />
-        <activity android:name=".Semester1.k2dArray.arrayQuiz.array2DRev" />
-        <activity android:name=".Semester1.k2dArray.Array2D" />
-        <activity android:name=".Semester1.jNestedLoops.nloopL.nloopL3" />
-        <activity android:name=".Semester1.jNestedLoops.nloopL.nloopL2" />
-        <activity android:name=".Semester1.jNestedLoops.nloopL.nloopL1" />
-        <activity android:name=".Semester1.jNestedLoops.nloopQuiz.nloopQuizResult" />
-        <activity android:name=".Semester1.jNestedLoops.nloopQuiz.nloopQuiz" />
-        <activity android:name=".Semester1.jNestedLoops.nloopQuiz.nloopRevResult" />
-        <activity android:name=".Semester1.jNestedLoops.nloopQuiz.nloopRev" />
-        <activity android:name=".Semester1.jNestedLoops.nloop" />
-        <activity android:name=".Semester1.iArrays.arrayL.arrayL4" />
-        <activity android:name=".Semester1.iArrays.arrayL.arrayL3" />
-        <activity android:name=".Semester1.iArrays.arrayL.arrayL2" />
-        <activity android:name=".Semester1.iArrays.arrayL.arrayL1" />
-        <activity android:name=".Semester1.iArrays.arrayQuiz.arrayQuizResult" />
-        <activity android:name=".Semester1.iArrays.arrayQuiz.arrayQuiz" />
-        <activity android:name=".Semester1.iArrays.arrayQuiz.arrayRevResult" />
-        <activity android:name=".Semester1.iArrays.arrayQuiz.arrayRev" />
-        <activity android:name=".Semester1.iArrays.Arrays" />
-        <activity android:name=".Semester1.hBoolean.booL.booL3" />
-        <activity android:name=".Semester1.hBoolean.booL.booL2" />
-        <activity android:name=".Semester1.hBoolean.booL.booL1" />
-        <activity android:name=".Semester1.hBoolean.booQuiz.booQuizResult" />
-        <activity android:name=".Semester1.hBoolean.booQuiz.booQuiz" />
-        <activity android:name=".Semester1.hBoolean.booQuiz.booRevResult" />
-        <activity android:name=".Semester1.hBoolean.booQuiz.booRev" />
-        <activity android:name=".Semester1.hBoolean.Boolean" />
-        <activity android:name=".Semester1.gInput.inputL.inputL4" />
-        <activity android:name=".Semester1.gInput.inputL.inputL3" />
-        <activity android:name=".Semester1.gInput.inputL.inputL2" />
-        <activity android:name=".Semester1.gInput.inputL.inputL1" />
-        <activity android:name=".Semester1.gInput.inputQuiz.inputQuizResult" />
-        <activity android:name=".Semester1.gInput.inputQuiz.inputQuiz" />
-        <activity android:name=".Semester1.gInput.inputQuiz.inputRevResult" />
-        <activity android:name=".Semester1.gInput.inputQuiz.inputRev" />
-        <activity android:name=".Semester1.gInput.Input" />
-        <activity android:name=".Semester1.fStrings.stringsQuiz.stringsQuizResult" />
-        <activity android:name=".Semester1.fStrings.stringsQuiz.stringsQuiz" />
-        <activity android:name=".Semester1.fStrings.stringsQuiz.stringsRevResult" />
-        <activity android:name=".Semester1.fStrings.stringsQuiz.stringsRev" />
-        <activity android:name=".Semester1.fStrings.stringsL.stringsL4" />
-        <activity android:name=".Semester1.fStrings.stringsL.stringsL3" />
-        <activity android:name=".Semester1.fStrings.stringsL.stringsL2" />
-        <activity android:name=".Semester1.fStrings.stringsL.stringsL1" />
-        <activity android:name=".Semester1.fStrings.Strings" />
-        <activity android:name=".Semester1.eIteration.iterationL.iterationL4" />
-        <activity android:name=".Semester1.eIteration.iterationL.iterationL3" />
-        <activity android:name=".Semester1.eIteration.iterationL.iterationL2" />
-        <activity android:name=".Semester1.eIteration.iterationL.iterationL1" />
-        <activity android:name=".Semester1.eIteration.iterationQuiz.iterationRevResult" />
-        <activity android:name=".Semester1.eIteration.iterationQuiz.iterationRev" />
-        <activity android:name=".Semester1.eIteration.iterationQuiz.iterationQuizResult" />
-        <activity android:name=".Semester1.eIteration.iterationQuiz.iterationQuiz" />
-        <activity android:name=".Semester1.dSelectionStatements.ssL.ssL4" />
-        <activity android:name=".Semester1.dSelectionStatements.ssL.ssL3" />
-        <activity android:name=".Semester1.dSelectionStatements.ssL.ssL2" />
-        <activity android:name=".Semester1.dSelectionStatements.ssL.ssL1" />
-        <activity android:name=".Semester1.dSelectionStatements.ssQuiz.ssRevResult" />
-        <activity android:name=".Semester1.dSelectionStatements.ssQuiz.ssRev" />
-        <activity android:name=".Semester1.dSelectionStatements.ssQuiz.ssQuizResult" />
-        <activity android:name=".Semester1.dSelectionStatements.ssQuiz.ssQuiz" />
-        <activity android:name=".Semester1.eIteration.Iteration" />
-        <activity android:name=".Semester1.dSelectionStatements.SS" />
-        <activity android:name=".Semester1.cOperators.opQuiz.opQuizResult" />
-        <activity android:name=".Semester1.cOperators.opQuiz.opQuiz" />
-        <activity android:name=".Semester1.cOperators.opL.opL7" />
-        <activity android:name=".Semester1.cOperators.opL.opL6" />
-        <activity android:name=".Semester1.cOperators.opL.opL5" />
-        <activity android:name=".Semester1.cOperators.opL.opL4" />
-        <activity android:name=".Semester1.cOperators.opL.opL3" />
-        <activity android:name=".Semester1.cOperators.opQuiz.opRevQ" />
-        <activity android:name=".Semester1.cOperators.opQuiz.opRevResult" />
-        <activity android:name=".Semester1.cOperators.opL.opL2" />
-        <activity android:name=".Semester1.cOperators.opL.opL1" />
-        <activity android:name=".Semester1.cOperators.opQuiz.opRevision" />
-        <activity android:name=".Semester1.cOperators.op" />
-        <activity android:name=".Semester1.bVariables.varQuiz.varRevResult" />
-        <activity android:name=".Semester1.aWIP.wipQuiz.ResultActivity" />
-        <activity android:name=".Semester1.bVariables.varQuiz.varRev" />
-        <activity android:name=".Auth.welcome" />
-        <activity
-            android:name=".Auth.video"
-            android:screenOrientation="landscape" />
-        <activity android:name=".Semester1.bVariables.varQuiz.varQuizResult" />
-        <activity android:name=".Semester1.bVariables.varQuiz.varQuiz" />
-        <activity android:name=".Semester1.bVariables.varL.varL4" />
-        <activity android:name=".Semester1.bVariables.varL.varL3" />
-        <activity android:name=".Semester1.bVariables.varL.varL2" />
-        <activity android:name=".Semester1.bVariables.varL.varL1" />
-        <activity android:name=".Semester1.bVariables.Var" />
-        <activity android:name=".Semester1.aWIP.wipL.wipL4" />
-        <activity android:name=".Semester1.aWIP.wipL.wipL3" />
-        <activity android:name=".Semester1.aWIP.wipL.wipL2" />
-        <activity android:name=".Semester1.aWIP.wipL.wipL1" />
-        <activity android:name=".Semester1.aWIP.wipQuiz.wipQuiz" />
-        <activity android:name=".Semester1.aWIP.WIP" />
-        <activity android:name=".Menu.Menu" />
-        <activity android:name=".Auth.SignUpActivity" />
-        <activity android:name=".Auth.loginActivity" />
-        <activity android:name=".Auth.MainActivity">
+        android:theme="@style/AppTheme"
+        tools:ignore="LockedOrientationActivity">
+        <activity android:name=".Auth.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Semester1.aWIP.wipL.lc"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.eIteration.iterationL.iterationL5"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.dSelectionStatements.ssL.ssL8"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.dSelectionStatements.ssL.ssL7"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.dSelectionStatements.ssL.ssL6"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.dSelectionStatements.ssL.ssL5"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.k2dArray.arrayL.array2DL4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.k2dArray.arrayL.array2DL3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.k2dArray.arrayL.array2DL2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.k2dArray.arrayL.array2DL1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.k2dArray.arrayQuiz.array2DQuizResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.k2dArray.arrayQuiz.array2DQuiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.k2dArray.arrayQuiz.array2DRevResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.k2dArray.arrayQuiz.array2DRev"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.k2dArray.Array2D"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.jNestedLoops.nloopL.nloopL3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.jNestedLoops.nloopL.nloopL2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.jNestedLoops.nloopL.nloopL1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.jNestedLoops.nloopQuiz.nloopQuizResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.jNestedLoops.nloopQuiz.nloopQuiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.jNestedLoops.nloopQuiz.nloopRevResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.jNestedLoops.nloopQuiz.nloopRev"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.jNestedLoops.nloop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.iArrays.arrayL.arrayL4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.iArrays.arrayL.arrayL3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.iArrays.arrayL.arrayL2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.iArrays.arrayL.arrayL1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.iArrays.arrayQuiz.arrayQuizResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.iArrays.arrayQuiz.arrayQuiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.iArrays.arrayQuiz.arrayRevResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.iArrays.arrayQuiz.arrayRev"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.iArrays.Arrays"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.hBoolean.booL.booL3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.hBoolean.booL.booL2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.hBoolean.booL.booL1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.hBoolean.booQuiz.booQuizResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.hBoolean.booQuiz.booQuiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.hBoolean.booQuiz.booRevResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.hBoolean.booQuiz.booRev"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.hBoolean.Boolean"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.gInput.inputL.inputL4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.gInput.inputL.inputL3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.gInput.inputL.inputL2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.gInput.inputL.inputL1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.gInput.inputQuiz.inputQuizResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.gInput.inputQuiz.inputQuiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.gInput.inputQuiz.inputRevResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.gInput.inputQuiz.inputRev"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.gInput.Input"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.fStrings.stringsQuiz.stringsQuizResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.fStrings.stringsQuiz.stringsQuiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.fStrings.stringsQuiz.stringsRevResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.fStrings.stringsQuiz.stringsRev"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.fStrings.stringsL.stringsL4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.fStrings.stringsL.stringsL3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.fStrings.stringsL.stringsL2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.fStrings.stringsL.stringsL1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.fStrings.Strings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.eIteration.iterationL.iterationL4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.eIteration.iterationL.iterationL3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.eIteration.iterationL.iterationL2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.eIteration.iterationL.iterationL1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.eIteration.iterationQuiz.iterationRevResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.eIteration.iterationQuiz.iterationRev"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.eIteration.iterationQuiz.iterationQuizResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.eIteration.iterationQuiz.iterationQuiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.dSelectionStatements.ssL.ssL4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.dSelectionStatements.ssL.ssL3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.dSelectionStatements.ssL.ssL2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.dSelectionStatements.ssL.ssL1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.dSelectionStatements.ssQuiz.ssRevResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.dSelectionStatements.ssQuiz.ssRev"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.dSelectionStatements.ssQuiz.ssQuizResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.dSelectionStatements.ssQuiz.ssQuiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.eIteration.Iteration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.dSelectionStatements.SS"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.cOperators.opQuiz.opQuizResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.cOperators.opQuiz.opQuiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.cOperators.opL.opL7"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.cOperators.opL.opL6"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.cOperators.opL.opL5"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.cOperators.opL.opL4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.cOperators.opL.opL3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.cOperators.opQuiz.opRevQ"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.cOperators.opQuiz.opRevResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.cOperators.opL.opL2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.cOperators.opL.opL1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.cOperators.opQuiz.opRevision"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.cOperators.op"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.bVariables.varQuiz.varRevResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.aWIP.wipQuiz.ResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.bVariables.varQuiz.varRev"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Auth.welcome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Auth.video"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Semester1.bVariables.varQuiz.varQuizResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.bVariables.varQuiz.varQuiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.bVariables.varL.varL4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.bVariables.varL.varL3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.bVariables.varL.varL2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.bVariables.varL.varL1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.bVariables.Var"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.aWIP.wipL.wipL4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.aWIP.wipL.wipL3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.aWIP.wipL.wipL2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.aWIP.wipL.wipL1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.aWIP.wipQuiz.wipQuiz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Semester1.aWIP.WIP"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Menu.Menu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Auth.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Auth.loginActivity"
+            android:screenOrientation="fullSensor" />
+        <activity android:name=".Auth.MainActivity"/>
+
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
 
         <meta-data
             android:name="preloaded_fonts"

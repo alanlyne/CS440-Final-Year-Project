@@ -70,40 +70,44 @@ public class wipL2 extends AppCompatActivity {
                 }
 
                 System.out.println(counter);
-                if (counter > 0) {
-                    TextView tv = findViewById(R.id.t1);
-                    tv.setVisibility(View.VISIBLE);
 
+                if (counter > 0) {
+                    TextView tv = findViewById(R.id.t0);
+                    tv.setVisibility(View.VISIBLE);
                 }
                 if (counter > 1) {
-                    TextView tv = findViewById(R.id.t2);
+                    TextView tv = findViewById(R.id.t1);
                     tv.setVisibility(View.VISIBLE);
                 }
                 if (counter > 2) {
-                    TextView tv = findViewById(R.id.t3);
+                    TextView tv = findViewById(R.id.t2);
                     tv.setVisibility(View.VISIBLE);
                 }
                 if (counter > 3) {
-                    TextView tv = findViewById(R.id.t4);
+                    TextView tv = findViewById(R.id.t3);
                     tv.setVisibility(View.VISIBLE);
                 }
                 if (counter > 4) {
-                    TextView tv = findViewById(R.id.t5);
+                    TextView tv = findViewById(R.id.t4);
                     tv.setVisibility(View.VISIBLE);
                 }
                 if (counter > 5) {
-                    TextView tv = findViewById(R.id.t6);
+                    TextView tv = findViewById(R.id.t5);
                     tv.setVisibility(View.VISIBLE);
                 }
                 if (counter > 6) {
-                    TextView tv = findViewById(R.id.t7);
+                    TextView tv = findViewById(R.id.t6);
                     tv.setVisibility(View.VISIBLE);
                 }
                 if (counter > 7) {
-                    TextView tv = findViewById(R.id.t8);
+                    TextView tv = findViewById(R.id.t7);
                     tv.setVisibility(View.VISIBLE);
                 }
                 if (counter > 8) {
+                    TextView tv = findViewById(R.id.t8);
+                    tv.setVisibility(View.VISIBLE);
+                }
+                if (counter > 9) {
                     Button b1 = findViewById(R.id.b1);
                     b1.setVisibility(View.VISIBLE);
                     b1.setOnClickListener(new View.OnClickListener() {
