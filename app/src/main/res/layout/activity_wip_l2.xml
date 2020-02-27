@@ -17,25 +17,6 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/t"
-            android:layout_width="350sp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/edit_round"
-            android:gravity="center"
-            android:padding="10dp"
-            android:text="The Learning Curve"
-            android:textColor="@android:color/black"
-            android:textColorHighlight="#FF000000"
-            android:textSize="15sp"
-            android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/t0"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
             android:id="@+id/t0"
             android:layout_width="350sp"
             android:layout_height="wrap_content"
@@ -52,7 +33,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/t" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/t1"
@@ -201,11 +182,30 @@
             android:textColorHighlight="#FF000000"
             android:textSize="15sp"
             android:visibility="invisible"
-            app:layout_constraintBottom_toTopOf="@+id/b1"
+            app:layout_constraintBottom_toTopOf="@+id/t9"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/t7" />
+
+        <TextView
+            android:id="@+id/t9"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Before you even look at a computer, you should be able to write, compile and run code all in your head for small programs."
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/b1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t8" />
 
         <Button
             android:id="@+id/b1"
@@ -222,7 +222,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/t8" />
+            app:layout_constraintTop_toBottomOf="@+id/t9" />
 
         <TextView
             android:id="@+id/x"

@@ -15,17 +15,17 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:textSize="15sp"
             android:id="@+id/t0"
-            android:gravity="center"
             android:layout_width="300sp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/edit_round"
+            android:gravity="center"
             android:padding="10dp"
-            android:text="Hello and welcome to The Bare Minimum.\nTap the screen to continue."
+            android:text="Hello and welcome to\nThe Bare Minimum.\nTap the screen to continue."
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
             android:visibility="visible"
             app:layout_constraintBottom_toTopOf="@+id/t1"
             app:layout_constraintEnd_toEndOf="parent"
@@ -34,17 +34,17 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:textSize="15sp"
-            android:layout_width="300sp"
             android:id="@+id/t1"
+            android:layout_width="300sp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="This application was developed as Alan Lyne's final year project and was supervised by Joseph Duffin"
+            android:text="This application was developed by Alan Lyne as part of his final year project and was supervised by Joseph Duffin"
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
             android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/t2"
             app:layout_constraintEnd_toEndOf="parent"
@@ -53,38 +53,118 @@
 
         <TextView
             android:id="@+id/t2"
-            android:textSize="15sp"
             android:layout_width="300sp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Beta version 0.5"
+            android:text="We will now look at how we actually use this app.\nAs you already know, (well I hope since you are seeing this) you tap the screen to see new content."
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
             android:visibility="invisible"
-            app:layout_constraintBottom_toTopOf="@+id/b1"
+            app:layout_constraintBottom_toTopOf="@+id/t3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/t1" />
 
-        <Button
-            android:background="@drawable/edit_round"
-            android:id="@+id/b1"
-            android:visibility="invisible"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/t3"
+            android:layout_width="300sp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="152dp"
-            android:layout_marginTop="304dp"
-            android:layout_marginEnd="153dp"
-            android:layout_marginBottom="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="When you are finished here, you will see the main menu with all the area selections and the 1st-year learning curve.\nWhat's the 1st-year learning curve? It is the 1st-year section of the programming learning curve.\nWhat's the programming learning curve? Don't worry, we will learn this soon."
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/img1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t2" />
+
+        <TextView
+            android:id="@+id/t4"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="At first you can only access each section one at a time. As you progress new areas will become orange and available to use and you will see yourself moving along the 1st-year learning curve.\n When you click into a section you will see the lessons available and, once again, must be done one at a time"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/img2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img1" />
+
+        <TextView
+            android:id="@+id/t5"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="And that's pretty much it. Hope you enjoy the app and if you have any questions ior suggestions please contact me at alan.lyne.2016@mumail.ie.\nBest of luck and happy coding!"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/b1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img2" />
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="88dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_round"
             android:text="Continue"
+            android:visibility="invisible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/t2" />
+            app:layout_constraintTop_toBottomOf="@+id/t5" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="609dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/t4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t3"
+            app:srcCompat="@drawable/menu"
+            tools:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="wrap_content"
+            android:layout_height="609dp"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/t5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t4"
+            app:srcCompat="@drawable/lesson" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

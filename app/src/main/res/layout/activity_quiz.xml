@@ -22,7 +22,7 @@
             android:text="Loading"
             android:gravity="left"
             android:textColor="@android:color/white"
-            android:textSize="28sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/reset"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -115,15 +115,15 @@
             android:layout_width="15dp"
             android:layout_height="35dp"
             android:layout_marginStart="10dp"
-            android:layout_marginEnd="386dp"
-            android:layout_marginBottom="148dp"
             android:text="x"
             android:textColor="@android:color/white"
             android:textSize="30sp"
-            app:layout_constraintBottom_toTopOf="@+id/reset"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/questionText"
+            app:layout_constraintEnd_toEndOf="@+id/questionText"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
