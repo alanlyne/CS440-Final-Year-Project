@@ -302,8 +302,7 @@
         <activity
             android:name=".Semester1.bVariables.varQuiz.varRev"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".Auth.welcome"
+        <activity android:name=".Auth.welcome"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Auth.video"
@@ -356,14 +355,14 @@
         <activity
             android:name=".Auth.loginActivity"
             android:screenOrientation="fullSensor" />
-        <activity android:name=".Auth.MainActivity"/>
+        <activity android:name=".Auth.MainActivity">
 
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
 
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
-<!--        </activity>-->
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"

@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ScrollView01"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/bgcolour"
-    android:fillViewport="true"
-    >
+    android:background="@drawable/bgcolour">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraint_layout1"
+        android:id="@+id/View01"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:id="@+id/t0"
@@ -116,6 +118,25 @@
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
+            android:text="At the start and end of each section, besides the first one, you will need to complete a short quiz and get 100% in order to progress/nThe revision quiz, at the start, tests you on all you have learnt so far, while the quiz at the end tests you on what you have just learned."
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/t6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img2" />
+
+        <TextView
+            android:id="@+id/t6"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
             android:text="And that's pretty much it. Hope you enjoy the app and if you have any questions ior suggestions please contact me at alan.lyne.2016@mumail.ie.\nBest of luck and happy coding!"
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
@@ -123,32 +144,36 @@
             android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/b1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/img2" />
-
-        <Button
-            android:id="@+id/b1"
-            android:layout_width="88dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/edit_round"
-            android:text="Continue"
-            android:visibility="invisible"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/t5" />
 
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/b_round"
+            android:text="Continue"
+            android:visibility="invisible"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t6" />
+
         <ImageView
             android:id="@+id/img1"
-            android:layout_width="wrap_content"
-            android:layout_height="609dp"
+            android:layout_width="278dp"
+            android:layout_height="532dp"
             android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:padding="5dp"
+            android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/t4"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/t3"
             app:srcCompat="@drawable/menu"
@@ -156,12 +181,15 @@
 
         <ImageView
             android:id="@+id/img2"
-            android:layout_width="wrap_content"
-            android:layout_height="609dp"
+            android:layout_width="278dp"
+            android:layout_height="525dp"
             android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:padding="5dp"
             android:visibility="invisible"
             app:layout_constraintBottom_toTopOf="@+id/t5"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/t4"
             app:srcCompat="@drawable/lesson" />

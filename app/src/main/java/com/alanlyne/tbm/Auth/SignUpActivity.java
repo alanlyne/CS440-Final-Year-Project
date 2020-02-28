@@ -94,6 +94,11 @@ public class SignUpActivity extends AppCompatActivity {
         menuCounter counter = new menuCounter(Menu.counter);
         databaseName.child(FirebaseAuth.getInstance().getCurrentUser().getUid()).setValue(counter);
     }
+    @Override
+    public void onBackPressed()
+    {
+
+    }
 
 }
 

@@ -15,23 +15,42 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:textColor="@android:color/black"
-            android:id="@+id/t0"
+            android:id="@+id/t"
             android:layout_width="350sp"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Variables are used to store a value or datatype. Like a number or name etc.\nYou can compare a variable to something like a storage container"
+            android:text="What is a Variable?"
+            android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
             android:textSize="15sp"
             android:visibility="visible"
-            app:layout_constraintBottom_toTopOf="@+id/t1"
+            app:layout_constraintBottom_toTopOf="@+id/t0"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/t0"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Variables are used to store a value or datatype. Like a number or name etc.\nYou can compare a variable to something like a storage container"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="#FF000000"
+            android:textSize="15sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/t1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/t" />
 
         <TextView
             android:id="@+id/t1"

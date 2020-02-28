@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.alanlyne.tbm.Auth.loginActivity;
 import com.alanlyne.tbm.Semester1.bVariables.Var;
 import com.alanlyne.tbm.Semester1.eIteration.Iteration;
 import com.alanlyne.tbm.Semester1.cOperators.op;
@@ -214,5 +215,12 @@ public class Menu extends AppCompatActivity {
                 System.out.println("The read failed: " + databaseError.getCode());
             }
         });
+    }
+    @Override
+    public void onBackPressed()
+    {
+        FirebaseAuth.getInstance().signOut();
+        Intent end = new Intent(Menu.this, loginActivity.class);
+        startActivity(end);
     }
 }

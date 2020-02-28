@@ -19,7 +19,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class varL1 extends AppCompatActivity {
-    TextView t0, t1, t2, t3, t4, x;
+    TextView t, t0, t1, t2, t3, t4, x;
     Button b1;
     int counter = 0;
     DatabaseReference databaseName;
@@ -31,6 +31,7 @@ public class varL1 extends AppCompatActivity {
         setContentView(R.layout.activity_var_l1);
         databaseName = FirebaseDatabase.getInstance().getReference("counter");
 
+        t = findViewById(R.id.t);
         t0 = findViewById(R.id.t0);
         t1 = findViewById(R.id.t1);
         t2 = findViewById(R.id.t2);
@@ -61,26 +62,28 @@ public class varL1 extends AppCompatActivity {
                     mLastClickTime = SystemClock.elapsedRealtime();
 
                     counter++;
-
                     System.out.println(counter);
                     if (counter > 0) {
-                        TextView tv = findViewById(R.id.t1);
+                        TextView tv = findViewById(R.id.t0);
                         tv.setVisibility(View.VISIBLE);
-
                     }
                     if (counter > 1) {
-                        TextView tv = findViewById(R.id.t2);
+                        TextView tv = findViewById(R.id.t1);
                         tv.setVisibility(View.VISIBLE);
                     }
                     if (counter > 2) {
-                        TextView tv = findViewById(R.id.t3);
+                        TextView tv = findViewById(R.id.t2);
                         tv.setVisibility(View.VISIBLE);
                     }
                     if (counter > 3) {
-                        TextView tv = findViewById(R.id.t4);
+                        TextView tv = findViewById(R.id.t3);
                         tv.setVisibility(View.VISIBLE);
                     }
                     if (counter > 4) {
+                        TextView tv = findViewById(R.id.t4);
+                        tv.setVisibility(View.VISIBLE);
+                    }
+                    if (counter > 5) {
                         Button b1 = findViewById(R.id.b1);
                         b1.setVisibility(View.VISIBLE);
                         b1.setOnClickListener(new View.OnClickListener() {

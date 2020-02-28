@@ -104,4 +104,9 @@ public class loginActivity extends AppCompatActivity {
         super.onStart();
         mFirebaseAuth.addAuthStateListener(mAuthStateListener);
     }
+    @Override
+    public void onBackPressed()
+    {
+
+    }
 }

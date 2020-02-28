@@ -25,7 +25,7 @@
             android:background="@drawable/edit_round"
             android:gravity="center"
             android:padding="10dp"
-            android:text="Lastly, we will look at the increment and decrement operator."
+            android:text="Increment and Decrement"
             android:textColor="@android:color/black"
             android:textColorHighlight="#FF000000"
             android:textSize="15sp"
