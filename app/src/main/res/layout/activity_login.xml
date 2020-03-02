@@ -8,7 +8,7 @@
     tools:context=".Auth.loginActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edit_login_email"
         android:layout_width="325dp"
         android:layout_height="69dp"
         android:layout_marginStart="85dp"
@@ -24,13 +24,13 @@
         android:textColorHint="@android:color/black"
         android:textColorLink="@android:color/black"
         android:textCursorDrawable="@android:color/black"
-        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintBottom_toTopOf="@+id/edit_login_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/edit_login_password"
         android:layout_width="326dp"
         android:layout_height="66dp"
         android:layout_marginStart="85dp"
@@ -50,7 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_login_email" />
 
     <TextView
         android:id="@+id/textView"
@@ -79,14 +79,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_login_password" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="200dp"
         android:layout_height="200sp"
         android:layout_marginTop="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintBottom_toTopOf="@+id/edit_login_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
